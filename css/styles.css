@@ -17,22 +17,26 @@ h1, h2, h3, h4 {
     font-family: "Frank Ruhl Libre", serif;
     line-height: 1.4;
 }
-
 h1 {
     font-size: 2.75em;
     font-weight: 600;
 }
-
+h1#hero {
+    color: #22CDB8;
+    font-weight: 700;
+}
 h2 {
     font-size: 2em;
     font-weight: 700;
 }
-
+h2#chat {
+    color: #22CDB8;
+    font-weight: 600;
+}
 h3 {
     font-size: 1.5em;
     font-weight: 700;
 }
-
 h4 {
     font-size: 1.25em;
     font-weight: 700;
@@ -40,4 +44,64 @@ h4 {
 
 img {
     width: 100%;
+}
+
+a {
+    color: #22CDB8;
+    text-decoration: none;
+}
+a:visited {
+    color: #818181;
+}
+a:hover,
+a:focus{
+    color: #22CDB8;
+    text-decoration: underline;
+}
+a:active{
+    color: blue;
+}  
+
+.button {
+    display: inline-block;
+    background-color: #22CDB8;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #818181;
+    transition: 0.2s opacity;
+}
+.button:hover,
+.button:active {
+    opacity: 0.5;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button.contact {
+    background-color: transparent;
+    color: #22CDB8;
+    text-transform: uppercase;
+    border: 2px solid #22CDB8;
+}
+.button.contact:hover,
+.button.contact:active {
+    background-color: #22CDB8;
+    color: #ffffff;
+}
+
+#work,
+#problem,
+#solution,
+#process,
+#ideation1,
+#ideation2,
+#iterations,
+#next {
+    background-color: rgba(129, 129, 129,0.25);
+}
+
+.email {
+    font-weight: 700;
+    text-transform: uppercase;
 }
