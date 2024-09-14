@@ -1,8 +1,12 @@
 /*
 Colors used:
-Primary Color (Turquoise): #22CDB8 or rgba(34, 205, 184);
+Primary Color (Turquoise): #00B29D or rgba(0, 178, 157);
 Secondary Color (Gray/Silver): #818181 or rgba(129, 129, 129);
 */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #ffffff;
@@ -13,25 +17,17 @@ body {
     color: #000000;             
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: "Frank Ruhl Libre", serif;
     line-height: 1.4;
 }
 h1 {
-    font-size: 2.75em;
+    font-size: 2.25em;
     font-weight: 600;
-}
-h1#hero {
-    color: #22CDB8;
-    font-weight: 700;
 }
 h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 700;
-}
-h2#chat {
-    color: #22CDB8;
-    font-weight: 600;
 }
 h3 {
     font-size: 1.5em;
@@ -41,21 +37,26 @@ h4 {
     font-size: 1.25em;
     font-weight: 700;
 }
+h5 {
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+}
 
 img {
     width: 100%;
 }
 
 a {
-    color: #22CDB8;
+    color: #00B29D;
     text-decoration: none;
 }
 a:visited {
-    color: #818181;
+    color: #00B29D;
 }
 a:hover,
 a:focus{
-    color: #22CDB8;
+    color: #00B29D;
     text-decoration: underline;
 }
 a:active{
@@ -64,44 +65,194 @@ a:active{
 
 .button {
     display: inline-block;
-    background-color: #22CDB8;
+    background-color: #00B29D;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 600;
     padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #818181;
+    border-radius: 6px;
+    border-bottom: 2px solid rgba(129, 129, 129, 0.25);
     transition: 0.2s opacity;
 }
-.button:hover,
-.button:active {
+.button:visited {
     opacity: 0.5;
     color: #ffffff;
     text-decoration: none;
 }
-.button.contact {
-    background-color: transparent;
-    color: #22CDB8;
-    text-transform: uppercase;
-    border: 2px solid #22CDB8;
+.button:hover,
+.button:active {
+    opacity: 0.75;
+    color: #ffffff;
+    text-decoration: none;
 }
-.button.contact:hover,
-.button.contact:active {
-    background-color: #22CDB8;
+
+.button.secondary {
+    background-color: transparent;
+    color: #00B29D;
+    text-transform: uppercase;
+    border: 2px solid #00B29D;
+    margin: 0 auto;
+    text-align: center;
+}
+.button.secondary:hover,
+.button.secondary:active {
+    background-color: #00B29D;
     color: #ffffff;
 }
 
-#work,
-#problem,
-#solution,
-#process,
-#ideation1,
-#ideation2,
-#iterations,
-#next {
-    background-color: rgba(129, 129, 129,0.25);
+.button.secondary.call {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+.intro {
+    color: #00B29D;
+    font-weight: 700;
+}
+
+.chat {
+    color: #00B29D;
+    font-weight: 600;
 }
 
 .email {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+    text-decoration: underline;
+    padding: 3px;
 }
+.email:hover,
+.email:active {
+    background-color: #00B29D;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.text {
+    background-color: rgba(129, 129, 129,0.25);
+}
+    
+.icon {
+    width: 40px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+/*Layout styling*/
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0;
+}
+#work .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #00B29D;
+}
+
+.center {
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+header.css-box-shadow {
+        width: [object Object]px; 
+        height: [object Object]px; 
+        background: #ffffff; 
+        border: solid #BDBDBD 1px; 
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+        -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+        -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+
+}
+
+main {
+    padding-top: 180px;
+}
+
+a.logo {
+    background-color: #00B29D;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 6px;
+    max-width: 250px;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a,
+nav > ul > li > a:visited {
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #00B29D;
+}
+nav > ul > li > a:hover,
+nav > ul > li > a:active {
+    background-color: #00B29D;
+    color: #ffffff;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+#hero {
+    background-color: #ffffff;
+    display: inline-block;
+    width: 100%;
+}
+#hero p {
+    padding-bottom: 25px;
+    border-bottom: 3px solid #818181;
+}
+
+#skills-tools .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #00B29D;
+}
+
+#cv {
+    padding-bottom: 25px;
+    border-bottom: 3px solid #818181;
+}
+
+footer {
+    padding-bottom: 25px;
+}
+
+#stoke h1,
+#stoke h2 {
+    text-align: center;
+}
+
+/* #stoke h2:nth-of-type(1) {
+    line-height: 0.5;
+    font-weight: 400;
+    padding-bottom: 25px;
+} */
