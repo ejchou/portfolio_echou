@@ -164,9 +164,13 @@ footer .chat {
     padding-bottom: 25px;
     border-bottom: 1px solid #00B29D;
 }
+#work .row:last-child {
+    padding-bottom: 25px;
+    border-bottom: none;
+}
 .last.row {
     padding-bottom: 25px;
-    border-bottom: 3px solid #818181;
+    border-bottom: 2px solid #04332d;
 }
 
 .center {
@@ -194,6 +198,10 @@ header.css-box-shadow {
 
 main {
     padding-top: 130px;
+}
+
+footer {
+    border-top: 3px solid #818181;
 }
 
 a.logo {
@@ -241,16 +249,6 @@ nav > ul > li > a:active {
     background-color: #ffffff;
     display: inline-block;
     width: 100%;
-}
-
-#contact-stoke {
-    position: absolute;
-    top: 17960px;
-    padding-bottom: 25px;
-}
-
-#stoke {
-    position: absolute;
 }
 
 #gain-text {
@@ -338,6 +336,15 @@ nav > ul > li > a:active {
     color: #04332d
 }
 
+#stoke {
+    position: absolute;
+}
+#contact-stoke {
+    position: absolute;
+    top: 17960px;
+    padding: 25px;
+}
+
 /*Media Queries*/
 
 [class*="col-"] {
@@ -373,6 +380,39 @@ nav > ul > li > a:active {
 
     #about h3 {
         margin-top: 0;
+    }
+
+    #gain-text {
+        font-size: 16px;
+        margin: 0 370px 0 40px;
+        bottom: 340px;
+    }
+
+    #manage-text {
+        font-size: 16px;
+        margin: 0 25px 0 400px;
+        bottom: 280px;
+    }
+
+    #sync-text {
+        font-size: 16px;
+        margin: 0 400px 0 65px;
+        bottom: 310px;
+    }
+
+    #climber-text {
+        font-size: 16px;
+        margin: 0 300px 0 40px;
+        bottom: 260px;
+    }
+    #stoke-logo {
+        right: 170px;
+        bottom: 250px;
+        width: 40%;
+    }
+
+    #contact-stoke {
+        top: 27075px; 
     }
 }
 
