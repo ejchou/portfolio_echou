@@ -253,7 +253,7 @@ nav > ul > li > a:active {
     position: absolute;
 }
 
-.gain-text {
+#gain-text {
     display: inline-block;
     font-family: "Frank Ruhl Libre", serif;
     color: #000000;
@@ -269,7 +269,7 @@ nav > ul > li > a:active {
     position: relative;
     bottom: 50px;
 }
-.manage-text{
+#manage-text{
     display: inline-block;
     font-family: "Frank Ruhl Libre", serif;
     color: #ffffff;
@@ -284,7 +284,7 @@ nav > ul > li > a:active {
     position: relative;
     bottom: 75px;
 }
-.sync-text {
+#sync-text {
     display: inline-block;
     font-family: "Frank Ruhl Libre", serif;
     color: #ffffff;
@@ -299,7 +299,7 @@ nav > ul > li > a:active {
     position: relative;
     bottom: 100px;
 }
-.climber-text {
+#climber-text {
     display: inline-block;
     font-family: "Frank Ruhl Libre", serif;
     color: #ffffff;
@@ -309,7 +309,7 @@ nav > ul > li > a:active {
     position: relative;
     bottom: 180px;
 }
-.stoke-logo {
+#stoke-logo {
     position: relative;
     right: 70px;
     bottom: 180px;
