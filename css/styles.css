@@ -165,6 +165,7 @@ a:active{
 
 header {
     position: fixed;
+    z-index: 999;
     background-color: #ffffff;
     text-align: center;
     padding: 10px 0;
@@ -243,16 +244,87 @@ nav > ul > li > a:active {
 }
 
 footer {
+    position: absolute;
+    top: 17960px;
     padding-bottom: 25px;
 }
 
-#stoke h1,
-#stoke h2 {
-    text-align: center;
+#stoke {
+    position: absolute;
 }
 
-/* #stoke h2:nth-of-type(1) {
+.gain-text {
+    display: inline-block;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 170px 0 25px;
+    position: relative;
+    bottom: 220px;
+    padding: none;
+}
+
+#manage {
+    position: relative;
+    bottom: 50px;
+}
+.manage-text{
+    display: inline-block;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 5px 0 217px;
+    position: relative;
+    bottom: 165px;
+}
+
+#sync {
+    position: relative;
+    bottom: 75px;
+}
+.sync-text {
+    display: inline-block;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 200px 0 25px;
+    position: relative;
+    bottom: 185px;
+}
+
+#climber {
+    position: relative;
+    bottom: 100px;
+}
+.climber-text {
+    display: inline-block;
+    font-family: "Frank Ruhl Libre", serif;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 120px 0 25px;
+    position: relative;
+    bottom: 180px;
+}
+.stoke-logo {
+    position: relative;
+    right: 70px;
+    bottom: 180px;
+    width: 60%;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+#prototype {
+    position: relative;
+    bottom: 210px;
+}
+
+#title h2 {
     line-height: 0.5;
     font-weight: 400;
     padding-bottom: 25px;
-} */
+}
