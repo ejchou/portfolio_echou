@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-size: 2.25em;
     font-weight: 600;
+    color: #04332d
 }
 h2 {
     font-size: 1.8em;
@@ -108,17 +109,17 @@ a:active{
     margin: 10px auto;
 }
 
-#intro1 {
-    color: #04332d;
-    font-weight: 600;
-}
-#intro2 {
+#intro {
     color: #00B29D;
     font-weight: 700;
 }
 
-.chat {
-    color: #00B29D;
+#hero span {
+    display: block;
+}
+
+footer .chat {
+    color: #04332d;
     font-weight: 600;
 }
 
@@ -163,6 +164,10 @@ a:active{
     padding-bottom: 25px;
     border-bottom: 1px solid #00B29D;
 }
+.last.row {
+    padding-bottom: 25px;
+    border-bottom: 3px solid #818181;
+}
 
 .center {
     text-align: center;
@@ -173,7 +178,7 @@ header {
     z-index: 999;
     background-color: #ffffff;
     text-align: center;
-    padding: 10px 0;
+    padding-top: 30px;
     width: 100%;
 }
 header.css-box-shadow {
@@ -188,14 +193,18 @@ header.css-box-shadow {
 }
 
 main {
-    padding-top: 180px;
+    padding-top: 130px;
 }
 
 a.logo {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.4;
     background-color: #00B29D;
     color: #ffffff;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 10px 15px;
     margin: 0 auto;
     border-radius: 6px;
     max-width: 250px;
@@ -232,20 +241,6 @@ nav > ul > li > a:active {
     background-color: #ffffff;
     display: inline-block;
     width: 100%;
-}
-#hero p {
-    padding-bottom: 25px;
-    border-bottom: 3px solid #818181;
-}
-
-#skills-tools .row {
-    padding-bottom: 25px;
-    border-bottom: 1px solid #00B29D;
-}
-
-#cv {
-    padding-bottom: 25px;
-    border-bottom: 3px solid #818181;
 }
 
 #contact-stoke {
@@ -332,4 +327,66 @@ nav > ul > li > a:active {
     line-height: 0.5;
     font-weight: 400;
     padding-bottom: 25px;
+}
+
+#work h3 {
+    margin: 0 auto;
+}
+
+#work h2,
+#about h2 {
+    color: #04332d
+}
+
+/*Media Queries*/
+
+[class*="col-"] {
+    float: left;
+    padding: 0 10px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Medium devices (640px and larger)*/
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 30px 0 20px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    main {
+        padding-top: 120px;
+        font-size: 18px;
+        .col-md-6 {
+            width: 50%;
+        }
+    }
+
+    #about h3 {
+        margin-top: 0;
+    }
+}
+
+/*Large devices (1024px and larger)*/
+@media only screen and (min-width: 1024px) {
+
+}
+
+/*Large devices (1440px and larger)*/
+@media only screen and (min-width: 1440px) {
+    
+}
+
+/*Extra-large devices (1920ox and larger)*/
+@media only screen and (min-width: 1920px) {
+    
 }
