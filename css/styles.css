@@ -418,10 +418,23 @@ nav > ul > li > a:active {
 
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) {
-
+    main {
+        font-size: 20px;
+        .col-lg-5 {
+            width: 40%;
+        }
+        .col-lg-7 {
+            width: 60%;
+        }
+    }
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-/*Large devices (1440px and larger)*/
+/*X-large devices (1440px and larger)*/
 @media only screen and (min-width: 1440px) {
     
 }
