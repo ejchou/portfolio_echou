@@ -41,7 +41,6 @@ h4 {
 }
 h5 {
     font-size: 16px;
-    font-style: italic;
     text-align: center;
 }
 
@@ -76,13 +75,12 @@ a:active{
     transition: 0.2s opacity;
 }
 .button:visited {
-    opacity: 0.5;
     color: #ffffff;
     text-decoration: none;
 }
 .button:hover,
 .button:active {
-    opacity: 0.75;
+    opacity: 0.8;
     color: #ffffff;
     text-decoration: none;
 }
@@ -94,9 +92,11 @@ a:active{
     border: 2px solid #00B29D;
     margin: 0 auto;
     text-align: center;
+    transition: 0.2s opacity;
 }
 .button.secondary:hover,
 .button.secondary:active {
+    opacity: 0.8;
     background-color: #00B29D;
     color: #ffffff;
 }
@@ -130,9 +130,11 @@ footer .chat {
     text-transform: uppercase;
     text-decoration: underline;
     padding: 3px;
+    transition: 0.2s opacity;
 }
 .email:hover,
 .email:active {
+    opacity: 0.8;
     background-color: #00B29D;
     color: #ffffff;
     text-decoration: none;
@@ -150,6 +152,15 @@ footer .chat {
     margin: 0 auto;
 }
 
+#about img{
+    width: 50%;
+    border-radius: 360px;
+}
+
+.style {
+    font-style: italic;
+    text-decoration: underline;
+}
 
 /*Layout styling*/
 
@@ -193,7 +204,6 @@ header.css-box-shadow {
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
         -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
         -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-
 }
 
 main {
@@ -251,80 +261,14 @@ nav > ul > li > a:active {
     width: 100%;
 }
 
-#gain-text {
-    display: inline-block;
-    font-family: "Frank Ruhl Libre", serif;
-    color: #000000;
-    font-size: 12px;
-    font-weight: 400;
-    margin: 0 170px 0 25px;
-    position: relative;
-    bottom: 220px;
-    padding: none;
-}
-
-#manage {
-    position: relative;
-    bottom: 50px;
-}
-#manage-text{
-    display: inline-block;
-    font-family: "Frank Ruhl Libre", serif;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 400;
-    margin: 0 5px 0 217px;
-    position: relative;
-    bottom: 165px;
-}
-
-#sync {
-    position: relative;
-    bottom: 75px;
-}
-#sync-text {
-    display: inline-block;
-    font-family: "Frank Ruhl Libre", serif;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 400;
-    margin: 0 200px 0 25px;
-    position: relative;
-    bottom: 185px;
-}
-
-#climber {
-    position: relative;
-    bottom: 100px;
-}
-#climber-text {
-    display: inline-block;
-    font-family: "Frank Ruhl Libre", serif;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 400;
-    margin: 0 120px 0 25px;
-    position: relative;
-    bottom: 180px;
-}
-#stoke-logo {
-    position: relative;
-    right: 70px;
-    bottom: 180px;
-    width: 60%;
-    padding: 25px;
-    margin: 0 auto;
-}
-
-#prototype {
-    position: relative;
-    bottom: 210px;
-}
-
 #title h2 {
     line-height: 0.5;
     font-weight: 400;
     padding-bottom: 25px;
+}
+
+#title img {
+    width: 70%;
 }
 
 #work h3 {
@@ -336,14 +280,70 @@ nav > ul > li > a:active {
     color: #04332d
 }
 
-#stoke {
-    position: absolute;
-}
-#contact-stoke {
-    position: absolute;
-    top: 17960px;
+#prototype {
     padding: 25px;
 }
+
+#about h3 {
+    margin-top: 0;
+}
+
+.bio h2,
+.bio p {
+    text-align: center;
+}
+
+.resume {
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #04332d; 
+}
+
+.journey-map {
+    grid-area: map;
+}
+.persona {
+    grid-area: pic;
+    width: 100px;
+}
+.quote {
+    grid-area: text;
+}
+.userflow {
+    display: grid;
+    grid-template-areas:
+    'map map'
+    'pic text';
+    gap: 10px;
+    font-size: 14px;
+}
+
+.sketch,
+.lfwireframe {
+    display: flex;
+    flex-flow: row; 
+    gap: 10px;
+    padding: 10px;
+}
+
+#userprobs p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.problem {
+    background-color: #315A4E;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+    min-width: 0;
+    height: 250px;
+}
+
 
 /*Media Queries*/
 
@@ -378,41 +378,22 @@ nav > ul > li > a:active {
         }
     }
 
-    #about h3 {
-        margin-top: 0;
+    .sketch {
+        flex-flow: column;
     }
 
-    #gain-text {
-        font-size: 16px;
-        margin: 0 370px 0 40px;
-        bottom: 340px;
+    .ideationimg1,
+    .ideationimg2 {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 20px;
     }
 
-    #manage-text {
-        font-size: 16px;
-        margin: 0 25px 0 400px;
-        bottom: 280px;
-    }
-
-    #sync-text {
-        font-size: 16px;
-        margin: 0 400px 0 65px;
-        bottom: 310px;
-    }
-
-    #climber-text {
-        font-size: 16px;
-        margin: 0 300px 0 40px;
-        bottom: 260px;
-    }
-    #stoke-logo {
-        right: 170px;
-        bottom: 250px;
-        width: 40%;
-    }
-
-    #contact-stoke {
-        top: 27075px; 
+    .set {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
     }
 }
 
@@ -426,20 +407,85 @@ nav > ul > li > a:active {
         .col-lg-7 {
             width: 60%;
         }
+        .col-lg {
+            width: 100%;
+        }
     }
+
     .container {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
+
+    #story {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        gap: 30px;
+        margin: 10px;
+    }
+
+    .bio h2,
+    .bio p {
+        text-align: left;
+    }
+
+    .resume {
+        text-align: left;
+        padding-top: 25px;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
 }
 
 /*X-large devices (1440px and larger)*/
 @media only screen and (min-width: 1440px) {
-    
+    main {
+        font-size: 24px;
+    }
 }
 
 /*Extra-large devices (1920ox and larger)*/
 @media only screen and (min-width: 1920px) {
-    
+    main {
+        font-size: 28px;
+    }
 }
+
+
+/*CSS Animation Example*/
+
+.berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+
+.sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(400px,50px);}
+  }
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+  @keyframes cloud-move-reverse {
+    from {transform: translate(500px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }

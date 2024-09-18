@@ -32,8 +32,8 @@
         </div>
     </header>
 
-    <main>
-        <div id="stoke" class="container">
+    <main id="stoke">
+        <div class="container">
             <div id="title" class="center">
                 <h1>Stoke</h1>
                 <h2>Mindful Health Tracking</h2>
@@ -56,28 +56,32 @@
                 </div>
 
                 <div>
-                    <h4 class="center">Mindfulness is at the core of Wellness.</h4>
-                    <div>
+                    <h4 class="center">Mindfulness is at the <span class="style">core</span> of Wellness.</h4>
+                    <div id="userprobs">
                         <ol>
-                            <div class="row">
-                                <p>“Fitness and nutrition should add to your life, not be a negative thing.”</p>
-                                <li>The current state of the fitness and nutrition industry is rather triggering,
-                                    especially for those with histories of disordered eating or body dysmorphia.</li>
+                            <div class="set">
+                                <div class="problem">
+                                    <p class="center">“Fitness and nutrition should add to your life, not be a negative thing.”</p>
+                                    <li> The current state of the fitness and nutrition industry is rather triggering,
+                                        especially for those with histories of disordered eating or body dysmorphia.</li>
+                                </div>
+                                <div class="problem">
+                                    <p class="center">“It would be great for the numbers to happen behind the scenes.”</p>
+                                    <li>Users want their data to be more contextual and educational rather than generically
+                                        prescribed numbers and graphs.</li>
+                                </div>
                             </div>
-                            <div class="row">
-                                <p>“It would be great for the numbers to happen behind the scenes.”</p>
-                                <li>Users want their data to be more contextual and educational rather than generically
-                                    prescribed numbers and graphs.</li>
-                            </div>
-                            <div class="row">
-                                <p>“I struggled with that lean body mindset.”</p>
-                                <li>Positive encouragement is lacking in current trackers, which influences users to
-                                    behave or pick up habits that do not improve health and wellbeing.</li>
-                            </div>
-                            <div class="row">
-                                <p>“I think about eating quite a bit, and probably not in a healthy amount.”</p>
-                                <li>A large obstacle surrounding nutrition is proper emotional support and understanding
-                                    how to affect stable positive change.</li>
+                            <div class="set">
+                                <div class="problem">
+                                    <p class="center">“I struggled with that lean body mindset.”</p>
+                                    <li>Positive encouragement is lacking in current trackers, which influences users to
+                                        behave or pick up habits that do not improve health and wellbeing.</li>
+                                </div>
+                                <div class="problem">
+                                    <p class="center">“I think about eating quite a bit, and probably not in a healthy amount.”</p>
+                                    <li>A large obstacle surrounding nutrition is proper emotional support and understanding
+                                        how to affect stable positive change.</li>
+                                </div>
                             </div>
                         </ol>
                     </div>
@@ -92,31 +96,11 @@
                         provides qualitative feedback.</p>
                 </div>
 
-                <div>
-                    <div>
-                        <h5>Dashboard v4</h5>
+                <div class="center">
                         <picture>
-                            <source srcset="img/stoke/1x/dashboard_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/dashboard_2x.png" alt="Dashboard">
+                            <source srcset="img/stoke/1x/solutionimg_1x.png" media="(max-width:767px)">
+                            <img src="img/stoke/2x/solutionimg_2x.png" alt="Solution Screens">
                         </picture>
-                        <ul>
-                            <li>Positive encouragement</li>
-                            <li>Emphasis on mindfulness before data</li>
-                            <li>Numbers are limited</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Stats Overview v4</h5>
-                        <picture>
-                            <source srcset="img/stoke/1x/stats_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/stats_2x.png" alt="Stats Overview">
-                        </picture>
-                        <ul>
-                            <li>Trigger words are avoided</li>
-                            <li>Data is contextual and related to user's personal metrics</li>
-                            <li>Proper support and understanding</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
 
@@ -130,7 +114,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="center">
                     <picture>
                         <source srcset="img/stoke/1x/allisonpersona_1x.jpg" media="(max-width:767px)">
                         <img src="img/stoke/2x/allisonpersona_2x.jpg" alt="Allison Persona">
@@ -151,77 +135,100 @@
                     </p>
                 </div>
 
-                <div>
+                <div class="center">
                     <div>
                         <h5>User flow #1</h5>
-                        <picture>
-                            <source srcset="img/stoke/1x/flow1_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/flow1_2x.png" alt="User Flow 1">
-                        </picture>
-                        <picture>
-                            <source srcset="img/stoke/1x/allisonpic_1x.jpg" media="(max-width:767px)">
-                            <img src="img/stoke/2x/allisonpic_2x.jpg" alt="Picture of Allison">
-                        </picture>
-                        <p>“I want to track the food I’m eating, so I can identify any food triggers thats have a
-                            negative impact to my wellbeing.”</p>
+
+                        <div class="userflow">
+                            <picture class="journey-map">
+                                <source srcset="img/stoke/1x/flow1_1x.png" media="(max-width:767px)">
+                                <img src="img/stoke/2x/flow1_2x.png" alt="User Flow 1">
+                            </picture>
+                            <picture class="persona">
+                                <source srcset="img/stoke/1x/allisonpic_1x.jpg" media="(max-width:767px)">
+                                <img src="img/stoke/2x/allisonpic_2x.jpg" alt="Picture of Allison">
+                            </picture>
+                            <p class="quote">“I want to track the food I’m eating, so I can identify any food triggers
+                                that have a
+                                negative impact to my wellbeing.”</p>
+                        </div>
                     </div>
 
                     <div>
                         <h5>User flow #2</h5>
-                        <picture>
-                            <source srcset="img/stoke/1x/siennapic_1x.jpg" media="(max-width:767px)">
-                            <img src="img/stoke/2x/siennapic_2x.jpg" alt="Picture of Sienna">
-                        </picture>
-                        <p>“I want to be able to see all my performance metrics in one place, so I can easily identify
-                            areas of improvement.”</p>
-                        <picture>
-                            <source srcset="img/stoke/1x/flow2_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/flow2_2x.png" alt="User Flow 2">
-                        </picture>
+
+                        <div class="userflow">
+                            <picture class="journey-map">
+                                <source srcset="img/stoke/1x/flow2_1x.png" media="(max-width:767px)">
+                                <img src="img/stoke/2x/flow2_2x.png" alt="User Flow 2">
+                            </picture>
+                            <picture class="persona">
+                                <source srcset="img/stoke/1x/siennapic_1x.jpg" media="(max-width:767px)">
+                                <img src="img/stoke/2x/siennapic_2x.jpg" alt="Picture of Sienna">
+                            </picture>
+                            <p class="quote">“I want to be able to see all my performance metrics in one place, so I can
+                                easily identify
+                                areas of improvement.”</p>
+                        </div>
                     </div>
 
                     <div>
-                        <h5>Card sorting results</h5>
-                        <picture>
-                            <source srcset="img/stoke/1x/cardsortresults_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/cardsortresults_2x.png" alt="Card Sorting Results">
-                        </picture>
+                        <div class="ideationimg1">
+                            <div class="cardsort">
+                                <h5>Card sorting results</h5>
+                                <picture>
+                                    <source srcset="img/stoke/1x/cardsortresults_1x.png" media="(max-width:767px)">
+                                    <img src="img/stoke/2x/cardsortresults_2x.png" alt="Card Sorting Results">
+                                </picture>
+                            </div>
+
+                            <div class="sitemap">
+                                <h5>Revised sitemap</h5>
+                                <picture>
+                                    <source srcset="img/stoke/1x/sitemap_1x.png" media="(max-width:767px)">
+                                    <img src="img/stoke/2x/sitemap_2x.png" alt="User Flow 2">
+                                </picture>
+                            </div>
                     </div>
 
                     <div>
-                        <h5>Revised sitemap</h5>
-                        <picture>
-                            <source srcset="img/stoke/1x/sitemap_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/sitemap_2x.png" alt="User Flow 2">
-                        </picture>
+                        <div class="ideationimg2">
+                            <div>
+                            <h5>Initial sketches</h5>
+                            <div class="sketch">
+                                <picture>
+                                    <source srcset="img/stoke/1x/sketch01_1x.jpg" media="(max-width:767px)">
+                                    <img src="img/stoke/2x/sketch01_2x.jpg" alt="Design Sketch 1">
+                                </picture>
+                                <picture>
+                                    <source srcset="img/stoke/1x/sketch02_1x.jpg" media="(max-width:767px)">
+                                    <img src="img/stoke/2x/sketch02_2x.jpg" alt="Design Sketch 2">
+                                </picture>
+                            </div>
+                        </div>
+    
+                            <div>
+                                <div>
+                                <h5>Low-fidelity wireframes</h5>
+                                <div class="lfwireframe">
+                                    <picture>
+                                        <source srcset="img/stoke/1x/home_lf_1x.png" media="(max-width:767px)">
+                                        <img src="img/stoke/2x/home_lf_2x.png" alt="Home Wireframe">
+                                    </picture>
+                                    <picture>
+                                        <source srcset="img/stoke/1x/stats_lf_1x.png" media="(max-width:767px)">
+                                        <img src="img/stoke/2x/stats_lf_2x.png" alt="Stats Wireframe">
+                                    </picture>
+                                    <picture>
+                                        <source srcset="img/stoke/1x/checkin_lf_1x.png" media="(max-width:767px)">
+                                        <img src="img/stoke/2x/checkin_lf_2x.png" alt="Check-In Wireframe">
+                                    </picture>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div>
-                        <h5>Initial sketches</h5>
-                        <picture>
-                            <source srcset="img/stoke/1x/sketch01_1x.jpg" media="(max-width:767px)">
-                            <img src="img/stoke/2x/sketch01_2x.jpg" alt="Design Sketch 1">
-                        </picture>
-                        <picture>
-                            <source srcset="img/stoke/1x/sketch02_1x.jpg" media="(max-width:767px)">
-                            <img src="img/stoke/2x/sketch02_2x.jpg" alt="Design Sketch 2">
-                        </picture>
-                    </div>
-
-                    <div>
-                        <h5>Low-fidelity wireframes</h5>
-                        <picture>
-                            <source srcset="img/stoke/1x/home_lf_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/home_lf_2x.png" alt="Home Wireframe">
-                        </picture>
-                        <picture>
-                            <source srcset="img/stoke/1x/stats_lf_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/stats_lf_2x.png" alt="Stats Wireframe">
-                        </picture>
-                        <picture>
-                            <source srcset="img/stoke/1x/checkin_lf_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/checkin_lf_2x.png" alt="Check-In Wireframe">
-                        </picture>
+                       
                     </div>
                 </div>
 
@@ -253,51 +260,10 @@
                 </div>
 
                 <div>
-                    <div>
-                        <h5>Stoke v1</h5>
                         <picture>
-                            <source srcset="img/stoke/1x/homev1_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/homev1_2x.png" alt="Home Screen v1">
+                            <source srcset="img/stoke/1x/iterationcomp_1x.png" media="(max-width:767px)">
+                            <img src="img/stoke/2x/iterationcomp_2x.png" alt="Stoke v1 and v4">
                         </picture>
-                        <picture>
-                            <source srcset="img/stoke/1x/homev1_bottom_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/homev1_bottom_2x.png" alt="Bottom of Home Screen v1">
-                        </picture>
-                        <picture>
-                            <source srcset="img/stoke/1x/statsv1_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/statsv1_2x.png" alt="Stats Screen v1">
-                        </picture>
-                    </div>
-
-                    <div>
-                        <ul>
-                            <li>A dialog showing the user’s current wellness is the first thing users will see when they
-                                open the app.</li>
-                            <li>Replaced title fills with vivid imagery to play to users’ emotions with appealing
-                                visuals.</li>
-                            <li>Revised coloring to adhere to adequate contrasting.</li>
-                            <li>Rounded all components to reduce austere UI.</li>
-                            <li>Revised navigation menu to include labels.</li>
-                            <li>The Stats feature is now a main screen and can be accessed at multiple points in the
-                                app.</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h5>Stoke v4</h5>
-                        <picture>
-                            <source srcset="img/stoke/1x/homev4_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/homev4_2x.png" alt="Home Screen v4">
-                        </picture>
-                        <picture>
-                            <source srcset="img/stoke/1x/homev4_bottom_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/homev4_bottom_2x.png" alt="Bottom of Home Screen v4">
-                        </picture>
-                        <picture>
-                            <source srcset="img/stoke/1x/statsv4_1x.png" media="(max-width:767px)">
-                            <img src="img/stoke/2x/statsv4_2x.png" alt="Stats Screen v4">
-                        </picture>
-                    </div>
                 </div>
             </div>
 
@@ -311,42 +277,32 @@
             </div>
 
             <div>
-                <div id="gain">
+                <div>
                     <picture>
                         <source srcset="img/stoke/1x/stoke_mockup01_1x.jpg" media="(max-width:767px)">
                         <img src="img/stoke/2x/stoke_mockup01_2x.jpg" alt="Mockup 1">
                     </picture>
-                    <div id="gain-text">Gain comprehensive insight into your fitness, nutrition, and mental health.</div>
                 </div>
 
-                <div id="manage">
+                <div>
                     <picture>
                         <source srcset="img/stoke/1x/stoke_mockup02_1x.jpg" media="(max-width:767px)">
                         <img src="img/stoke/2x/stoke_mockup02_2x.jpg" alt="Mockup 2">
                     </picture>
-                    <div id="manage-text">Manage your wellbeing with mindfulness.</div>
                 </div>
 
-                <div id="sync">
+                <div>
                     <picture>
                         <source srcset="img/stoke/1x/stoke_mockup03_1x.jpg" media="(max-width:767px)">
                         <img src="img/stoke/2x/stoke_mockup03_2x.jpg" alt="Mockup 3">
                     </picture>
-                    <div id="sync-text">Sync all your devices for real-time data.</div>
                 </div>
 
-                <div id="climber">
+                <div>
                     <picture>
                         <source srcset="img/stoke/1x/climber_1x.jpg" media="(max-width:767px)">
                         <img src="img/stoke/2x/climber_2x.jpg" alt="Rock Climber">
                     </picture>
-                    <div id="climber-text">The ultimate health tracker to aid in mindfulness and peak performance.</div>
-                        <div id="stoke-logo">
-                            <picture>
-                                <source srcset="img/stoke/1x/logo_1x.png" media="(max-width:767px)">
-                                <img src="img/stoke/2x/logo_2x.png" alt="Stoke Logo">
-                            </picture>
-                        </div>
                 </div>
             </div>
 
