@@ -92,12 +92,12 @@ a:active{
     border: 2px solid #00B29D;
     margin: 0 auto;
     text-align: center;
-    transition: 0.2s opacity;
+    transition: 0.5s opacity;
 }
 .button.secondary:hover,
 .button.secondary:active {
     opacity: 0.8;
-    background-color: #00B29D;
+    background-color: #04332d;
     color: #ffffff;
 }
 
@@ -130,12 +130,12 @@ footer .chat {
     text-transform: uppercase;
     text-decoration: underline;
     padding: 3px;
-    transition: 0.2s opacity;
+    transition: 0.5s opacity;
 }
 .email:hover,
 .email:active {
     opacity: 0.8;
-    background-color: #00B29D;
+    background-color: #04332d;
     color: #ffffff;
     text-decoration: none;
     padding: 5px;
@@ -245,6 +245,7 @@ nav > ul > li > a:visited {
     text-transform: uppercase;
     font-weight: 700;
     color: #04332d;
+    transition: 0.5s opacity;
 }
 nav > ul > li > a:hover,
 nav > ul > li > a:active {
@@ -253,6 +254,7 @@ nav > ul > li > a:active {
     padding: 5px;
     margin: 10px;
     border-radius: 6px;
+    opacity: 0.8;
 }
 
 #hero {
