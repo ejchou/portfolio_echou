@@ -1,0 +1,1 @@
+console.log("Welcome! Thanks for checking out my site.")
