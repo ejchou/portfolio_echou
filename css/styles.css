@@ -1,7 +1,7 @@
 /*
 Colors used:
 Primary Color (Turquoise): #00B29D or rgba(0, 178, 157);
-Secondary Color (Dark Turquoise)#04332d; 
+Secondary Color (Dark Turquoise)#04332d or rgba(4, 51, 45); 
 Tertiary Color (Gray/Silver): #818181 or rgba(129, 129, 129)
 */
 
@@ -58,7 +58,6 @@ a:visited {
 a:hover,
 a:focus{
     color: #00B29D;
-    text-decoration: underline;
 }
 a:active{
     color: blue;
@@ -204,7 +203,7 @@ main {
 }
 
 footer {
-    border-top: 3px solid #818181;
+    border-top:1px solid #818181;
 }
 
 a.logo {
@@ -218,6 +217,9 @@ a.logo {
     padding: 10px 15px;
     border-radius: 6px;
     max-width: 150px;
+}
+a.logo:hover {
+    text-decoration: underline;
 }
 
 nav > ul {
@@ -246,15 +248,34 @@ nav > ul > li > a:active {
 .navtoggle li:not(:last-child) {
     display: none;
 }
-.navtoggle, .navtoggle.responsive {
-    position: relative;
-}
 .navtoggle li .icon {
     position: absolute;
     right: 0;
     top: -6px;
     font-size: 20px;
-    padding-right: 0;
+    padding-right: 5px;
+}
+.navtoggle li .icon:hover {
+    padding-right: 5px;
+    padding-bottom: 0;
+    margin: 10px 0 0;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(129, 129, 129, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
 }
 
 #hero {
