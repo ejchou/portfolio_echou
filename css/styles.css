@@ -145,12 +145,6 @@ footer .chat {
 .text {
     background-color: rgba(129, 129, 129,0.25);
 }
-    
-.icon {
-    width: 40px;
-    padding: 10px;
-    margin: 0 auto;
-}
 
 #about img{
     width: 50%;
@@ -225,7 +219,7 @@ a.logo {
     padding: 10px 15px;
     margin: 0 auto;
     border-radius: 6px;
-    max-width: 250px;
+    max-width: 150px;
 }
 
 nav {
@@ -361,6 +355,10 @@ nav > ul > li > a:active {
     display: table;
 }
 
+a.logo {
+    min-width: 641px;
+}
+
 /*Medium devices (640px and larger)*/
 @media only screen and (min-width: 640px) {
     header {
@@ -439,11 +437,6 @@ nav > ul > li > a:active {
         padding: 10px;
     }
 
-    .icon {
-        width: 40px;
-        margin: 10px auto;
-    }
-
     .container {
         max-width: 1200px;
         margin-left: auto;
@@ -500,10 +493,6 @@ nav > ul > li > a:active {
     .button.secondary.call {
         font-size: 24px;
         padding: 10px;
-    }
-
-    .icon {
-        width: 50px;
     }
 
     #userprobs p {
