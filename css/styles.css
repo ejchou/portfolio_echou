@@ -396,7 +396,6 @@ nav > ul > li > a:active {
     nav {
         width: auto;
         float: right;
-        margin-top: 4px;
     }
     nav > ul {
         margin: 1em 0;
@@ -409,6 +408,15 @@ nav > ul > li > a:active {
     }
     .navtoggle li:last-child {
         display: none;
+    }
+
+    .navtoggle.responsive li {
+        padding: 0;
+        border: none;
+    }
+
+    .navtoggle.responsive nav {
+        padding: 0;
     }
 
     main {
