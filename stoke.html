@@ -17,6 +17,22 @@
         href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Nokora:wght@100;300;400;700;900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/e0d13a7da0.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
 </head>
 
 <body>
@@ -323,7 +339,7 @@
         </div>
     </main>
 
-    <footer id="contact-stoke" class="center">
+    <footer id="contact" class="center">
         <div class="container">
             <h2 class="chat">Let's Chat!</h2>
             <p><a href="mailto:eileen.j.chou@gmail.com" class="email">Drop a line</a> if you'd like to work together.
@@ -334,11 +350,11 @@
 
             <div>
                 <a href="https://www.linkedin.com/in/ejchou/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-linkedin fa-xl"></i>
                 </a>
             </div>
 
-            <p>Copyright Eileen Chou 2024</p>
+            <p>&copy; Eileen Chou 2024</p>
         </div>
     </footer>
 

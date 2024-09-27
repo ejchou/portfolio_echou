@@ -369,6 +369,10 @@ nav > ul > li > a:active {
     min-width: 0;
 }
 
+.fab.fa-linkedin {
+    color: #04332d;
+    margin: 20px 0 0;
+}
 
 /*Media Queries*/
 
