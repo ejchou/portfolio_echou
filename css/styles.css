@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-size: 2.25em;
     font-weight: 600;
-    color: #04332d
+    color: #04332d;
 }
 h2 {
     font-size: 1.8em;
@@ -36,12 +36,8 @@ h3 {
     font-weight: 700;
 }
 h4 {
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 700;
-}
-h5 {
-    font-size: 16px;
-    text-align: center;
 }
 
 img {
@@ -68,7 +64,7 @@ a:active{
     background-color: #00B29D;
     color: #ffffff;
     font-weight: 600;
-    padding: 10px;
+    padding: 5px 10px;
     border-radius: 6px;
     border-bottom: 2px solid rgba(129, 129, 129, 0.25);
     transition: 0.2s opacity;
@@ -100,7 +96,7 @@ a:active{
     color: #ffffff;
 }
 
-.button.secondary.call {
+.button.secondary.contact {
     font-family: "Frank Ruhl Libre", serif;
     font-size: 18px;
     font-weight: 700;
@@ -111,6 +107,7 @@ a:active{
 #intro {
     color: #00B29D;
     font-weight: 700;
+    font-size: 30px;
 }
 
 #hero span {
@@ -139,10 +136,6 @@ footer .chat {
     text-decoration: none;
     padding: 5px;
     border-radius: 6px;
-}
-
-.text {
-    background-color: rgba(129, 129, 129,0.25);
 }
 
 #about img{
@@ -327,7 +320,7 @@ nav > ul > li > a:active {
 }
 .persona {
     grid-area: pic;
-    width: 100px;
+    width: 80px;
 }
 .quote {
     grid-area: text;
@@ -335,10 +328,11 @@ nav > ul > li > a:active {
 .userflow {
     display: grid;
     grid-template-areas:
-    'map map'
-    'pic text';
-    gap: 10px;
+    'map map map map'
+    'pic text text text';
+    gap: 0;
     font-size: 14px;
+    padding: 0 20px;
 }
 
 .sketch,
@@ -448,6 +442,15 @@ nav > ul > li > a:active {
         gap: 10px;
         padding: 10px;
     }
+
+    .persona {
+        width: 100px;
+        margin: 0 0 0 40px;
+    }
+    .userflow {
+        font-size: .75em;
+        padding: 0 40px;
+    }
 }
 
 /*Large devices (1024px and larger)*/
@@ -483,7 +486,7 @@ nav > ul > li > a:active {
         font-size: 20px;
     }
 
-    .button.secondary.call {
+    .button.secondary.contact {
         font-size: 20px;
         padding: 10px;
     }
@@ -511,6 +514,14 @@ nav > ul > li > a:active {
         padding-top: 25px;
         padding-bottom: 0;
         border-bottom: none;
+    }
+    
+    .persona {
+        width: 120px;
+    }
+    .userflow {
+        font-size: 1em;
+        padding: 0 60px;
     }
 
 }
@@ -541,7 +552,7 @@ nav > ul > li > a:active {
         font-size: 24px;
     }
 
-    .button.secondary.call {
+    .button.secondary.contact {
         font-size: 24px;
         padding: 10px;
     }
