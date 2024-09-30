@@ -1,7 +1,7 @@
 /*
 Colors used:
-Primary Color (Turquoise): #00B29D/#008576 or rgba(0, 178, 157);
-Secondary Color (Dark Turquoise)#04332d or rgba(4, 51, 45); 
+Primary Color (Dark Green): #1E5C49 or rgba(30, 92, 73);
+Secondary Color (Pale Yellow): #F8E5BD or rgba(248, 229, 189); 
 Tertiary Color (Gray/Silver): #818181 or rgba(129, 129, 129)
 */
 
@@ -18,26 +18,25 @@ body {
     color: #000000;             
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
     font-family: "Frank Ruhl Libre", serif;
     line-height: 1.4;
 }
 h1 {
     font-size: 2.25em;
-    font-weight: 600;
-    color: #04332d;
+    font-weight: 700;
+    color: #1E5C49;
 }
 h2 {
-    font-size: 1.8em;
-    font-weight: 700;
+    font-size: 1.75em;
+    font-weight: 600;
 }
 h3 {
-    font-size: 1.5em;
-    font-weight: 700;
+    font-size: 1.25em;
+    font-weight: 600;
 }
 h4 {
-    font-size: 1em;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 img {
@@ -45,24 +44,25 @@ img {
 }
 
 a {
-    color: #008576;
+    color: #1E5C49;
     text-decoration: none;
 }
 a:visited {
-    color: #008576;
+    color: #1E5C49;
 }
 a:hover,
 a:focus{
-    color: #008576;
+    color: #1E5C49;
 }
 a:active{
-    color: blue;
+    color: #1E5C49;
 }  
 
 .button {
     display: inline-block;
-    background-color: #008576;
-    color: #ffffff;
+    background-color: #1E5C49;
+    color: #F8E5BD;
+    font-size: 14px;
     font-weight: 600;
     padding: 5px 10px;
     border-radius: 6px;
@@ -70,21 +70,21 @@ a:active{
     transition: 0.2s opacity;
 }
 .button:visited {
-    color: #ffffff;
+    color: #F8E5BD;
     text-decoration: none;
 }
 .button:hover,
 .button:active {
     opacity: 0.8;
-    color: #ffffff;
+    color: #F8E5BD;
     text-decoration: none;
 }
 
 .button.secondary {
     background-color: transparent;
-    color: #008576;
+    color: #1E5C49;
     text-transform: uppercase;
-    border: 2px solid #008576;
+    border: 2px solid #1E5C49;
     margin: 0 auto;
     text-align: center;
     transition: 0.5s opacity;
@@ -92,8 +92,9 @@ a:active{
 .button.secondary:hover,
 .button.secondary:active {
     opacity: 0.8;
-    background-color: #04332d;
-    color: #ffffff;
+    background-color: #1E5C49;
+    color: #F8E5BD;
+    border: 2px solid #F8E5BD;
 }
 
 .button.secondary.contact {
@@ -112,18 +113,12 @@ a:active{
     border-radius: 6px;
 }
 
-#intro {
-    color: #008576;
-    font-weight: 700;
-    font-size: 30px;
-}
-
 #hero span {
     display: block;
 }
 
 footer .chat {
-    color: #04332d;
+    color: #1E5C49;
     font-weight: 600;
 }
 
@@ -139,7 +134,7 @@ footer .chat {
 .email:hover,
 .email:active {
     opacity: 0.8;
-    background-color: #04332d;
+    background-color: #1E5C49;
     color: #ffffff;
     text-decoration: none;
     padding: 5px;
@@ -147,8 +142,9 @@ footer .chat {
 }
 
 #about img{
-    width: 50%;
+    width: 80%;
     border-radius: 360px;
+    padding-top: 10px;
 }
 
 .style {
@@ -167,7 +163,7 @@ footer .chat {
 }
 #work .row {
     padding-bottom: 25px;
-    border-bottom: 1px solid #00B29D;
+    border-bottom: 1px solid #1E5C49;
 }
 #work .row:last-child {
     padding-bottom: 25px;
@@ -175,7 +171,7 @@ footer .chat {
 }
 .last.row {
     padding-bottom: 25px;
-    border-bottom: 2px solid #04332d;
+    border-bottom: 2px solid #1E5C49;
 }
 
 .center {
@@ -186,41 +182,25 @@ header {
     position: fixed;
     z-index: 999;
     background-color: #ffffff;
-    padding: 30px 0 20px;
+    padding: 15px 0 10px;
     width: 100%;
 }
 header.css-box-shadow {
         width: [object Object]px; 
         height: [object Object]px; 
         background: #ffffff; 
-        border: solid #BDBDBD 1px; 
+        border: solid #bdbdbd 1px; 
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
         -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
         -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 }
 
 main {
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 footer {
     border-top:1px solid #818181;
-}
-
-a.logo {
-    font-family: "Frank Ruhl Libre", serif;
-    font-size: 2em;
-    font-weight: 600;
-    line-height: 1.4;
-    background-color: #008576;
-    color: #ffffff;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    border-radius: 6px;
-    max-width: 150px;
-}
-a.logo:hover {
-    text-decoration: underline;
 }
 
 nav > ul {
@@ -233,13 +213,13 @@ nav > ul > li > a:visited {
     padding: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #04332d;
+    color: #1E5C49;
     transition: 0.5s opacity;
 }
 nav > ul > li > a:hover,
 nav > ul > li > a:active {
-    background-color: #04332d;
-    color: #ffffff;
+    background-color: #1E5C49;
+    color: #F8E5BD;
     padding: 5px;
     margin: 10px;
     border-radius: 6px;
@@ -252,11 +232,12 @@ nav > ul > li > a:active {
 .navtoggle li .icon {
     position: absolute;
     right: 0;
-    top: -6px;
+    top: 15px;
     font-size: 20px;
     padding-right: 5px;
 }
-.navtoggle li .icon:hover {
+.navtoggle li .icon:hover,
+.navtoggle li .icon:active {
     padding-right: 5px;
     padding-bottom: 0;
     margin: 10px 0 0;
@@ -301,7 +282,7 @@ nav > ul > li > a:active {
 
 #work h2,
 #about h2 {
-    color: #04332d
+    color: #1E5C49
 }
 
 #prototype {
@@ -320,7 +301,7 @@ nav > ul > li > a:active {
 .resume {
     text-align: center;
     padding-bottom: 25px;
-    border-bottom: 2px solid #04332d; 
+    border-bottom: 2px solid #1E5C49; 
 }
 
 .journey-map {
@@ -372,7 +353,7 @@ nav > ul > li > a:active {
 }
 
 .fab.fa-linkedin {
-    color: #04332d;
+    color: #1E5C49;
     margin: 20px 0 0;
 }
 
@@ -380,7 +361,7 @@ nav > ul > li > a:active {
 
 [class*="col-"] {
     float: left;
-    padding: 0 10px;
+    padding: 0 30px;
 }
 .row::after {
     content: "";
@@ -392,16 +373,12 @@ nav > ul > li > a:active {
 @media only screen and (min-width: 640px) {
     header {
         text-align: unset;
-        padding: 30px 0 20px;
-    }
-
-    a.logo {
-        min-width: 641px;
     }
 
     nav {
         width: auto;
         float: right;
+        padding-top: 20px;
     }
     nav > ul {
         margin: 1em 0;
@@ -426,11 +403,19 @@ nav > ul > li > a:active {
     }
 
     main {
-        padding-top: 120px;
         font-size: 18px;
         .col-md-6 {
             width: 50%;
         }
+    }
+
+    #hero img {
+        width: 75%;
+    }
+
+    #about img{
+        width: 60%;
+        padding-top: 20px;
     }
 
     .sketch {
@@ -459,6 +444,10 @@ nav > ul > li > a:active {
         font-size: .75em;
         padding: 0 40px;
     }
+
+    #expertise {
+        margin: 0 40px;
+    }
 }
 
 /*Large devices (1024px and larger)*/
@@ -486,8 +475,12 @@ nav > ul > li > a:active {
         font-size: 18px;
     }
 
-    a.logo {
-        font-size: 2em;
+    #hero img {
+        width: 50%;
+    }
+
+    #about img{
+        width: 40%;
     }
 
     .email {
@@ -532,6 +525,10 @@ nav > ul > li > a:active {
         padding: 0 60px;
     }
 
+    #expertise {
+        margin: 0 auto;
+    }
+
 }
 
 /*X-large devices (1440px and larger)*/
@@ -542,7 +539,7 @@ nav > ul > li > a:active {
 
     main
     {
-        padding-top: 170px;
+        padding-top: 200px;
         font-size: 20px;
     }
 
@@ -551,9 +548,8 @@ nav > ul > li > a:active {
         font-size: 20px;
     }
 
-    a.logo {
-        font-size: 3em;
-        padding: 20px 30px;
+    #about svg {
+        width: 350;
     }
 
     .email {
