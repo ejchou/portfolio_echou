@@ -2,7 +2,8 @@
 Colors used:
 Primary Color (Dark Green): #1E5C49 or rgba(30, 92, 73);
 Secondary Color (Pale Yellow): #F8E5BD or rgba(248, 229, 189); 
-Tertiary Color (Gray/Silver): #818181 or rgba(129, 129, 129)
+Tertiary Color (Gray/Silver): #818181 or rgba(129, 129, 129);
+Background Color: #FFFBEF;
 */
 
 * {
@@ -10,7 +11,7 @@ Tertiary Color (Gray/Silver): #818181 or rgba(129, 129, 129)
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #FFFBEF;
     font-family: "Nokora", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -181,14 +182,14 @@ footer .chat {
 header {
     position: fixed;
     z-index: 999;
-    background-color: #ffffff;
+    background-color: #FFFBEF;
     padding: 15px 0 10px;
     width: 100%;
 }
 header.css-box-shadow {
         width: [object Object]px; 
         height: [object Object]px; 
-        background: #ffffff; 
+        background: #FFFBEF; 
         border: solid #bdbdbd 1px; 
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
         -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
@@ -261,7 +262,7 @@ nav > ul > li > a:active {
 }
 
 #hero {
-    background-color: #ffffff;
+    background-color: #FFFBEF;
     display: inline-block;
     width: 100%;
 }
