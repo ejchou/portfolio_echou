@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Turquoise): #00B29D or rgba(0, 178, 157);
+Primary Color (Turquoise): #00B29D/#008576 or rgba(0, 178, 157);
 Secondary Color (Dark Turquoise)#04332d or rgba(4, 51, 45); 
 Tertiary Color (Gray/Silver): #818181 or rgba(129, 129, 129)
 */
@@ -45,15 +45,15 @@ img {
 }
 
 a {
-    color: #00B29D;
+    color: #008576;
     text-decoration: none;
 }
 a:visited {
-    color: #00B29D;
+    color: #008576;
 }
 a:hover,
 a:focus{
-    color: #00B29D;
+    color: #008576;
 }
 a:active{
     color: blue;
@@ -61,7 +61,7 @@ a:active{
 
 .button {
     display: inline-block;
-    background-color: #00B29D;
+    background-color: #008576;
     color: #ffffff;
     font-weight: 600;
     padding: 5px 10px;
@@ -82,9 +82,9 @@ a:active{
 
 .button.secondary {
     background-color: transparent;
-    color: #00B29D;
+    color: #008576;
     text-transform: uppercase;
-    border: 2px solid #00B29D;
+    border: 2px solid #008576;
     margin: 0 auto;
     text-align: center;
     transition: 0.5s opacity;
@@ -104,8 +104,16 @@ a:active{
     margin: 10px auto;
 }
 
+.button.disabled {
+    background-color: rgba(129, 129, 129, 0.8);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
 #intro {
-    color: #00B29D;
+    color: #008576;
     font-weight: 700;
     font-size: 30px;
 }
@@ -204,7 +212,7 @@ a.logo {
     font-size: 2em;
     font-weight: 600;
     line-height: 1.4;
-    background-color: #00B29D;
+    background-color: #008576;
     color: #ffffff;
     text-transform: uppercase;
     padding: 10px 15px;
