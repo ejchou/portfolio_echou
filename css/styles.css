@@ -19,7 +19,7 @@ body {
     color: #000000;             
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: "Frank Ruhl Libre", serif;
     line-height: 1.4;
 }
@@ -39,6 +39,11 @@ h3 {
 h4 {
     font-weight: 600;
 }
+h5 {
+    font-size: 0.75em;
+    font-weight: 400;
+}
+
 
 img {
     width: 100%;
