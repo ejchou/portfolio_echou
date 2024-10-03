@@ -161,18 +161,7 @@ footer .chat {
 
 .row {
     margin: 25px 0;
-}
-#work .row {
-    padding-bottom: 25px;
-    border-bottom: 1px solid #1E5C49;
-}
-#work .row:last-child {
-    padding-bottom: 25px;
-    border-bottom: none;
-}
-.last.row {
-    padding-bottom: 25px;
-    border-bottom: 2px solid #1E5C49;
+    padding-bottom: 30px;
 }
 
 .center {
@@ -198,6 +187,7 @@ header.css-box-shadow {
 
 main {
     padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 footer {
@@ -265,6 +255,7 @@ nav > ul > li > a:active {
     background-color: #FFFBEF;
     display: inline-block;
     width: 100%;
+    padding-bottom: 75px;
 }
 
 #title h2 {
@@ -587,38 +578,52 @@ nav > ul > li > a:active {
 }
 
 
-/*CSS Animation Example*/
+  /* Arrow Bounce*/
 
-.berlin-illustration {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+.arrow {
+  position: relative;
 }
 
-@keyframes color-change {
-    0% {fill: #edc655;}
-    50% {fill: #fcffad;}
-    100% {fill: #f76414;}
+.bounce {
+  animation: bounce 2s infinite;
 }
 
-.sun {
-    animation: 4s color-change infinite alternate linear;
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+
+  /*Scrolling*/
+
+  html {
+    scroll-behavior: smooth;
   }
 
-  @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(400px,50px);}
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #1E5C49;
+    color: #F8E5BD;
+    padding: 10px;
+    border-radius: 60px;
+    font-size: 18px;
+    font-weight: 600;
   }
-
-  .cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-  }
-
-  @keyframes cloud-move-reverse {
-    from {transform: translate(500px,48px);}
-    to {transform: translate(100px, 48px);}
-  }
-
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+  
+  #myBtn:hover {
+    background-color: #818181;
+    color: #ffffff;
   }
