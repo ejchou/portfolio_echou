@@ -622,8 +622,8 @@ nav > ul > li > a:active {
     outline: none;
     background-color: #1E5C49;
     color: #F8E5BD;
-    padding: 10px;
-    border-radius: 60px;
+    padding: 10px 12px;
+    border-radius: 360px;
     font-size: 18px;
     font-weight: 600;
   }
