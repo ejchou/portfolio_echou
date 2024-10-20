@@ -37,6 +37,7 @@ h3 {
     font-weight: 600;
 }
 h4 {
+    font-size: 1.125em;
     font-weight: 600;
 }
 h5 {
@@ -68,9 +69,9 @@ a:active{
     display: inline-block;
     background-color: #1E5C49;
     color: #F8E5BD;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border-radius: 6px;
     border-bottom: 2px solid rgba(129, 129, 129, 0.25);
     transition: 0.2s opacity;
@@ -105,7 +106,7 @@ a:active{
 
 .button.secondary.contact {
     font-family: "Frank Ruhl Libre", serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     padding: 5px;
     margin: 10px auto;
@@ -119,6 +120,13 @@ a:active{
     border-radius: 6px;
 }
 
+#prototype .button {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 600;
+    font-size: 1.25em;
+    padding: 15px;
+}
+
 #hero span {
     display: block;
 }
@@ -130,7 +138,6 @@ footer .chat {
 
 .email {
     font-family: "Frank Ruhl Libre", serif;
-    font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: underline;
@@ -263,16 +270,6 @@ nav > ul > li > a:active {
     padding-bottom: 75px;
 }
 
-#title h2 {
-    line-height: 0.5;
-    font-weight: 400;
-    padding-bottom: 25px;
-}
-
-#title img {
-    width: 70%;
-}
-
 #work h3 {
     margin: 0 auto;
 }
@@ -280,10 +277,6 @@ nav > ul > li > a:active {
 #work h2,
 #about h2 {
     color: #1E5C49
-}
-
-#prototype {
-    padding: 25px;
 }
 
 #about h3 {
@@ -301,10 +294,24 @@ nav > ul > li > a:active {
     border-bottom: 2px solid #1E5C49; 
 }
 
+#personacards {
+    display: flex;
+    flex-direction: row;
+}
+.persona1 {
+    position: relative;
+    left: 50px;
+}
+.persona2 {
+    position: relative;
+    right: 50px;
+    top: 20px;
+}
+
 .journey-map {
     grid-area: map;
 }
-.persona {
+.persona_sm {
     grid-area: pic;
     width: 80px;
 }
@@ -352,6 +359,34 @@ nav > ul > li > a:active {
 .fab.fa-linkedin {
     color: #1E5C49;
     margin: 20px 0 0;
+}
+
+.text {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+/*Case Study Hero Section*/
+
+#scopetitles p {
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+#scopedesc p {
+    margin: 0 auto;
+}
+
+#scope {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
+#title img {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 /*Media Queries*/
@@ -404,6 +439,12 @@ nav > ul > li > a:active {
         .col-md-6 {
             width: 50%;
         }
+        .col-md-7 {
+            width: 60%;
+        }
+        .col-md-5 {
+            width: 40%;
+        }
     }
 
     #hero img {
@@ -433,7 +474,7 @@ nav > ul > li > a:active {
         padding: 10px;
     }
 
-    .persona {
+    .persona_sm {
         width: 100px;
         margin: 0 0 0 40px;
     }
@@ -445,6 +486,21 @@ nav > ul > li > a:active {
     #expertise {
         margin: 0 40px;
     }
+    
+    #title {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .persona1 {
+        left: 100px;
+    }
+    .persona2 {
+        right: 100px;
+        top: 25px;
+        margin-bottom: 20px;
+    }
+    
 }
 
 /*Large devices (1024px and larger)*/
@@ -514,7 +570,7 @@ nav > ul > li > a:active {
         border-bottom: none;
     }
     
-    .persona {
+    .persona_sm {
         width: 120px;
     }
     .userflow {
@@ -524,6 +580,19 @@ nav > ul > li > a:active {
 
     #expertise {
         margin: 0 auto;
+    }
+
+    #title img {
+        width: 90%;
+    }
+
+    .persona1 {
+        left: 200px;
+    }
+    .persona2 {
+        right: 200px;
+        top: 50px;
+        margin-bottom: 40px;
     }
 
 }
