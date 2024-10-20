@@ -45,7 +45,6 @@ h5 {
     font-weight: 400;
 }
 
-
 img {
     width: 100%;
 }
@@ -69,9 +68,9 @@ a:active{
     display: inline-block;
     background-color: #1E5C49;
     color: #F8E5BD;
-    font-size: 16px;
+    font-size: .75em;
     font-weight: 600;
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 6px;
     border-bottom: 2px solid rgba(129, 129, 129, 0.25);
     transition: 0.2s opacity;
@@ -87,44 +86,40 @@ a:active{
     text-decoration: none;
 }
 
-.button.secondary {
+.button.contact {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 10px;
+    margin-bottom: 20px;
     background-color: transparent;
     color: #1E5C49;
-    text-transform: uppercase;
     border: 2px solid #1E5C49;
-    margin: 0 auto;
-    text-align: center;
     transition: 0.5s opacity;
 }
-.button.secondary:hover,
-.button.secondary:active {
+.button.contact:hover,
+.button.contact:active {
     opacity: 0.8;
     background-color: #1E5C49;
     color: #F8E5BD;
     border: 2px solid #F8E5BD;
 }
 
-.button.secondary.contact {
-    font-family: "Frank Ruhl Libre", serif;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 5px;
-    margin: 10px auto;
-}
-
 .button.disabled {
     background-color: rgba(129, 129, 129, 0.8);
     color: #ffffff;
     font-weight: 600;
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: 6px;
 }
 
-#prototype .button {
+.button.prototype {
     font-family: "Frank Ruhl Libre", serif;
     font-weight: 600;
     font-size: 1.25em;
-    padding: 15px;
+    padding: 10px 15px;
 }
 
 #hero span {
@@ -134,24 +129,6 @@ a:active{
 footer .chat {
     color: #1E5C49;
     font-weight: 600;
-}
-
-.email {
-    font-family: "Frank Ruhl Libre", serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: underline;
-    padding: 3px;
-    transition: 0.5s opacity;
-}
-.email:hover,
-.email:active {
-    opacity: 0.8;
-    background-color: #1E5C49;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 6px;
 }
 
 #about img{
@@ -213,7 +190,8 @@ nav > ul {
 }
 nav > ul > li > a,
 nav > ul > li > a:visited {
-    padding: 15px;
+    padding: 10px;
+    margin: 10px;
     text-transform: uppercase;
     font-weight: 700;
     color: #1E5C49;
@@ -223,8 +201,6 @@ nav > ul > li > a:hover,
 nav > ul > li > a:active {
     background-color: #1E5C49;
     color: #F8E5BD;
-    padding: 5px;
-    margin: 10px;
     border-radius: 6px;
     opacity: 0.8;
 }
@@ -305,27 +281,27 @@ nav > ul > li > a:active {
 .persona2 {
     position: relative;
     right: 50px;
-    top: 20px;
+    top: 30px;
+    margin-bottom: 20px;
 }
 
-.journey-map {
-    grid-area: map;
+.userflow {
+    margin: 20px;
+}
+.userquote {
+    margin: 20px;
 }
 .persona_sm {
-    grid-area: pic;
     width: 80px;
+    float: left;
+    padding-right: 20px;
 }
 .quote {
-    grid-area: text;
+    text-align: left;
 }
-.userflow {
-    display: grid;
-    grid-template-areas:
-    'map map map map'
-    'pic text text text';
-    gap: 0;
-    font-size: 14px;
-    padding: 0 20px;
+
+.sitemap {
+    margin-right: 15px;
 }
 
 .sketch,
@@ -345,12 +321,11 @@ nav > ul > li > a:active {
 #userprobs ol {
     font-size: 16px;
 }
-
 .problem {
     background-color: #315A4E;
     color: #ffffff;
     border-radius: 10px;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 25px 15px 15px;
     margin: 10px;
     flex: 1;
     min-width: 0;
@@ -476,11 +451,12 @@ nav > ul > li > a:active {
 
     .persona_sm {
         width: 100px;
-        margin: 0 0 0 40px;
+    }
+    .userquote {
+        margin: 40px 100px;
     }
     .userflow {
-        font-size: .75em;
-        padding: 0 40px;
+        margin: 0 20px;
     }
 
     #expertise {
@@ -497,8 +473,8 @@ nav > ul > li > a:active {
     }
     .persona2 {
         right: 100px;
-        top: 25px;
-        margin-bottom: 20px;
+        top: 60px;
+        margin-bottom: 60px;
     }
     
 }
@@ -569,13 +545,16 @@ nav > ul > li > a:active {
         padding-bottom: 0;
         border-bottom: none;
     }
-    
-    .persona_sm {
-        width: 120px;
+
+    .journey-map img {
+        width: 80%;
+    }
+
+    .userquote {
+        margin: 40px 250px;
     }
     .userflow {
-        font-size: 1em;
-        padding: 0 60px;
+        margin: 0 80px;
     }
 
     #expertise {
@@ -591,8 +570,8 @@ nav > ul > li > a:active {
     }
     .persona2 {
         right: 200px;
-        top: 50px;
-        margin-bottom: 40px;
+        top: 100px;
+        margin-bottom: 100px;
     }
 
 }
