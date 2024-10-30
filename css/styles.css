@@ -480,10 +480,11 @@ nav > ul > li > a:active {
     #about main {
         padding-top: 175px;
     }
-    #about img {
-        position: fixed;
-        left: 25px;
-        margin-right: 30px;
+    #selfpic {
+        position: sticky;
+        float: left;
+        top: 14em;
+        margin-bottom: 5em;
     }
 
     #bio {

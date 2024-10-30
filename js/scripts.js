@@ -29,25 +29,3 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
-// Stop float scroll //
-
-  $(document).ready(function() {
-  var $image = $('#about img'); 
-  var stopScroll = $('#stop').offset().top;
-
-  $(window).scroll(function() {
-    var scrollTop = $(this).scrollTop();
-
-    if (scrollTop + $image.height() < stopScroll) {
-      $image.css({
-        'position': 'fixed',
-      });
-    } else {
-      $image.css({
-        'position': 'absolute',
-        'top': stopScroll - $image.height()
-      });
-    }
-  });
-});
