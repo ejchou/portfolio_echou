@@ -21,7 +21,7 @@
 </head>
 
 <body>
-	<header class="css-box-shadow">
+	<header>
 		<div class="container">
 			<div class="navtoggle" id="myNavtoggle">
 				<a href="index.html" class="logo">
@@ -37,7 +37,7 @@
 				</a>
 				<nav>
 					<ul class="navigation">
-						<li><a href="index.html">Work</a></li>
+						<li><a href="index.html#none">Work</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
 						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
@@ -50,12 +50,10 @@
 	<main>
 		<div id="hero" class="center">
 			<div class="container">
-				<h1>Hey there!</h1>
-				<picture>
-					<source srcset="img/home/intro.png" media="(max-width:767px)">
-					<img src="img/home/intro.svg" alt="Stoke Product Mockup">
-				</picture>							
-				<h4 class="row">My background is in operations and systems.<span>My passion lies in designs that promote preservation and sustainability.</span></h4>
+				<h2>Hey there!</h2>
+				<h1>I'm Eileen, a UX Designer.</h1>
+						
+				<h3 class="row"> My background is in operations and elevated human experiences.<span>My passions are driven towards preservation and sustainability.</span></h3>
 			</div>
 
 			<div id="none"></div>
@@ -70,7 +68,6 @@
 
 		<div id="work">
 			<div class="container">
-				<h2 class="center">My Work</h2>
 				<div class="row">
 					<div class="col-md-6 col-lg-7">
 						<picture>
@@ -83,7 +80,9 @@
 						<p>Stoke is a responsive web app that addresses the correlation among fitness, nutrition, and
 							mental health. As a comprehensive health tracker, users are able to seamlessly assess how
 							their daily choices impact their wellness.</p>
-						<a href="stoke.html" class="button">Read Case Study</a>
+						<a href="stoke.html" class="button">View Project 
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+						</a>
 					</div>
 				</div>
 
@@ -109,19 +108,18 @@
 
 	<footer id="contact" class="center">
 		<div class="container">
-			<h2 class="chat">Let's Chat!</h2>
+			<h3 class="chat">Let's Connect!</h3>
 			<p>Drop a line if you'd like to work together.</p>
 			<div>
-				<a href="mailto:eileen.j.chou@gmail.com" class="button contact">Email Me</a>
-			</div>
-
-			<div>
+				<a href="mailto:eileen.j.chou@gmail.com">
+					<i class="fa-regular fa-envelope fa-xl"></i>
+				</a>
 				<a href="https://www.linkedin.com/in/ejchou/" target="_blank">
-					<i class="fab fa-linkedin fa-xl"></i>
+					<i class="fab fa-linkedin-in fa-xl"></i>
 				</a>
 			</div>
 
-			<h5>Designed and Developed by <div>&copy;Eileen Chou 2024</div></h5>
+			<h5>Designed and Developed by <div>&copy; Eileen Chou 2024</div></h5>
 		</div>
 
 	</footer>

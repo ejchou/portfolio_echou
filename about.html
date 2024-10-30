@@ -21,7 +21,8 @@
 </head>
 
 <body id="about">
-    <header class="css-box-shadow">
+
+    <header>
         <div class="container">
             <div class="navtoggle" id="myNavtoggle">
                 <a href="index.html" class="logo">
@@ -47,27 +48,19 @@
         </div>
     </header>
 
-    <main>
+    <main class="bio-parent">
         <div class="container">
-            <div class="bio">
-                <div class="center">
-                    <div>
-                    <picture>
-                        <source srcset="img/bio/aboutme.png" media="(max-width:767px)">
-                        <img src="img/bio/aboutme.svg" alt="About Me">
-                    </picture>		
-                    </div>
+            <div class="center">
+                <div id="selfpic">
                     <picture>
                         <source srcset="img/bio/biopic_1x.jpg" media="(max-width:767px)">
                         <img src="img/bio/biopic_2x.jpg" alt="Profile Photo">
                     </picture>
                 </div>
 
-                <div id="story">
-                    <div>
-                        <div>
-                        <h2>My Story</h2>
-
+                <div id="bio">
+                    <div id="story">
+                        <h3> Hi, I'm Eileen Chou.</h3>
                         <p>Inspired by nature, a curious learner, and an avid wanderlust, I constantly find myself
                             beyond constrained boundaries. My whole life I’ve never lived anywhere for very long and
                             while I don’t label any one place as home, each has shaped me into the person I am today.
@@ -93,69 +86,63 @@
                         </p>
                         <p>Aiding my designs are my personal interests in photography, agroecology, and anthropology.
                             When I’m not working, you can find me climbing, hiking, or skiing in the mountains.</p>
-
-                        <div class="resume">
-                            <a href="files/chou_cv.pdf" class="button" target="_blank">Resume</a>
-                        </div>
-                        </div>
                     </div>
 
                     <div id="expertise">
-                        <h2>Expertise</h2>
-
                         <div class="row">
-                            <div class="col-md-6 col-lg">
-                                <h3>Relevant Skills</h3>
-                                <ul>
-                                    <li>UX/UI design</li>
-                                    <li>User research</li>
-                                    <li>User testing</li>
-                                    <li>Prototyping</li>
-                                    <li>HTML, CSS, JavaScript</li>
-                                    <li>Team-oriented</li>
-                                    <li>Strong communication</li>
-                                    <li>Highly organized</li>
-                                    <li>Detail-oriented</li>
-                                </ul>
+                            <div class="col-md-6">
+                                <h3>Skillset</h3>
+                                    <p>User-Centric Design
+                                    <span>User Research</span>
+                                    <span>User Testing</span>
+                                    <span>Wireframing</span>
+                                    <span>Rapid Prototyping</span>
+                                    <span>UI Design</span>
+                                    <span>HTML, CSS, JavaScript</span>
+                                    </p>
                             </div>
 
-                            <div class="col-md-6 col-lg">
-                                <h3>Tools I Use</h3>
-                                <ul>
-                                    <li>Figma</li>
-                                    <li>Adobe Photoshop</li>
-                                    <li>Adobe Lightroom</li>
-                                    <li>Visual Studio Code</li>
-                                    <li>Github</li>
-                                    <li>Google Suite</li>
-                                    <li>Microsoft Office</li>
-                                </ul>
+                            <div class="col-md-6">
+                                <h3>Tools</h3>
+                                    <p>Figma
+                                    <span>Adobe Creative Suite</span>
+                                    <span>Github</span>
+                                    <span>Google Suite</span>
+                                    <span>MS Office Suite</span>
+                                    </p>
                             </div>
                         </div>
+                    </div>
+
+                    <div id="stop"></div>
+                    
+                    <div id="resume">
+                        <a href="files/echou_resume.pdf" class="button resume" target="_blank">View Resume</a>
                     </div>
                 </div>
 
             </div>
         </div>
+
     </main>
 
     <footer id="contact" class="center">
-        <div class="container">
-            <h2 class="chat">Let's Chat!</h2>
-            <p>Drop a line if you'd like to work together.</p>
+		<div class="container">
+			<h3 class="chat">Let's Connect!</h3>
+			<p>Drop a line if you'd like to work together.</p>
 			<div>
-				<a href="mailto:eileen.j.chou@gmail.com" class="button contact">Email Me</a>
+				<a href="mailto:eileen.j.chou@gmail.com">
+					<i class="fa-regular fa-envelope fa-xl"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/ejchou/" target="_blank">
+					<i class="fab fa-linkedin-in fa-xl"></i>
+				</a>
 			</div>
 
-            <div>
-                <a href="https://www.linkedin.com/in/ejchou/" target="_blank">
-                    <i class="fab fa-linkedin fa-xl"></i>
-                </a>
-            </div>
+			<h5>Designed and Developed by <div>&copy; Eileen Chou 2024</div></h5>
+		</div>
 
-			<h5>Designed and Developed by <div>&copy;Eileen Chou 2024</div></h5>
-        </div>
-    </footer>
+	</footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>

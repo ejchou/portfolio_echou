@@ -1,9 +1,9 @@
 /*
 Colors used:
-Primary Color (Dark Green): #1E5C49 or rgba(30, 92, 73);
-Secondary Color (Pale Yellow): #F8E5BD or rgba(248, 229, 189); 
+Primary Color (Dark Green): #0B5616 or rgba(11, 86, 22);
+Secondary Color (Pale Yellow): #FFF6C5 or rgba(248, 229, 189); 
 Tertiary Color (Gray/Silver): #818181 or rgba(129, 129, 129);
-Background Color: #FFFBEF;
+Background Color: #FFFFFF;
 */
 
 * {
@@ -11,38 +11,39 @@ Background Color: #FFFBEF;
 }
 
 body {
-    background-color: #FFFBEF;
-    font-family: "Nokora", sans-serif;
+    background-color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
+    font-style: normal;
     line-height: 1.6;
     color: #000000;             
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: "Frank Ruhl Libre", serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.4;
 }
 h1 {
-    font-size: 2.25em;
-    font-weight: 700;
-    color: #1E5C49;
+    font-size: 3em;
+    font-weight: 600;
+    color: #0B5616;
 }
 h2 {
-    font-size: 1.75em;
-    font-weight: 600;
+    font-size: 2em;
+    font-weight: 500;
 }
 h3 {
     font-size: 1.25em;
-    font-weight: 600;
+    font-weight: 500;
 }
 h4 {
     font-size: 1.125em;
-    font-weight: 600;
+    font-weight: 400;
 }
 h5 {
     font-size: 0.75em;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 img {
@@ -50,89 +51,75 @@ img {
 }
 
 a {
-    color: #1E5C49;
+    color: #0B5616;
     text-decoration: none;
 }
-a:visited {
-    color: #1E5C49;
-}
 a:hover,
-a:focus{
-    color: #1E5C49;
+a:focus {
+    color: #0B5616;
+    text-decoration: underline;
 }
 a:active{
-    color: #1E5C49;
+    text-decoration: underline;
 }  
 
 .button {
     display: inline-block;
-    background-color: #1E5C49;
-    color: #F8E5BD;
-    font-size: .75em;
+    color: #0B5616;
+    font-size: .8em;
     font-weight: 600;
-    padding: 10px;
-    border-radius: 6px;
-    border-bottom: 2px solid rgba(129, 129, 129, 0.25);
-    transition: 0.2s opacity;
-}
-.button:visited {
-    color: #F8E5BD;
-    text-decoration: none;
+    padding: 10px 0;
 }
 .button:hover,
 .button:active {
     opacity: 0.8;
-    color: #F8E5BD;
+    text-decoration: underline;
+}
+.button.disabled {
+    color: #818181;
+    font-weight: 600;
+}
+.button.disabled:hover,
+.button.disabled.active {
+    opacity: 1;
     text-decoration: none;
 }
 
-.button.contact {
-    font-family: "Frank Ruhl Libre", serif;
-    font-size: 22px;
+.button.prototype,
+.button.resume {
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
-    text-transform: uppercase;
+    font-size: 1em;
     text-align: center;
-    padding: 5px 10px;
+    padding: 10px;
     margin-bottom: 20px;
     background-color: transparent;
-    color: #1E5C49;
-    border: 2px solid #1E5C49;
-    transition: 0.5s opacity;
+    color: #0B5616;
+    border: 1px solid #0B5616;
+    border-radius: 15px;
+    transition: 0.2s opacity;
 }
-.button.contact:hover,
-.button.contact:active {
+.button.resume:hover,
+.button.prototype:hover,
+.button.resume:active,
+.button.prototype:active {
     opacity: 0.8;
-    background-color: #1E5C49;
+    background-color: #0B5616;
     color: #F8E5BD;
-    border: 2px solid #F8E5BD;
 }
-
-.button.disabled {
-    background-color: rgba(129, 129, 129, 0.8);
-    color: #ffffff;
-    font-weight: 600;
-    padding: 10px;
-    border-radius: 6px;
-}
-
-.button.prototype {
-    font-family: "Frank Ruhl Libre", serif;
-    font-weight: 600;
-    font-size: 1.25em;
-    padding: 10px 15px;
-}
-
 #hero span {
     display: block;
 }
 
 footer .chat {
-    color: #1E5C49;
+    color: #0B5616;
     font-weight: 600;
+}
+footer p {
+    font-weight: 400;
 }
 
 #about img{
-    width: 80%;
     border-radius: 360px;
     padding-top: 10px;
 }
@@ -150,7 +137,7 @@ footer .chat {
 
 .row {
     margin: 25px 0;
-    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .center {
@@ -161,26 +148,13 @@ header {
     position: fixed;
     z-index: 999;
     background-color: #FFFBEF;
-    padding: 15px 0 10px;
+    padding: 20px 0;
     width: 100%;
-}
-header.css-box-shadow {
-        width: [object Object]px; 
-        height: [object Object]px; 
-        background: #FFFBEF; 
-        border: solid #bdbdbd 1px; 
-        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-        -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-        -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-}
-
-main {
-    padding-top: 150px;
-    padding-bottom: 100px;
 }
 
 footer {
-    border-top:1px solid #818181;
+    background-color: #FFFBEF;
+    padding: 30px 0 20px;
 }
 
 nav > ul {
@@ -194,14 +168,15 @@ nav > ul > li > a:visited {
     margin: 10px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #1E5C49;
+    color: #0B5616;
     transition: 0.5s opacity;
 }
 nav > ul > li > a:hover,
 nav > ul > li > a:active {
-    background-color: #1E5C49;
-    color: #F8E5BD;
-    border-radius: 6px;
+    text-decoration: underline;
+    background-color: #0B5616;
+    color: #FFF6C5;
+    border-radius: 15px;
     opacity: 0.8;
 }
 
@@ -213,13 +188,12 @@ nav > ul > li > a:active {
     right: 0;
     top: 15px;
     font-size: 20px;
-    padding-right: 5px;
+    padding: 0 8px;
+    margin: 10px 0 0;
 }
 .navtoggle li .icon:hover,
 .navtoggle li .icon:active {
-    padding-right: 5px;
-    padding-bottom: 0;
-    margin: 10px 0 0;
+    opacity: 1;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -243,31 +217,32 @@ nav > ul > li > a:active {
     background-color: #FFFBEF;
     display: inline-block;
     width: 100%;
-    padding-bottom: 75px;
+    padding-top: 130px;
+    padding-bottom: 20px;
 }
 
-#work h3 {
-    margin: 0 auto;
-}
+#none {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
 
-#work h2,
-#about h2 {
-    color: #1E5C49
+#about main {
+    padding-top: 130px;
 }
-
+#about img {
+    margin: 20px auto;
+}
 #about h3 {
     margin-top: 0;
+    font-weight: 500;
+}
+#about span {
+    display: block;
 }
 
-.bio h2,
-.bio p {
+#resume {
     text-align: center;
-}
-
-.resume {
-    text-align: center;
-    padding-bottom: 25px;
-    border-bottom: 2px solid #1E5C49; 
+    margin-bottom: 10px;
 }
 
 #personacards {
@@ -313,7 +288,7 @@ nav > ul > li > a:active {
 }
 
 #userprobs p {
-    font-family: "Frank Ruhl Libre", serif;
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -323,7 +298,7 @@ nav > ul > li > a:active {
 }
 .problem {
     background-color: #315A4E;
-    color: #ffffff;
+    color: #FFFFFF;
     border-radius: 10px;
     padding: 15px 25px 15px 15px;
     margin: 10px;
@@ -331,9 +306,9 @@ nav > ul > li > a:active {
     min-width: 0;
 }
 
-.fab.fa-linkedin {
-    color: #1E5C49;
-    margin: 20px 0 0;
+.fa-regular.fa-envelope,
+.fab.fa-linkedin-in {
+    margin: 10px;
 }
 
 .text {
@@ -366,10 +341,6 @@ nav > ul > li > a:active {
 
 /*Media Queries*/
 
-[class*="col-"] {
-    float: left;
-    padding: 0 30px;
-}
 .row::after {
     content: "";
     clear: both;
@@ -409,8 +380,12 @@ nav > ul > li > a:active {
         padding: 0;
     }
 
+    [class*="col-"] {
+    float: left;
+    padding: 0 30px;
+    }
+
     main {
-        font-size: 18px;
         .col-md-6 {
             width: 50%;
         }
@@ -422,13 +397,8 @@ nav > ul > li > a:active {
         }
     }
 
-    #hero img {
-        width: 75%;
-    }
-
-    #about img{
-        width: 60%;
-        padding-top: 20px;
+    #about img {
+        width: 350px;
     }
 
     .sketch {
@@ -458,10 +428,6 @@ nav > ul > li > a:active {
     .userflow {
         margin: 0 20px;
     }
-
-    #expertise {
-        margin: 0 40px;
-    }
     
     #title {
         display: flex;
@@ -482,12 +448,10 @@ nav > ul > li > a:active {
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) { 
     header {
-        padding-top: 35px 0 25px;
+        padding-top: 35px
     }
 
     main {
-        padding-top: 150px;
-        font-size: 18px;
         .col-lg-5 {
             width: 40%;
         }
@@ -498,28 +462,14 @@ nav > ul > li > a:active {
             width: 100%;
         }
     }
-    
-    nav,
-    footer {
-        font-size: 18px;
-    }
 
-    #hero img {
-        width: 50%;
+    #hero {
+        padding-top: 175px;
+        margin-bottom: 40px;
     }
-
-    #about img{
-        width: 40%;
-    }
-
-    .email {
-        font-size: 20px;
-    }
-
-    .button.secondary.contact {
-        font-size: 20px;
-        padding: 10px;
-    }
+    #none {
+        padding-bottom: 40px;
+      }
 
     .container {
         max-width: 1200px;
@@ -527,23 +477,29 @@ nav > ul > li > a:active {
         margin-right: auto;
     }
 
-    #story {
-        display: grid;
-        grid-template-columns: 70% 30%;
-        gap: 30px;
-        margin: 10px;
+    #about main {
+        padding-top: 175px;
+    }
+    #about img {
+        position: fixed;
+        left: 25px;
+        margin-right: 30px;
     }
 
-    .bio h2,
-    .bio p {
+    #bio {
+        padding-left: 395px;
+    }
+    #story p {
         text-align: left;
     }
 
-    .resume {
-        text-align: left;
-        padding-top: 25px;
-        padding-bottom: 0;
-        border-bottom: none;
+    .row {
+        padding: 30px 50px;
+        margin: 25px 0 10px;
+    }
+
+    #resume {
+        padding-bottom: 20px;
     }
 
     .journey-map img {
@@ -555,10 +511,6 @@ nav > ul > li > a:active {
     }
     .userflow {
         margin: 0 80px;
-    }
-
-    #expertise {
-        margin: 0 auto;
     }
 
     #title img {
@@ -579,31 +531,11 @@ nav > ul > li > a:active {
 /*X-large devices (1440px and larger)*/
 @media only screen and (min-width: 1440px) {
     header {
-        padding: 40px 0 30px;
+        padding-top: 40px
     }
 
-    main
-    {
+    #hero {
         padding-top: 200px;
-        font-size: 20px;
-    }
-
-    nav,
-    footer {
-        font-size: 20px;
-    }
-
-    #about svg {
-        width: 350;
-    }
-
-    .email {
-        font-size: 24px;
-    }
-
-    .button.secondary.contact {
-        font-size: 24px;
-        padding: 10px;
     }
 
     #userprobs p {
@@ -638,7 +570,7 @@ nav > ul > li > a:active {
 }
 
 .bounce {
-  animation: bounce 2s infinite;
+  animation: bounce 5s infinite;
 }
 
 @keyframes bounce {
@@ -668,8 +600,8 @@ nav > ul > li > a:active {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #1E5C49;
-    color: #F8E5BD;
+    background-color: #0B5616;
+    color: #FFF6C5;
     padding: 10px 12px;
     border-radius: 360px;
     font-size: 18px;
@@ -678,5 +610,5 @@ nav > ul > li > a:active {
   
   #myBtn:hover {
     background-color: #818181;
-    color: #ffffff;
+    color: #FFFFFF;
   }
