@@ -1,0 +1,62 @@
+/* Layout Styling */
+
+#about main {
+    padding-top: 130px;
+}
+
+#about span {
+    display: block;
+}
+
+#about img {
+    border-radius: 360px;
+    padding-top: 10px;
+    margin: 20px auto;
+}
+
+#about h3 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+#resume {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+
+/*Medium devices (640px and larger)*/
+
+@media only screen and (min-width: 640px) {
+    #about img {
+        width: 350px;
+    }
+
+    #about main {
+        padding-top: 175px;
+    }
+    #selfpic {
+        position: sticky;
+        float: left;
+        top: 14em;
+        margin-bottom: 5em;
+    }
+
+    #bio {
+        padding-left: 395px;
+    }
+    #story p {
+        text-align: left;
+    }
+
+    #resume {
+        padding-bottom: 20px;
+    }
+}
+
+/*X-large devices (1440px and larger)*/
+@media only screen and (min-width: 1440px) {
+    #hero {
+        padding-top: 200px;
+    }
+}

@@ -1,0 +1,216 @@
+/* Layout Styling */
+
+#stoke main {
+    padding-top: 130px;
+}
+
+/*Case Study Hero Section*/
+
+#scope {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
+#scopetitles p {
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+#scopedesc p {
+    margin: 0 auto;
+}
+
+#title img {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Main Section */
+
+.text {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.core {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.problem {
+    background-color: #315A4E;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 15px 25px 15px 15px;
+    margin: 10px;
+    flex: 1;
+    min-width: 0;
+}
+
+#userprobs p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#personacards {
+    display: flex;
+    flex-direction: row;
+}
+.persona1 {
+    position: relative;
+    left: 50px;
+}
+.persona2 {
+    position: relative;
+    right: 50px;
+    top: 30px;
+    margin-bottom: 20px;
+}
+
+.userflow img {
+    margin: 20px;
+    width: 80%;
+}
+
+.cardsort img {
+    width: 60%;
+}
+.sitemap img {
+    width: 80%;
+}
+
+.sketch,
+.lfwireframe {
+    display: flex;
+    flex-flow: row; 
+    gap: 10px;
+    padding: 10px;
+}
+
+.prototype {
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 640px) {
+    #title {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #title img {
+        width: 90%;
+    }
+    
+    .set {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .persona1 {
+        left: 100px;
+    }
+
+    .persona2 {
+        right: 100px;
+        top: 60px;
+        margin-bottom: 60px;
+    }
+    .userflow {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0 20px;
+    }
+
+    .sketch {
+        flex-flow: column;
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .ideationimg1,
+    .ideationimg2 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 10px;
+    }
+
+    .ideationimg2 {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .designsystem {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }    
+}
+
+/*Large devices (1024px and larger)*/
+@media only screen and (min-width: 1024px) { 
+    .container {
+        padding: 0 40px;
+    }
+
+    .text {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+/*X-large devices (1440px and larger)*/
+@media only screen and (min-width: 1440px) {
+    #userprobs p {
+        font-size: 20px;
+    }
+    #userprobs ol {
+        font-size: 18px;
+    }
+}
+
+/*XX-large devices (1920ox and larger)*/
+@media only screen and (min-width: 1920px) {
+    #userprobs p {
+        font-size: 22px;
+    }
+    #userprobs ol {
+        font-size: 20px;
+    }
+}
+
+
+/* Scrolling */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0B5616;
+    color: #FFF6C5;
+    padding: 10px 12px;
+    border-radius: 360px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  #myBtn:hover {
+    background-color: #818181;
+    color: #FFFFFF;
+  }
