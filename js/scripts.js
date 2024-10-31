@@ -1,5 +1,7 @@
 console.log("Welcome! Thanks for checking out my site.")
 
+/* Menu Toggle */
+
 function menuToggle() {
     var x = document.getElementById('myNavtoggle');
     if (x.className === 'navtoggle') {
@@ -8,6 +10,8 @@ function menuToggle() {
         x.className = 'navtoggle';
     }
 }
+
+/* Scroll to top */
 
 // Get the button:
 let mybutton = document.getElementById("myBtn");
@@ -28,4 +32,10 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+/* Enlarge image */
+
+
+
 

@@ -43,6 +43,10 @@
 
 /* Work Section */
 
+#work img {
+    border-radius: 15px;
+}
+
 .casestudy {
     margin-bottom: 2em;
 }

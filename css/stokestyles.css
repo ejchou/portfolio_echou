@@ -1,40 +1,51 @@
 /* Layout Styling */
 
 #stoke main {
-    padding-top: 130px;
+    padding-top: 10em;
+    padding-bottom: 4em;
 }
 
 /*Case Study Hero Section*/
 
-#scope {
+.scope {
     display: flex;
     flex-direction: row;
     gap: 28px;
 }
 
-#scopetitles p {
+.scopetitles p {
     font-weight: 600;
     margin: 0 auto;
 }
 
-#scopedesc p {
+.scopedesc p {
     margin: 0 auto;
 }
 
-#title img {
+.title img {
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 /* Main Section */
 
+.links {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.links .button.secondary {
+    margin: 0 1em;
+}
+
 .text {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 1em;
+    padding-bottom: 3em;
 }
 
 .core {
     font-style: italic;
+    font-weight: 600;
     text-decoration: underline;
 }
 
@@ -48,16 +59,16 @@
     min-width: 0;
 }
 
-#userprobs p {
+.userprobs p {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
 
-#personacards {
+.personacards {
     display: flex;
     flex-direction: row;
+    margin-bottom: 2em;
 }
 .persona1 {
     position: relative;
@@ -67,7 +78,6 @@
     position: relative;
     right: 50px;
     top: 30px;
-    margin-bottom: 20px;
 }
 
 .userflow img {
@@ -90,28 +100,28 @@
     padding: 10px;
 }
 
-.prototype {
-    text-align: center;
-    padding-bottom: 4em;
-}
-
 /* Media Queries */
 
 @media only screen and (min-width: 640px) {
-    #title {
+    .title {
         display: flex;
         flex-direction: row;
     }
 
-    #title img {
+    .title img {
         width: 90%;
     }
     
     .set {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         gap: 10px;
         padding: 10px;
+    }
+
+    .solution img {
+        width: 80%;
     }
 
     .persona1 {
@@ -126,7 +136,11 @@
     .userflow {
         display: grid;
         grid-template-columns: auto auto;
-        margin: 0 20px;
+        margin: 0 4em;
+    }
+
+    .userflow img {
+        margin: 0 auto;
     }
 
     .sketch {
@@ -152,37 +166,32 @@
         width: 80%;
         margin: 0 auto;
         padding: 20px;
-    }    
+    }
+    
+    .revision img {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) { 
     .container {
-        padding: 0 40px;
+        padding-left: 8em;
+        padding-right: 8em;
     }
 
-    .text {
-        padding-left: 120px;
-        padding-right: 120px;
-    }
-}
-
-/*X-large devices (1440px and larger)*/
-@media only screen and (min-width: 1440px) {
-    #userprobs p {
-        font-size: 20px;
-    }
-    #userprobs ol {
-        font-size: 18px;
+    .userprobs {
+        margin: 0 6em;
     }
 }
 
 /*XX-large devices (1920ox and larger)*/
 @media only screen and (min-width: 1920px) {
-    #userprobs p {
+    .userprobs p {
         font-size: 22px;
     }
-    #userprobs ol {
+    .userprobs ol {
         font-size: 20px;
     }
 }
@@ -197,16 +206,16 @@ html {
   #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    bottom: 1em; /* Place the button at the bottom of the page */
+    right: 1em; /* Place the button 30px from the right */
     z-index: 99;
     border: none;
     outline: none;
     background-color: #0B5616;
     color: #FFF6C5;
-    padding: 10px 12px;
+    padding: .45em .6em;
     border-radius: 360px;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 600;
   }
   

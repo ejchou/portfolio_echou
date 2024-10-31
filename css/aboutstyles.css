@@ -1,7 +1,8 @@
 /* Layout Styling */
 
-#about main {
-    padding-top: 130px;
+#about {
+    padding-top: 10em;
+    padding-bottom: 4em;
 }
 
 #about span {

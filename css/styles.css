@@ -41,7 +41,7 @@ h4 {
     font-weight: 400;
 }
 h5 {
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 500;
 }
 h6 {
@@ -86,8 +86,7 @@ a:active{
     text-decoration: none;
 }
 
-.button.prototype,
-.button.resume {
+.button.secondary {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 1em;
@@ -99,10 +98,8 @@ a:active{
     border-radius: 15px;
     transition: 0.2s opacity;
 }
-.button.resume:hover,
-.button.prototype:hover,
-.button.resume:active,
-.button.prototype:active {
+.button.secondary:hover,
+.button.secondary:active {
     opacity: 0.8;
     background-color: #0B5616;
     color: #F8E5BD;
@@ -217,7 +214,7 @@ footer {
     margin: 10px;
 }
 
-footer .chat {
+footer h3 {
     color: #0B5616;
     font-weight: 600;
 }
