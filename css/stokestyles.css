@@ -7,6 +7,11 @@
 
 /*Case Study Hero Section*/
 
+#stoke h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
 .scope {
     display: flex;
     flex-direction: row;
@@ -28,6 +33,9 @@
 }
 
 /* Main Section */
+.quicklinks h4 {
+    font-weight: 600;
+}
 
 .links {
     text-align: center;
