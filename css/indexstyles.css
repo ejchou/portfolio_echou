@@ -10,7 +10,10 @@
     width: 100%;
     padding-top: 130px;
     padding-bottom: 3em;
-    margin-bottom: 1em;
+}
+
+#hero h1,h2 {
+    display: inline;
 }
 
 #none {
@@ -59,9 +62,14 @@
 
 @media only screen and (min-width: 640px) {
     #hero {
-        padding-top: 175px;
-        margin-bottom: 40px;
+        padding-top: 10em;
+        padding-bottom: 6em;
     }
+
+    h1 {
+        font-size: 4em;
+    }
+
     #none {
         padding-bottom: 40px;
       }
@@ -80,6 +88,14 @@
 
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) {
+    #hero .container {
+        padding-top: 5em;
+    }
+
+    #hero {
+        padding-bottom: 10em;
+    }
+
     #work {
         display: grid;
         grid-template-columns: auto auto;
@@ -114,5 +130,13 @@
 
     .casestudy:hover .casestudy-text {
         opacity: 1;
+    }
+}
+
+/*XX-large devices (1920ox and larger)*/
+@media only screen and (min-width: 1920px) {
+    #hero {
+        padding-top: 15em;
+        padding-bottom: 15em;
     }
 }
