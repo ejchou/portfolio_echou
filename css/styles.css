@@ -10,7 +10,7 @@ Background Color: #FFFFFF, #FFFBEF;
 /* Typography & Color */
 
 body {
-    background-color: #FFFFFF;
+    background-color: #FFFBEF;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -25,7 +25,7 @@ h2, h3, h4, h5 {
 }
 h1 {
     font-family: "Playwrite CO", serif;
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 400;
     color: #0B5616;
 }
@@ -46,7 +46,7 @@ h5 {
     font-weight: 500;
 }
 h6 {
-    font-size: 0.75em;
+    font-size: .8em;
     font-weight: 300;
 }
 
@@ -60,22 +60,22 @@ a {
 a:hover,
 a:focus {
     color: #0B5616;
-    text-decoration: underline;
+    text-decoration: none;
 }
 a:active{
-    text-decoration: underline;
+    text-decoration: none;
 }  
 
 .button {
     display: inline-block;
     color: #0B5616;
     font-weight: 600;
-    padding: 10px 0;
+    padding: .5em 1em;
 }
 .button:hover,
 .button:active {
     opacity: 0.8;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .button.disabled {
     color: #818181;
@@ -92,11 +92,11 @@ a:active{
     font-weight: 600;
     font-size: 1em;
     text-align: center;
-    padding: 10px;
+    padding: .5em 1.5em;
     background-color: transparent;
     color: #0B5616;
     border: 1px solid #0B5616;
-    border-radius: 15px;
+    border-radius: 1em;
     transition: 0.2s opacity;
 }
 .button.secondary:hover,
@@ -118,12 +118,12 @@ img {
 }
 
 .container {
-    padding: 0 15px;
+    padding: 0 1em;
 }
 
 .row {
-    margin: 25px 0;
-    padding-top: 30px;
+    margin: 1.5em 0;
+    padding-top: 2em;
 }
 .row::after {
     content: "";
@@ -142,7 +142,7 @@ header {
     position: fixed;
     z-index: 999;
     background-color: #FFFBEF;
-    padding: 20px 0;
+    padding: 1.25em 0;
     width: 100%;
 }
 
@@ -153,20 +153,19 @@ nav > ul {
 }
 nav > ul > li > a,
 nav > ul > li > a:visited {
-    padding: 10px;
-    margin: 10px;
+    padding: .5em 1.5em;
+    margin: .5em;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     color: #0B5616;
     transition: 0.5s opacity;
 }
 nav > ul > li > a:hover,
 nav > ul > li > a:active {
-    text-decoration: underline;
+    text-decoration: none;
     background-color: #0B5616;
     color: #FFF6C5;
-    border-radius: 15px;
-    opacity: 0.8;
+    border-radius: 1em;
 }
 
 .navtoggle li:not(:last-child) {
@@ -175,10 +174,10 @@ nav > ul > li > a:active {
 .navtoggle li .icon {
     position: absolute;
     right: 0;
-    top: 15px;
-    font-size: 20px;
-    padding: 0 8px;
-    margin: 10px 0 0;
+    top: 1em;
+    font-size: 1.25em;
+    padding: .15em .5em;
+    margin: .75em 0 0;
 }
 .navtoggle li .icon:hover,
 .navtoggle li .icon:active {
@@ -190,35 +189,38 @@ nav > ul > li > a:active {
 }
 
 .navtoggle.responsive nav {
-    padding: 24px 0 0;
+    padding: 1.5em 0 0;
 }
 .navtoggle.responsive li {
     display: block;
-    padding: 10px 0;
+    padding: .75em 0;
     border-top: 1px solid rgba(129, 129, 129, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
-    padding: 0 0 10px;
+    padding: 0 0 .75em;
 }
 
 
 /* Footer Section */
 
 footer {
-    background-color: #FFFBEF;
-    padding: 30px 0 20px;
+    padding: 2em 0 1.5em;
 }
 
 .fa-regular.fa-envelope,
 .fab.fa-linkedin-in {
-    margin: 10px;
+    margin: .5em;
+    text-decoration: none;
 }
 
 footer h3 {
+    font-family: "Playwrite CO", serif;
+    font-size: 1.5em;
     color: #0B5616;
-    font-weight: 600;
+    font-weight: 400;
 }
+
 footer p {
     font-weight: 400;
 }
@@ -311,6 +313,18 @@ footer p {
 @media only screen and (min-width: 1440px) {
     header {
         padding-top: 40px
+    }
+
+    main {
+        .col-xlg-5 {
+            width: 40%;
+        }
+        .col-xlg-7 {
+            width: 60%;
+        }
+        .col-xlg-6 {
+            width: 50%;
+        }
     }
 }
 

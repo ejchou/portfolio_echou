@@ -1,0 +1,359 @@
+/* Layout Styling */
+
+#marvel main {
+    padding-top: 10em;
+    padding-bottom: 4em;
+}
+
+#solution {
+    position: relative;
+    top: -6.5em;
+}
+
+/*Case Study Hero Section*/
+
+.title {
+    margin: 2em 1em;
+}
+
+.title h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+.scope {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+
+.scopetitles p {
+    font-weight: 600;
+    margin: 0 auto;
+    padding: .25em 0;
+}
+
+.scopedesc p {
+    margin: 0 auto;
+    padding: .25em 0;
+}
+
+.title img {
+    margin-top: 4em;
+}
+
+/* Main Section */
+
+.quicklinks {
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+.quicklinks h4 {
+    font-weight: 600;
+}
+
+.links .button.secondary {
+    margin: 0 1em;
+}
+
+.text {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0 .5em;
+}
+
+.text h3 {
+    font-size: 1.75em; 
+    font-weight: 500;
+}
+
+.text h4 {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+.objectives .list,
+.takeaway .list {
+    background-color: #4A426A;
+    color: #FFFFFF;
+    border-radius: 1em;
+    padding: .5em;
+    margin: 1em auto;
+}
+
+.objectives .list .item,
+.takeaway .list .item {
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+}
+
+.objectives img,
+.takeaway img {
+    display: inline-block;
+    padding-right: 1em;
+    width: 2.5em;
+    height: 1.5em;
+}
+
+.objectives p,
+.takeaway p {
+    display: inline-block;
+}
+
+.objectives span,
+.takeaway span {
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.challenge span {
+    display: inline-block;
+}
+
+.challenge .underline {
+    width: 325px;
+    overflow: auto;
+    margin: -2em auto 0 auto;
+}
+
+.flex ul li {
+    padding-bottom: 1em;
+    font-size: 1.15em;
+    margin: 0 2em;
+}
+
+.flex span {
+    font-weight: 500;
+}
+
+.flex img {
+    margin-bottom: 2em;
+}
+
+.research {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 1em 0.5em;
+}
+
+.projectgoals,
+.userflows {
+    padding: 1em 0;    
+}
+
+.mfwireframes {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: 1em 0.5em;
+}
+
+.redesign .underline1 {
+    width: 11.25em;
+    overflow: auto;
+    margin: -2.5em auto 0 auto;
+}
+
+.redesign .underline2 {
+    width: 8.125em;
+    overflow: auto;
+    margin: -2.5em auto 0 auto;
+}
+
+.redesign .underline3 {
+    width: 6.875em;
+    overflow: auto;
+    margin: -2.75em auto 0 auto;
+}
+
+.impact ul {
+    padding-right: 1.5em;
+}
+
+.impact ul li {
+    padding: .5em 0;
+}
+
+.impact span {
+    font-weight: 500;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 640px) {
+    .title {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .title img {
+        margin-top: 1em;
+        padding-left: 2em;
+
+    }
+
+    .casestudy .text {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .objectives .list,
+    .takeaway .list {
+    background-color: #4A426A;
+    color: #FFFFFF;
+    border-radius: 1em;
+    padding: .5em;
+    margin: 1em 3em;
+}
+
+    .text h4 {
+    font-size: 1.5em;
+    }
+
+    .challenge .underline {
+        width: 400px;
+        margin: -2.25em auto 0 auto;
+    }
+
+    .title .col-md-6 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .research,
+    .mfwireframes {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        padding: 2em 1em;
+    }
+
+    .redesign .underline1 {
+        width: 13.5em;;
+        margin-top: -2.75em;
+        margin-bottom: 1em;
+    }
+    
+    .redesign .underline2 {
+        width: 9.75em;
+        margin-top: -2.75em;
+        margin-bottom: 1em;
+    }
+    
+    .redesign .underline3 {
+        width: 8.375em;
+        margin-top: -3em;
+        margin-bottom: 1em;
+    }
+
+    .redesign img {
+        padding: 0 1em;
+    }
+}
+
+/*Large devices (1024px and larger)*/
+@media only screen and (min-width: 1024px) { 
+    .casestudy .text,
+    .casestudy .flex {
+        padding-left: 8em;
+        padding-right: 8em;
+    }
+
+    .scopedesc p span {
+        display: inline-block;
+    }
+
+    .title img {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    [class*="col-"] {
+        padding-bottom: 2em;
+    }
+
+    .research {
+        gap: 2em;
+        padding: 2em 6em 0 6em;
+    }
+
+    .projectgoals,
+    .userflows {
+        padding: 2em 0;    
+    }
+
+    .mfwireframes {
+        gap: 1em;
+        padding: 2em;
+    }
+}
+
+/*X-large devices (1440px and larger)*/
+@media only screen and (min-width: 1440px) {
+    .title {
+        margin: 2em 0;
+    }
+
+    .quicklinks {
+        margin-bottom: 3em;
+    }
+
+    .casestudy .flex {
+        padding: 0 2em;
+    }
+
+    .flex ul li {
+        padding-bottom: 3em;
+        margin: 0 auto;
+    }
+
+    [class*="col-"] {
+        padding-top: 1em;
+    }
+
+    .mfwireframes {
+        padding: 0 0 2em 0;
+    }
+
+    .redesign img {
+        padding: 0;
+    }
+}
+
+/*XX-large devices (1920ox and larger)*/
+@media only screen and (min-width: 1920px) {
+
+}
+
+
+/* Scrolling */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 1em; /* Place the button at the bottom of the page */
+    right: 1em; /* Place the button 30px from the right */
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0B5616;
+    color: #FFF6C5;
+    padding: .45em .6em;
+    border-radius: 360px;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  #myBtn:hover {
+    background-color: #818181;
+    color: #FFFFFF;
+  }
