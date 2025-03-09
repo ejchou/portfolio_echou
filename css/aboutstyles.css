@@ -15,6 +15,11 @@
     margin: 20px auto;
 }
 
+#story h2 {
+    font-family: "Playwrite CO", serif;
+    color: #0B5616;
+}
+
 #about h3 {
     margin-top: 0;
     font-weight: 500;
