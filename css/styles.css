@@ -46,7 +46,7 @@ h5 {
     font-weight: 500;
 }
 h6 {
-    font-size: .8em;
+    font-size: 1em;
     font-weight: 300;
 }
 
@@ -206,6 +206,15 @@ nav > ul > li > a:active {
 
 footer {
     padding: 2em 0 1.5em;
+}
+
+#contact h6 {
+    display: inline;
+}
+
+#contact .icons {
+    display: inline;
+    float: right;
 }
 
 .fa-regular.fa-envelope,

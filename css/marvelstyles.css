@@ -183,6 +183,21 @@
     font-weight: 500;
 }
 
+#prototype {
+    margin: 2em auto;
+}
+
+#prototype .button.secondary {
+    color: #4A426A;
+    border: 1px solid #4A426A;
+}
+
+#prototype .button.secondary:hover,
+#prototype .button.secondary:active {
+    background-color: #4A426A;
+    color: #f7f1e4;
+}
+
 /* Media Queries */
 
 @media only screen and (min-width: 640px) {
@@ -231,6 +246,10 @@
         flex-direction: row;
         gap: 1em;
         padding: 2em 1em;
+    }
+
+    .example {
+        flex-basis: calc(100%/3);
     }
 
     .redesign .underline1 {

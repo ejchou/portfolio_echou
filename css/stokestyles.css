@@ -5,6 +5,11 @@
     padding-bottom: 4em;
 }
 
+#solution {
+    position: relative;
+    top: -6.5em;
+}
+
 /*Case Study Hero Section*/
 
 .title {
