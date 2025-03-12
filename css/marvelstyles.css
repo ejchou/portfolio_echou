@@ -184,7 +184,7 @@
 }
 
 #prototype {
-    margin: 2em auto;
+    margin: 2em auto 0;
 }
 
 #prototype .button.secondary {
@@ -196,6 +196,20 @@
 #prototype .button.secondary:active {
     background-color: #4A426A;
     color: #f7f1e4;
+}
+
+/* Footer */
+
+.next .button {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 3em;
+}
+
+.next svg {
+    display: inline-flex;
+    vertical-align: top;
 }
 
 /* Media Queries */

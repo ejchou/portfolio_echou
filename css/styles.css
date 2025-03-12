@@ -46,7 +46,7 @@ h5 {
     font-weight: 500;
 }
 h6 {
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 300;
 }
 
@@ -96,14 +96,14 @@ a:active{
     background-color: transparent;
     color: #0B5616;
     border: 1px solid #0B5616;
-    border-radius: 1em;
+    border-radius: .5em;
     transition: 0.2s opacity;
 }
 .button.secondary:hover,
 .button.secondary:active {
     opacity: 0.8;
     background-color: #0B5616;
-    color: #F8E5BD;
+    color: #FFFBEF;
 }
 
 
@@ -165,7 +165,7 @@ nav > ul > li > a:active {
     text-decoration: none;
     background-color: #0B5616;
     color: #FFF6C5;
-    border-radius: 1em;
+    border-radius: .5em;
 }
 
 .navtoggle li:not(:last-child) {
@@ -205,14 +205,29 @@ nav > ul > li > a:active {
 /* Footer Section */
 
 footer {
-    padding: 2em 0 1.5em;
+    margin: 2em auto;
 }
 
-#contact h6 {
+footer h3 {
+    font-family: "Playwrite CO", serif;
+    font-size: 1.75em;
+    color: #0B5616;
+    font-weight: 400;
+}
+
+#connect .button.secondary {
+    background-color: #0B5616;
+    color: #FFFBEF;
+    font-size: 1.125em;
+    margin-bottom: 3em;
+}
+
+footer h6 {
     display: inline;
+    color: #0B5616;
 }
 
-#contact .icons {
+footer .icons {
     display: inline;
     float: right;
 }
@@ -221,17 +236,6 @@ footer {
 .fab.fa-linkedin-in {
     margin: .5em;
     text-decoration: none;
-}
-
-footer h3 {
-    font-family: "Playwrite CO", serif;
-    font-size: 1.5em;
-    color: #0B5616;
-    font-weight: 400;
-}
-
-footer p {
-    font-weight: 400;
 }
 
 
