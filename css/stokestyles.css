@@ -123,28 +123,6 @@
     padding: 10px;
 }
 
-/* Footer */
-
-#projects {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.previous .button,
-.next .button {
-    font-size: 1.5em;
-    font-weight: 500;
-    line-height: 36px;
-    margin-bottom: 3em;
-}
-
-.previous svg,
-.next svg {
-    display: inline-flex;
-    vertical-align: top;
-}
-
 /* Media Queries */
 
 @media only screen and (min-width: 640px) {
@@ -257,31 +235,3 @@
         font-size: 20px;
     }
 }
-
-
-/* Scrolling */
-
-html {
-    scroll-behavior: smooth;
-  }
-
-  #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 1em; /* Place the button at the bottom of the page */
-    right: 1em; /* Place the button 30px from the right */
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #0B5616;
-    color: #FFF6C5;
-    padding: .45em .6em;
-    border-radius: 360px;
-    font-size: 1em;
-    font-weight: 600;
-  }
-  
-  #myBtn:hover {
-    background-color: #818181;
-    color: #FFFFFF;
-  }
