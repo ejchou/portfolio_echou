@@ -217,11 +217,14 @@ footer h3 {
     font-weight: 400;
 }
 
+#connect {
+    margin-bottom: 6em;
+}
+
 #connect .button.secondary {
     background-color: #0B5616;
     color: #FFFDF7;
-    font-size: 1.125em;
-    margin-bottom: 3em;
+    font-size: 1em;
 }
 
 footer h6 {
@@ -260,7 +263,34 @@ footer .icons {
     vertical-align: top;
 }
 
+/* Scrolling */
 
+html {
+    scroll-behavior: smooth;
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 1em; /* Place the button at the bottom of the page */
+    right: 1em; /* Place the button 30px from the right */
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0B5616;
+    color: #FFF6C5;
+    padding: .45em .6em;
+    border-radius: 360px;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  #myBtn:hover {
+    background-color: #818181;
+    color: #FFFFFF;
+  }
+
+  
 /*Media Queries*/
 
 /*Medium devices (640px and larger)*/
@@ -387,31 +417,3 @@ footer .icons {
         margin-right: auto;
     }
 }
-
-
-/* Scrolling */
-
-html {
-    scroll-behavior: smooth;
-  }
-
-  #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 1em; /* Place the button at the bottom of the page */
-    right: 1em; /* Place the button 30px from the right */
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #0B5616;
-    color: #FFF6C5;
-    padding: .45em .6em;
-    border-radius: 360px;
-    font-size: 1em;
-    font-weight: 600;
-  }
-  
-  #myBtn:hover {
-    background-color: #818181;
-    color: #FFFFFF;
-  }
