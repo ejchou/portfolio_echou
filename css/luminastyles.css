@@ -1,0 +1,358 @@
+/* Layout Styling */
+
+#lumina main {
+    padding: 10em 2em 4em;
+}
+
+#outcome {
+    position: relative;
+    top: -6.5em;
+}
+
+/*Hero Section*/
+
+.title {
+    margin: 2em 1em;
+}
+
+.title h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 1em auto;
+}
+
+.title img {
+    margin-top: 2em;
+}
+
+.scope {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    padding: 1em 0;
+}
+
+.scopetitles p {
+    font-weight: 600;
+    margin: 0 auto;
+    padding: .25em 0;
+}
+
+.scopedesc p {
+    margin: 0 auto;
+    padding: .25em 0;
+}
+
+/*Main Section*/
+
+.quicklinks {
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+.quicklinks h4 {
+    font-weight: 600;
+    line-height: 2;
+}
+
+.links .button.secondary {
+    margin: 0.5em 1em;
+}
+
+.text {
+    padding: 1em 0;
+}
+
+.text h3 {
+    font-size: 1.75em; 
+    font-weight: 500;
+}
+
+.goal {
+    font-weight: 500;
+    font-size: 1.15em;
+}
+
+.objectives,
+.approach,
+.sitemap,
+.visual,
+.mockup,
+.brand,
+#outcome
+.home {
+    clear: both;
+}
+
+.objectives h5 {
+    font-family: "Libre Caslon Display", serif;
+    font-size: 1.75em;
+    padding-right: .5em;
+}
+
+.objectives h4 {
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.objectives h5,h4 {
+    display: inline;
+}
+
+.objectives ul {
+    margin: 2em auto;
+}
+
+.approach,
+.visual h6 {
+    color: #818181;
+}
+
+.wf-container {
+    padding-bottom: 2em;
+}
+
+.wireframes {
+    display: inline-flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.wf {
+    flex-basis: calc(100%/3);
+}
+
+.cta-ex,
+.mockup,
+.home {
+    margin: 2em auto;
+}
+
+.visual {
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+
+.example {
+    padding: 1em 0;
+}
+
+.typography span {
+    font-weight: 500;
+}
+
+.lumina-title h1 {
+    font-family: "Libre Caslon Display", serif;
+    font-size: 2.5em;
+    line-height: 0;
+    padding-bottom: 1em;
+    color: #000000;
+}
+
+.lumina-body h3 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    font-size: 1.75em;
+    line-height: 0;
+}
+
+.brand img {
+    margin: 3em auto;
+}
+
+#website {
+    margin: 4em auto 0;
+}
+
+#website .button.secondary {
+    background-color: #9A6C56;
+    border-style: double;
+    border-color: #ffffff;
+    border-width: .5em;
+    color: #FFFFFF;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.15em;
+    font-weight: 500;
+}
+
+/* Media Queries */
+
+/*Small devices (640px to 767px)*/
+@media only screen and (min-width: 640px) {
+    .sitemap {
+        padding-bottom: 2em;
+    }
+
+    .cta-mobile img,
+    .mobile img {
+        max-width: 300px;
+    }
+}
+
+/*Medium devices (768px to 1023px)*/
+@media only screen and (min-width: 768px) {
+    .title {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-item {
+        flex-basis: calc(100%/2);
+    }
+
+    .title h1 {
+        margin: 0 auto;
+    }
+
+    .scope {
+        padding: auto;
+    }
+
+    .title-img,
+    .quicklinks {
+        clear: both;
+    }
+
+    .objectives h5,h4 {
+        display: block;
+    }
+
+    .objectives h5 {
+        line-height: 0;
+    }
+
+    .objectives ul {
+        margin: 0 auto;
+    }
+
+    .sitemap {
+        padding: 2em 0;
+    }
+
+    .sitemap,
+    .wf-container {
+        margin: 0 .5em;
+    }
+
+    .mockup {
+        justify-content: space-between;
+        align-items: flex-start;
+        display: inline-flex;
+        margin: 3em auto;
+        gap: 3em;
+    }
+
+    .example {
+        padding: 0;
+    }
+    
+    .cta-ex {
+        margin: 3em auto;
+        gap: 1em;
+    }
+    
+    .cta-ex,
+    .column-mockup {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        display: inline-flex;
+    }
+
+    .row-cta {
+        flex-direction: row;
+        justify-content: center;
+        display: inline-flex;
+        gap: 2.5em;
+        margin: 0 auto;
+    }
+
+    .video {
+        max-width: 650px;
+    }
+
+    .cta-mobile img {
+        max-width: 400px;
+        max-height: 100%;
+        overflow: hidden;
+    }
+
+    .visual {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2em;
+    }
+
+    .vis {
+        flex-basis: calc(100%/2);
+    }
+
+    .brand .text {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .brand img {
+        margin: 0 auto;
+    }
+
+    .column-mockup {
+        gap: 2.5em;
+    }
+
+    .mobile img {
+        max-width: 100%;
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .home {
+        display: inline-flex;
+        justify-content: center;
+        gap: 2.5em;
+    }
+}
+
+/*Large devices (1024px to 1439px)*/
+@media only screen and (min-width: 1024px) {
+    .sitemap,
+    .wf-container {
+        padding: 3em;
+    }
+
+    .wireframes,
+    .cta-ex,
+    .mockup {
+        gap: 5em;
+    }
+
+    .visual {
+        grid-template-columns: 60% 40%;
+    }
+
+    .mobile img {
+        max-height: 600px;
+    }
+}
+
+/*X-large devices (1440px and larger)*/
+@media only screen and (min-width: 1440px) {
+    .sitemap {
+        padding: 1em 10em 3em;
+    }
+
+    .visual {
+        padding: 4em 6em;
+        gap: 5em;
+    }
+
+    .video {
+        max-width: 100%;
+    }
+}
+

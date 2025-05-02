@@ -1,16 +1,18 @@
+/* Main Styles*/
+
 /*
 Colors used:
 Primary Color (Dark Green): #0B5616 or rgba(11, 86, 22);
 Secondary Color (Pale Yellow): #FFF6C5 or rgba(248, 229, 189); 
 Tertiary Color (Gray/Silver): #818181 or rgba(129, 129, 129);
-Background Color: #FFFFFF, #FFFBEF;
+Background Color: #FFFDF7, #FFFBEF (secondary?);
 */
 
 
 /* Typography & Color */
 
 body {
-    background-color: #FFFBEF;
+    background-color: #FFFDF7;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -103,7 +105,7 @@ a:active{
 .button.secondary:active {
     opacity: 0.8;
     background-color: #0B5616;
-    color: #FFFBEF;
+    color: #FFFDF7;
 }
 
 
@@ -141,7 +143,7 @@ img {
 header {
     position: fixed;
     z-index: 999;
-    background-color: #FFFBEF;
+    background-color: #FFFDF7;
     padding: 1.25em 0;
     width: 100%;
 }
@@ -164,7 +166,7 @@ nav > ul > li > a:hover,
 nav > ul > li > a:active {
     text-decoration: none;
     background-color: #0B5616;
-    color: #FFFBEF;
+    color: #FFFDF7;
     border-radius: .5em;
 }
 
@@ -215,11 +217,14 @@ footer h3 {
     font-weight: 400;
 }
 
+#connect {
+    margin-bottom: 6em;
+}
+
 #connect .button.secondary {
     background-color: #0B5616;
-    color: #FFFBEF;
-    font-size: 1.125em;
-    margin-bottom: 3em;
+    color: #FFFDF7;
+    font-size: 1em;
 }
 
 footer h6 {
@@ -238,7 +243,54 @@ footer .icons {
     text-decoration: none;
 }
 
+#projects {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 
+.previous .button,
+.next .button {
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 3em;
+}
+
+.previous svg,
+.next svg {
+    display: inline-flex;
+    vertical-align: top;
+}
+
+/* Scrolling */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 1em; /* Place the button at the bottom of the page */
+    right: 1em; /* Place the button 30px from the right */
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0B5616;
+    color: #FFF6C5;
+    padding: .45em .6em;
+    border-radius: 360px;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  #myBtn:hover {
+    background-color: #818181;
+    color: #FFFFFF;
+  }
+
+  
 /*Media Queries*/
 
 /*Medium devices (640px and larger)*/
@@ -250,7 +302,7 @@ footer .icons {
     nav {
         width: auto;
         float: right;
-        padding-top: 20px;
+        padding-top: 1.5em;
     }
     nav > ul {
         margin: 1em 0;
@@ -273,10 +325,13 @@ footer .icons {
     .navtoggle.responsive nav {
         padding: 0;
     }
+}
 
+/*Medium devices (768px to 1023px)*/
+@media only screen and (min-width: 768px) {
     [class*="col-"] {
     float: left;
-    padding: 0 30px;
+    padding: 0 1em;
     }
 
     main {
@@ -289,13 +344,21 @@ footer .icons {
         .col-md-5 {
             width: 40%;
         }
+        .col-md-4 {
+            width: 33%;
+        }
     }
 }
 
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) { 
     header {
-        padding-top: 35px
+        padding-top: 2em;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 0 1.5em;
     }
 
     main {
@@ -328,6 +391,11 @@ footer .icons {
         padding-top: 40px
     }
 
+    [class*="col-"] {
+        float: left;
+        padding: 0 2em;
+    }
+
     main {
         .col-xlg-5 {
             width: 40%;
@@ -341,7 +409,7 @@ footer .icons {
     }
 }
 
-/*XX-large devices (1920ox and larger)*/
+/*XX-large devices (1920px and larger)*/
 @media only screen and (min-width: 1920px) {
     .container {
         max-width: 1440px;
