@@ -13,29 +13,32 @@
 /*Case Study Hero Section*/
 
 .title {
-    margin: 2em auto;
+    margin: 2em 1em;
 }
 
 .title h1 {
     font-family: "Poppins", sans-serif;
     font-size: 2.5em;
     font-weight: 500;
-    margin: 0 auto;
+    margin: 1em auto;
 }
 
 .scope {
     display: flex;
     flex-direction: row;
     gap: 28px;
+    padding: 1em 0;
 }
 
 .scopetitles p {
     font-weight: 600;
     margin: 0 auto;
+    padding: .25em 0;
 }
 
 .scopedesc p {
     margin: 0 auto;
+    padding: .25em 0;
 }
 
 .title img {
@@ -51,19 +54,20 @@
 
 .quicklinks h4 {
     font-weight: 600;
+    line-height: 2;
 }
 
 .links .button.secondary {
-    margin: 0 1em;
+    margin: 0.5em 1em;
 }
 
 .text {
-    padding-top: 1em;
-    padding-bottom: 2em;
+    padding: 1em;
 }
 
 .text h3{
     font-size: 1.75em;
+    font-weight: 500;
 }
 
 .text h4 {
@@ -82,6 +86,11 @@
     padding-right: .75em;
 }
 
+.userprobs,
+.example {
+    margin: 3em auto;
+}
+
 .userprobs p {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -91,7 +100,7 @@
 .personacards {
     display: flex;
     flex-direction: row;
-    margin-bottom: 2em;
+    margin: 3em auto;
 }
 .persona1 {
     position: relative;
@@ -104,35 +113,39 @@
 }
 
 .userflow img {
-    margin: 20px;
-    width: 80%;
-}
-
-.cardsort img {
-    width: 60%;
-}
-.sitemap img {
-    width: 80%;
+    padding: 1em;
 }
 
 .sketch,
 .lfwireframe {
     display: flex;
     flex-flow: row; 
-    gap: 10px;
-    padding: 10px;
+    gap: 1em;
+}
+
+#prototype {
+    margin: 4em auto 0;
 }
 
 /* Media Queries */
 
+/*Small devices (640px to 767px)*/
 @media only screen and (min-width: 640px) {
+    .example {
+        margin: 3em 2em;
+    }
+}
+
+/*Medium devices (768px to 1023px)*/
+@media only screen and (min-width: 768px) {
     .title {
-        display: flex;
-        flex-direction: row;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .title img {
-        width: 90%;
+        padding: 0;
     }
 
     .casestudy {
@@ -152,10 +165,6 @@
         margin: 1em 1em;
     }
 
-    .solution img {
-        width: 80%;
-    }
-
     .persona1 {
         left: 100px;
     }
@@ -165,45 +174,23 @@
         top: 60px;
         margin-bottom: 60px;
     }
-    .userflow {
-        display: grid;
-        grid-template-columns: auto auto;
-        margin: 0 4em;
-    }
 
-    .userflow img {
-        margin: 0 auto;
+    .userflow {
+        display: inline-flex;
+        flex-direction: row;
     }
 
     .sketch {
-        flex-flow: column;
-        width: 65%;
-        margin: 0 auto;
+        display: inline-flex;
+        flex-direction: column;
     }
 
     .ideationimg1,
     .ideationimg2 {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        gap: 10px;
-    }
-
-    .ideationimg2 {
-        width: 80%;
-        margin: 0 auto;
-        padding-bottom: 20px;
-    }
-
-    .designsystem {
-        width: 80%;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    
-    .revision img {
-        width: 80%;
-        margin: 0 auto;
-    }
+        display: inline-flex;
+        flex-direction: row;
+        gap: 2em;
+    }    
 }
 
 /*Large devices (1024px and larger)*/
@@ -212,26 +199,17 @@
         padding-left: 8em;
         padding-right: 8em;
     }
+    
+    .sketch img {
+        width: 200px;
+    }
 
-    .userprobs {
-        margin: 0 auto;
+    .ideationimg2 {
+        gap: 3em;
     }
 }
 
 /*X-large devices (1440px and larger)*/
 @media only screen and (min-width: 1440px) {
-    .quicklinks {
-        margin-top: 6em;
-        margin-bottom: 4em;
-    }
-}
-
-/*XX-large devices (1920ox and larger)*/
-@media only screen and (min-width: 1920px) {
-    .userprobs p {
-        font-size: 22px;
-    }
-    .userprobs ol {
-        font-size: 20px;
-    }
+ 
 }

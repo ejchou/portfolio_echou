@@ -1,7 +1,8 @@
 /* Layout Styling */
 
 #lumina main {
-    padding: 10em 2em 4em;
+    padding-top: 10em;
+    padding-bottom: 4em;
 }
 
 #outcome {
@@ -22,10 +23,6 @@
     margin: 1em auto;
 }
 
-.title img {
-    margin-top: 2em;
-}
-
 .scope {
     display: flex;
     flex-direction: row;
@@ -42,6 +39,10 @@
 .scopedesc p {
     margin: 0 auto;
     padding: .25em 0;
+}
+
+.title img {
+    margin-top: 2em;
 }
 
 /*Main Section*/
@@ -80,7 +81,7 @@
 .visual,
 .mockup,
 .brand,
-#outcome
+#outcome,
 .home {
     clear: both;
 }
@@ -186,8 +187,10 @@
     }
 
     .cta-mobile img,
-    .mobile img {
+    .mobile img,
+    .home-mobile img {
         max-width: 300px;
+        max-height: 100%;
     }
 }
 
@@ -250,7 +253,7 @@
     }
     
     .cta-ex {
-        margin: 3em auto;
+        margin: 3em 0.5em;
         gap: 1em;
     }
     
@@ -284,6 +287,7 @@
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 2em;
+        margin: 0 0.5em;
     }
 
     .vis {
@@ -301,6 +305,11 @@
         margin: 0 auto;
     }
 
+    .mockup,
+    .home {
+        margin: 0 0.5em;
+    }
+
     .column-mockup {
         gap: 2.5em;
     }
@@ -311,15 +320,30 @@
         overflow: hidden;
     }
 
+    .outcomes .text p {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
     .home {
         display: inline-flex;
         justify-content: center;
         gap: 2.5em;
     }
+
+    .home-mobile img {
+        max-width: 600px;
+        max-height: 100%;
+        overflow: hidden;
+    }
 }
 
 /*Large devices (1024px to 1439px)*/
 @media only screen and (min-width: 1024px) {
+    .text {
+        padding: 1em;
+    }
+
     .sitemap,
     .wf-container {
         padding: 3em;
@@ -327,11 +351,19 @@
 
     .wireframes,
     .cta-ex,
+    .visual,
     .mockup {
         gap: 5em;
     }
 
-    .visual {
+    .cta-ex,
+    .visual,
+    .mockup,
+    .home {
+        margin: 3em 2em;
+    }
+
+    .home {
         grid-template-columns: 60% 40%;
     }
 

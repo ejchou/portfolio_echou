@@ -175,6 +175,11 @@
         font-size: 2em;
     }
 
+    .tagline h3 {
+        display: inline-block;
+        padding-left: .5em;
+    }
+
     #work {
         display: grid;
         grid-template-columns: auto auto auto;
