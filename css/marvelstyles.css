@@ -56,13 +56,11 @@
 }
 
 .links .button.secondary {
-    margin: 0 1em;
+    margin: 0.5em 1em;
 }
 
 .text {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin: 0 .5em;
+    padding: 1em;
 }
 
 .text h3 {
@@ -200,6 +198,7 @@
 
 /* Media Queries */
 
+/*Medium devices (768px-1023px)*/
 @media only screen and (min-width: 768px) {
     .title {
         display: flex;
