@@ -1,15 +1,19 @@
 /* Hero Section */
 
 #hero {
-    width: 100vw;
-    height: 100vh;
-    padding-top: 13em;
-    padding-bottom: 4em;
-    background-image: url('/img/home/bg_img.png');
-    background-position: center bottom;
+    padding-top: 20em;
+    padding-bottom: 10em;
+    background-image: url('/img/home/stormking.jpg');
+    background-color: #0c0c0c;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
+
+/* .hero-text {
+    padding-top: 4em;
+} */
 
 .headline h1,h2 {
     display: block;
@@ -17,11 +21,13 @@
 
 .headline h1 {
     font-size: 3em;
+    color: #FFF6C5;
 }
 
 .headline h2 {
     font-size: 1.75em;
     line-height: 0;
+    color: #FFFDF7;
 }
 
 .tagline {
@@ -31,6 +37,7 @@
 .tagline h3 {
     font-size: 1.5em;
     line-height: 1;
+    color: #FFFDF7;
 }
 
 #none {
@@ -46,7 +53,8 @@
 }
 
 .arrow a {
-    color: #053F0E;
+    /* color: #053F0E; */
+    color: #FFF6C5;
 }
 
 .bounce {
@@ -115,11 +123,6 @@
 
 /*Small devices (640px to 767px)*/
 @media only screen and (min-width: 640px) {
-    #hero {
-        padding-top: 12em;
-        padding-bottom: 8em;
-    }
-
     .tagline {
         margin: 6em auto;
     }
@@ -143,11 +146,16 @@
 
 /* Medium devices (768px to 1023px)*/
 @media only screen and (min-width: 768px) {
-    #hero h1,h2 {
+    #hero {
+        padding-top: 24em;
+        padding-bottom: 12em;
+    }
+
+    .headline h1,h2 {
         display: inline;
     }
 
-    #hero h2 {
+    .headline h2 {
         line-height: 1.6;
         padding-left: 0.25em;
         padding-right: 0.5em;
@@ -164,12 +172,20 @@
 
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) {
-    #hero h1 {
+    #hero {
+        padding-top: 16em;
+        padding-bottom: 8em;
+    }
+    .headline h1 {
         font-size: 4em;
     }
 
-    #hero h2 {
+    .headline h2 {
         font-size: 2em;
+    }
+
+    .tagline {
+        margin-top: 3em;
     }
 
     .tagline h3 {
@@ -222,9 +238,9 @@
 /*X-large devices (1440px and larger)*/
 @media only screen and (min-width: 1440px) {
     #hero {
-        padding-top: 16em;
+        padding-top: 20em;
+        padding-bottom: 10em;
     }
-
     #work {
         padding-top: 8em;
         padding-bottom: 8em;
