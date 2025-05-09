@@ -3,12 +3,12 @@
 #hero {
     padding-top: 20em;
     padding-bottom: 10em;
-    background-image: url('/img/home/stormking.jpg');
+    background-image: url('/img/home/stormking_mobile.jpg');
     background-color: #0c0c0c;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: initial;
 }
 
 /* .hero-text {
@@ -173,9 +173,10 @@
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) {
     #hero {
-        padding-top: 16em;
-        padding-bottom: 8em;
+        background-image: url('/img/home/stormking_desktop.jpg');
+        background-attachment: fixed;
     }
+
     .headline h1 {
         font-size: 4em;
     }
@@ -237,10 +238,10 @@
 
 /*X-large devices (1440px and larger)*/
 @media only screen and (min-width: 1440px) {
-    #hero {
+    /* #hero {
         padding-top: 20em;
         padding-bottom: 10em;
-    }
+    } */
     #work {
         padding-top: 8em;
         padding-bottom: 8em;
