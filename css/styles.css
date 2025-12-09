@@ -16,18 +16,19 @@ Paragraph: "font-family: neuzeit-grotesk, sans-serif" "font-weight: 300/400/700/
 /* Typography & Color */
 
 body {
-    background-color: #FFF;
+    background-color: #FFFFFF;
     font-family: neuzeit-grotesk, sans-serif;
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #000000;             
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: miller-display, serif;
     line-height: 1.4;
+    margin: 0;
 }
 
 h1 {
@@ -60,6 +61,9 @@ h6 {
     font-weight: 400;
 }
 
+p {
+    margin: 0;
+}
 
 /* Links & Buttons */
 
@@ -70,10 +74,10 @@ a {
 a:hover,
 a:focus {
     color: rgba(0,0,0,0.5);
-    text-decoration: underline;
+    text-decoration: none;
 }
 a:active{
-    text-decoration: underline;
+    text-decoration: none;
 }  
 
 .button {
@@ -135,6 +139,7 @@ img {
     margin: 1.5em 0;
     padding-top: 2em;
 }
+
 .row::after {
     content: "";
     clear: both;
@@ -154,12 +159,6 @@ header {
     background-color: #FFFFFF;
     padding: 1.5em 0;
     width: 100%;
-}
-
-#myNavtoggle.navtoggle {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
 }
 
 #logo img {
@@ -197,6 +196,16 @@ nav > ul > li > a:active {
 
 .navtoggle, .navtoggle.responsive {
     position: relative;
+
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 0.25em;
+    font-size: 1.25em;
+    padding-right: 0;
+    margin: 0;
 }
 
 .navtoggle.responsive nav {
@@ -205,46 +214,50 @@ nav > ul > li > a:active {
 
 .navtoggle.responsive li {
     display: block;
-    padding: .75em 0;
-    border-top: 1px solid rgba(129, 129, 129, 0.5);
+    padding: 2em 0;
+    border-top: 1px solid rgba(129,129,129,0.25);
+    text-align: center;
 }
 
 .navtoggle.responsive li:last-child {
     padding: 0 0 .75em;
 }
 
-.navtoggle li .icon {
-    font-size: 1.25em;
-    padding: 0;
-    margin: 0;
-}
-
-.navtoggle li .icon:hover,
-.navtoggle li .icon:active {
-    opacity: 1;
-}
-
 
 /*/ Footer Section /*/
 
 footer {
-    margin: 2em auto;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 2em;
 }
 
-footer h6 {
-    display: inline;
-    color: #0B5616;
+#contact h3 {
+    font-style: italic;
+    margin: 0 auto 3em;
+    text-decoration: underline;
+    text-underline-offset: .25em;
 }
 
-footer .icons {
-    display: inline;
-    float: right;
+.bottom-footer {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.fa-regular.fa-envelope,
-.fab.fa-linkedin-in {
+.bottom-footer p {
+    font-size: 0.875em;
+}
+
+.bottom-footer .social {
+    display: inline-block;
+}
+
+.bottom-footer .social i {
     margin: .5em;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 #projects {
@@ -404,7 +417,6 @@ html {
     }
 
     .container {
-        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -441,9 +453,9 @@ html {
 
 /*/ Large monitors (1920px and larger) /*/
 @media only screen and (min-width: 1920px) {
-    .container {
+    /* .container {
         max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
 }

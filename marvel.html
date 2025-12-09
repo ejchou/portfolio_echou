@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/baq0llq.css">
     <script src="https://kit.fontawesome.com/e0d13a7da0.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body id="marvel">
@@ -40,13 +41,12 @@
 				</picture>
                 <nav>
                     <ul class="navigation">
-                        <li><a href="/#featured">Work</a></li>
-                        <li><a href="about">About</a></li>
-                        <li><a href="/#contact" onclick="menuToggle()">Contact</a></li>
-                        <li>
-                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-                                    class="fas fa-bars"></i></a>
-                        </li>
+                        <li><a href="#featured" onclick="toggleMenuAndIcon()">Work</a></li>
+						<li><a href="about">About</a></li>
+						<li><a href="#contact" onclick="toggleMenuAndIcon()">Contact</a></li>
+						<li><a href="javascript:void(0);" class="icon" onclick="toggleMenuAndIcon()"><i id="menuIcon" data-feather="align-right"></i></a>
+							<script>feather.replace();</script>
+						</li>
                     </ul>
                 </nav>
             </div>

@@ -1,147 +1,232 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4V2E8GNY2J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4V2E8GNY2J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "G-4V2E8GNY2J");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Eileen Chou" />
+    <meta
+      name="description"
+      content="Systems thinker blending intuitive designs with impactful storytelling."
+    />
+    <title>Eileen Chou | Designer</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
-  gtag('config', 'G-4V2E8GNY2J');
-</script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Eileen Chou">
-	<meta name="description" content="Systems thinker blending intuitive designs with impactful storytelling.">
-	<title>Eileen Chou | Designer</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/indexstyles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/baq0llq.css" />
+    <script
+      src="https://kit.fontawesome.com/e0d13a7da0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
 
-	<link rel="stylesheet" type="text/css"
-		href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/indexstyles.css">
-	<link rel="stylesheet" href="https://use.typekit.net/baq0llq.css">
-	<script src="https://kit.fontawesome.com/e0d13a7da0.js" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-
-<body>
-	
-	<header>
-		<div class="container">
-			<div class="navtoggle" id="myNavtoggle">
-				<picture id="logo">
-					<source srcset="img/home/1x/logo_1x.png" media="(max-width:767px)">
-					<a href=""><img src="img/home/2x/logo_2x.png" alt="Logo"></a>
-				</picture>
-				<nav>
-					<ul class="navigation">
-						<li><a href="#featured">Work</a></li>
-						<li><a href="about">About</a></li>
-						<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
-
-	<main>
-		<div id="hero" class="center">
-			<div class="hero-text">	
-				<div class="headline">
-					<h1 class="hero-name">EILEEN <span>CHOU</span></h1>
-				</div>
-				<div class="tagline">
-					<p>Empathetic systems thinker.</p>
-					<p>Impactful storytelling.</p>
-					<p>Building for sustainability.</p>
-				</div>
-				<div class="headline">
-					<h1 class="hero-title">DESIGNER</h1>
-				</div>
-			</div>
-		</div>
-
-		<div id="featured"></div>
-		
-		<div class="container" id="work">
-			<div class="casestudy">
-				<picture>
-					<source srcset="img/marvel/1x/marveltools_grid_1x.png" media="(max-width:767px)">
-					<a href="marvel.html"><img src="img/marvel/2x/marveltools_grid_2x.png" alt="Marvel Grid Image"></a>
-				</picture>
-	
-				<a href="marvel.html"><div class="casestudy-text">
-					<div class="designtype"><h6>Product Design</h6></div>
-					<h3>Marvel Tools</h3>
-					<h5>AI-powered tools for educators.</h5>
-				</div></a>
-			</div>
-
-			<div class="casestudy">
-				<picture>
-					<source srcset="img/lumina/1x/lumina_grid_1x.png" media="(max-width:767px)">
-					<a href="lumina.html"><img src="img/lumina/2x/lumina_grid_2x.png" alt="Lumina Grid Image"></a>
-				</picture>
-	
-				<a href="lumina.html"><div class="casestudy-text">
-					<div class="designtype"><h6>Web Design</h6></div>
-					<h3>Lumina Clinic</h3>
-					<h5>A medical spa offering beauty and wellness services.</h5>
-				</div></a>
-			</div>
-			
-			<div class="casestudy">
-				<picture>
-					<source srcset="img/stoke/1x/stoke_grid_1x.png" media="(max-width:767px)">
-					<a href="stoke.html"><img src="img/stoke/2x/stoke_grid_2x.png" alt="Stoke Grid Image"></a>
-				</picture>
-	
-				<a href="stoke.html"><div class="casestudy-text">
-					<div class="designtype"><h6>Product Design</h6></div>
-					<h3>Stoke</h3>
-					<h5>Health tracking focused on fitness, nutrition, and mindfulness.</h5>
-				</div></a>
-			</div>
-
-		</div>
-	</main>
-
-	<footer id="contact">
-        <div class="container">
-            <h3 class="connect center">
-				<a href="mailto:eileen.j.chou@gmail.com" target="_blank">Let's Connect</a>
-			</h3>
-            
-            <!-- <div id="connect">
-                <div class="center">
-                    <a href="mailto:eileen.j.chou@gmail.com"
-                    class="button secondary" target="_blank">Reach Out</a>
-                </div>
-            </div> -->
-
-            <h6>&copy; Eileen Chou 2025</h6>
-
-            <div class="icons">
-                <a href="mailto:eileen.j.chou@gmail.com">
-                    <i class="fa-regular fa-envelope fa-xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ejchou/" target="_blank">
-                    <i class="fab fa-linkedin-in fa-xl"></i>
-                </a>
-            </div>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <picture id="logo">
+            <source
+              srcset="img/home/1x/logo_1x.png"
+              media="(max-width:767px)"
+            />
+            <a href=""
+              ><img src="img/home/2x/logo_2x.png" alt="Eileen Chou Logo"
+            /></a>
+          </picture>
+          <nav>
+            <ul class="navigation">
+              <li><a href="#work" onclick="toggleMenuAndIcon()">Work</a></li>
+              <li><a href="about">About</a></li>
+              <li>
+                <a href="#contact" onclick="toggleMenuAndIcon()">Contact</a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="toggleMenuAndIcon()"
+                  ><i id="menuIcon" data-feather="align-right"></i
+                ></a>
+                <script>
+                  feather.replace();
+                </script>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero center">
+        <div class="hero-text">
+          <div class="headline">
+            <h1 class="hero-name">EILEEN <span>CHOU</span></h1>
+          </div>
+          <div class="tagline">
+            <p>Empathetic systems thinker.</p>
+            <p>Impactful storytelling.</p>
+            <p>Building for sustainability.</p>
+          </div>
+          <div class="headline">
+            <h1 class="hero-title">DESIGNER</h1>
+          </div>
+        </div>
+      </section>
+
+      <div id="hero-text-trigger"></div>
+
+      <div id="featured" class="center">
+        <h2>Featured Work</h2>
+      </div>
+
+      <section id="work" class="c-work">
+        <div class="c-work__list">
+          <!-- CARD 1: Marvel Tools -->
+          <article class="c-work__item">
+            <figure class="c-work__item-figure">
+              <picture>
+                <source
+                  srcset="img/marvel/1x/marvel-grid_1x.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/marvel/2x/marvel-grid_2x.png"
+                  alt="Marvel Grid Image"
+                />
+              </picture>
+            </figure>
+
+            <a href="marvel.html" class="c-work__item-overlay">
+              <div class="c-work__item-text">
+                <h6>Product Design</h6>
+                <h3>Marvel Tools</h3>
+                <h5>AI-powered tools for educators.</h5>
+              </div>
+            </a>
+          </article>
+
+          <!-- CARD 2: Lumina -->
+          <article class="c-work__item">
+            <figure class="c-work__item-figure">
+              <picture>
+                <source
+                  srcset="img/lumina/1x/lumina-grid_1x.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/lumina/2x/lumina-grid_2x.png"
+                  alt="Lumina Grid Image"
+                />
+              </picture>
+            </figure>
+
+            <a href="lumina.html" class="c-work__item-overlay">
+              <div class="c-work__item-text">
+                <h6>Web Design</h6>
+                <h3>Lumina Clinic</h3>
+                <h5>A medical spa offering beauty and wellness services.</h5>
+              </div>
+            </a>
+          </article>
+
+          <!-- CARD 3: Stoke -->
+          <article class="c-work__item">
+            <figure class="c-work__item-figure">
+              <picture>
+                <source
+                  srcset="img/stoke/1x/stoke-grid_1x.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/stoke/2x/stoke-grid_2x.png"
+                  alt="Stoke Grid Image"
+                />
+              </picture>
+            </figure>
+
+            <a href="stoke.html" class="c-work__item-overlay">
+              <div class="c-work__item-text">
+                <h6>Product Design</h6>
+                <h3>Stoke</h3>
+                <h5>
+                  Health tracking focused on fitness, nutrition, and
+                  mindfulness.
+                </h5>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container center" id="contact">
+        <h3>
+          <a href="mailto:eileen.j.chou@gmail.com" target="_blank"
+            >Let's Connect</a
+          >
+        </h3>
+      </div>
+      <div class="bottom-footer">
+        <p>&copy; Eileen Chou 2025</p>
+
+        <div class="social">
+          <a href="mailto:eileen.j.chou@gmail.com">
+            <i class="fa-regular fa-envelope fa-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ejchou/" target="_blank">
+            <i class="fab fa-linkedin-in fa-xl"></i>
+          </a>
+        </div>
+      </div>
     </footer>
 
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	<script src="js/scripts.js"></script>
-
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </body>
 </html>
