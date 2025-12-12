@@ -1,15 +1,14 @@
 /* Hero Section */
 
-section.hero {
-  padding-top: 6.5em;
+#hero {
   margin-bottom: 2em;
   position: relative;
   height: 100vh;
-  overflow: visible;
+  overflow: hidden;
 }
 
 /* Background layer: fixed while hero is in view */
-section.hero::before {
+#hero::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -32,7 +31,7 @@ section.hero::before {
 }
 
 /* When #featured is in view: image drifts up, scales slightly, blurs, fades */
-body.release-hero section.hero::before {
+body.release-hero #hero::before {
   /* slight upward motion + gentle scale for depth */
   transform: translateY(-15vh) scale(1.03);
   filter: blur(6px);
@@ -76,7 +75,7 @@ body.lift-hero-text .hero-text * {
 }
 
 .headline h1 {
-  font-size: clamp(2rem, 10vw, 4rem);
+  font-size: clamp(2rem, 10vw, 3rem);
   margin: 0 auto;
 }
 
@@ -134,11 +133,11 @@ body.lift-featured #featured * {
   margin: 0 auto;
   padding: 64px 0;
   background-color: #ffffff;
+  z-index: 998;
 }
 
 #work .c-work__list {
-  display: grid;
-  grid-gap: 40px;
+  position: relative;
 }
 
 /* ---------- MOBILE-FIRST: full-screen stacked cards ---------- */
@@ -156,11 +155,6 @@ body.lift-featured #featured * {
   border-radius: 0; /* remove rounding so it looks like a full panel */
   overflow: hidden;
   border: none; /* no borders on full-screen mode */
-}
-
-/* Scroll-linked scaling animation */
-#work .c-work__item:not(:last-child) {
-  animation: none;
 }
 
 /* Image wrapper fills entire card */
@@ -223,34 +217,59 @@ body.lift-featured #featured * {
   opacity: 0.9;
 }
 
-/* Medium mobile/small tablet devices (480px to 767px) */
-@media only screen and (min-width: 480px) {
-}
 
 /* Medium to large tablet devices (768px to 1023px) */
+
 @media only screen and (min-width: 768px) {
-  section.hero {
-    padding-top: 24em;
-    padding-bottom: 12em;
-  }
+  #hero .hero-text {
+    width: 50vw;
+    height: 100vh;
+    z-index: -10;
+    }
 
-  section.hero::before {
+  #hero::before {
+    height: 100vh;
+    width: 50vw;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;   /* anchor to the right */
+    left: auto; /* release from left alignment */
+
     background-image: url("/img/home/2x/white-sands_2x.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* image aligns to the right */
+    z-index: -1;
   }
 
-  /* .headline .hero-title {
-    color: #FFFFFF;
-    } */
+  body.release-hero #hero::before {
+    transform: translateX(-20vw) translateY(-15vh) scale(1.5);
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding-top: 48px;
+    padding-bottom: 240px;
+
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  }
+
+  .headline h1 {
+    font-size: clamp(3rem, 5vw, 4rem);
+  }
 
   .tagline p {
     font-size: 1.25em;
-    text-align: right;
   }
 
   #work.c-work {
-    width: min(1200px, 90%);
-    padding: 72px 0;
+    padding: 72px 24px;
   }
 
   #work .c-work__item {
@@ -264,19 +283,10 @@ body.lift-featured #featured * {
     max-height: 720px;
 
     border-radius: 16px;
-
-    /* turn off CSS animation so GSAP can control scale */
-    animation: none;
-    animation-name: none;
-    animation-timeline: auto;
-    view-timeline-name: none;
   }
 
-  #work .c-work__item:not(:last-child) {
-    animation: none;
-    animation-name: none;
-    animation-timeline: auto;
-    view-timeline-name: none;
+   #work .c-work__item + .c-work__item {
+    margin-top: 40px;    /* creates scroll space between triggers */
   }
 
   /* On desktop, image + overlay fill the card (not the viewport) */
@@ -289,25 +299,32 @@ body.lift-featured #featured * {
 }
 
 /* Laptop devices (1024px to 1439px) */
-@media only screen and (min-width: 1024px) {
-  section.hero {
-    padding-top: 6.5em;
-    margin-bottom: 2em;
-    position: relative;
-    height: 200vh;
-    overflow: clip;
-  }
 
-  #work {
-    padding-top: 8em;
-    padding-bottom: 8em;
+@media only screen and (min-width: 1024px) {
+#hero::before {
+  transition: transform 1.1s ease-out,
+    filter 1.1s ease-out,
+    opacity 1.1s ease-out;
+    /* cubic-bezier(0.25, 0.8, 0.5, 1) */
+}
+
+ #work .c-work__item {
+    width: min(1024px, 100%);
+    margin: 0 auto;
   }
 }
 
 /* Desktop devices (1440px to 1919px) */
 @media only screen and (min-width: 1440px) {
-  /* section.hero {
-        padding-top: 20em;
-        padding-bottom: 10em;
-    } */
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #hero::before,
+  .hero-text {
+    transition: none !important;
+    transform: none !important;
+    filter: none !important;
+    opacity: 1 !important;
+  }
 }

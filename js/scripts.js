@@ -1,6 +1,8 @@
 console.log("Thank you for being here.")
 
+
 /* Menu Toggle */
+
 let menuOpen = false;
 
 function toggleMenuAndIcon() {
@@ -105,40 +107,68 @@ const featured = document.getElementById("featured");
 
 gsap.registerPlugin(ScrollTrigger);
 
-  const mm = gsap.matchMedia();
+const mm = gsap.matchMedia();
 
-  mm.add("(min-width: 768px)", () => {
-    const cards = gsap.utils.toArray("#work .c-work__item");
-    const lastCardIndex = cards.length - 1;
-    const triggers = [];
+mm.add("(min-width: 768px)", () => {
+  const cards = gsap.utils.toArray("#work .c-work__item");
+  const lastCard = cards[cards.length - 1];
+  const totalCards = cards.length;
 
-    // Use the last card to define where the stack ends
-    const lastCardST = ScrollTrigger.create({
-      trigger: cards[lastCardIndex],
-      start: "center center"
+  cards.forEach((card, index) => {
+    const isLast = index === totalCards - 1;
+
+    // Scale: last card full size, earlier ones smaller
+    const targetScale = isLast ? 1 : 0.4;
+
+    // Vertical lift: earlier cards lift higher
+    const liftOffset = isLast ? 0 : -30 * (totalCards - index); // tweak 40px if needed
+
+    // Opacity fade: last card stays solid, earlier ones fade out
+    const targetOpacity = isLast ? 1 : 0.15;
+
+    // Z-index: later cards appear above earlier ones
+    gsap.set(card, {
+      zIndex: index + 1,
+      transformOrigin: "center top",
     });
-    triggers.push(lastCardST);
 
-    cards.forEach((card, index) => {
-      const scale = index === lastCardIndex ? 1 : 0.5; // last card ends full size
-
-      const st = ScrollTrigger.create({
+    gsap.to(card, {
+      scale: targetScale,
+      y: liftOffset,
+      opacity: targetOpacity,
+      ease: "power1.out",
+      scrollTrigger: {
         trigger: card,
         start: "top top",
-        end: () => lastCardST.start,
+        // end when the LAST card hits center of viewport
+        endTrigger: lastCard,
+        end: "center center",
         pin: true,
         pinSpacing: false,
-        scrub: 0.5,
-        animation: gsap.to(card, { scale }),
-        ease: "none"
-      });
-
-      triggers.push(st);
+        scrub: 1,
+      },
     });
-
-    // Cleanup if viewport shrinks below 768px
-    return () => {
-      triggers.forEach(t => t.kill());
-      gsap.set(cards, { clearProps: "all" });
-    };
   });
+
+  // cleanup on smaller viewports
+  return () => {
+    ScrollTrigger.getAll().forEach((t) => t.kill());
+    gsap.set(cards, { clearProps: "all" });
+  };
+});
+
+
+/* Header Background Color Change */
+
+const primaryHeader = document.querySelector('.primary-header');
+const scrollWatcher = document.createElement('div');
+
+scrollWatcher.setAttribute('data-scroll-watcher', '');
+primaryHeader.before(scrollWatcher);
+
+const navObserver = new IntersectionObserver((entries) => {
+  primaryHeader.classList.toggle('sticking', !entries[0].isIntersecting)
+}, {rootMargin: "1300px 0px 0px 0px"});
+
+navObserver.observe(scrollWatcher)
+

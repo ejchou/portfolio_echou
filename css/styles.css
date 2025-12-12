@@ -153,10 +153,11 @@ img {
 
 /*/ Header Section /*/
 
-header {
-    position: fixed;
+.primary-header {
+    position: sticky;
+    top: 0;
     z-index: 999;
-    background-color: #FFFFFF;
+    background: #ffffff;
     padding: 1.5em 0;
     width: 100%;
 }
@@ -349,6 +350,21 @@ html {
 
 /*/ Medium to large tablet devices (768px to 1023px) /*/
 @media only screen and (min-width: 768px) {
+    .primary-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: transparent;
+    padding: 1.5em 0;
+    width: 100%;
+
+    transition: background-color 500ms;
+}
+
+    .primary-header.sticking {
+    background: #ffffff;
+}
+    
     h1 {
         font-size: 4em;
     }
