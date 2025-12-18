@@ -134,7 +134,9 @@ body.lift-featured #featured * {
   opacity: 0;
 }
 
-#featured h2 {
+#featured h1 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  font-weight: 400;
   font-style: italic;
   color: #ffffff;
 }
