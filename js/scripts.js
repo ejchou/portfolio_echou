@@ -107,12 +107,17 @@ const featured = document.getElementById("featured");
 
 gsap.registerPlugin(ScrollTrigger);
 
+// ScrollTrigger.defaults({
+//   markers: true
+// });
+
 const mm = gsap.matchMedia();
 
-mm.add("(min-width: 768px)", () => {
+mm.add("(min-width: 1024px)", () => {
   const cards = gsap.utils.toArray("#work .c-work__item");
   const lastCard = cards[cards.length - 1];
   const totalCards = cards.length;
+  const workList = document.querySelector("#work .c-work__list");
 
   cards.forEach((card, index) => {
     const isLast = index === totalCards - 1;
@@ -142,7 +147,7 @@ mm.add("(min-width: 768px)", () => {
         start: "top top",
         // end when the LAST card hits center of viewport
         endTrigger: lastCard,
-        end: "center center",
+        end: "bottom 80%",
         pin: true,
         pinSpacing: false,
         scrub: 1,
@@ -150,10 +155,20 @@ mm.add("(min-width: 768px)", () => {
     });
   });
 
+  if (workList && lastCard) {
+    ScrollTrigger.create({
+      trigger: lastCard,
+      start: "bottom bottom",
+      onEnter: () => workList.classList.add("grid-view"),
+      onLeaveBack: () => workList.classList.remove("grid-view"),
+    });
+  }
+
   // cleanup on smaller viewports
   return () => {
     ScrollTrigger.getAll().forEach((t) => t.kill());
     gsap.set(cards, { clearProps: "all" });
+    if (workList) workList.classList.remove("grid-view");
   };
 });
 
@@ -171,4 +186,125 @@ const navObserver = new IntersectionObserver((entries) => {
 }, {rootMargin: "1300px 0px 0px 0px"});
 
 navObserver.observe(scrollWatcher)
+
+
+/* Hide header on scroll down, show on scroll up */
+
+let lastScrollY = window.scrollY;
+let headerHidden = false;
+const headerScrollThreshold = 10;
+let headerTicking = false;
+
+function updateHeaderVisibility() {
+  if (!primaryHeader) return;
+
+  const currentScrollY = window.scrollY;
+
+  if (menuOpen) {
+    primaryHeader.classList.remove('header-hidden');
+    headerHidden = false;
+    lastScrollY = currentScrollY;
+    return;
+  }
+
+  if (currentScrollY <= 0) {
+    primaryHeader.classList.remove('header-hidden');
+    headerHidden = false;
+    lastScrollY = currentScrollY;
+    return;
+  }
+
+  if (currentScrollY - lastScrollY > headerScrollThreshold && !headerHidden) {
+    primaryHeader.classList.add('header-hidden');
+    headerHidden = true;
+  } else if (lastScrollY - currentScrollY > headerScrollThreshold && headerHidden) {
+    primaryHeader.classList.remove('header-hidden');
+    headerHidden = false;
+  }
+
+  lastScrollY = currentScrollY;
+}
+
+window.addEventListener('scroll', () => {
+  if (!primaryHeader) return;
+
+  if (!headerTicking) {
+    window.requestAnimationFrame(() => {
+      updateHeaderVisibility();
+      headerTicking = false;
+    });
+    headerTicking = true;
+  }
+});
+
+updateHeaderVisibility();
+
+
+/* #featured / #work Background Color Change */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const work = document.getElementById("work");
+  const root = document.documentElement;
+  const charcoal = 54;
+
+  if (!work) return;
+
+  // How early should .bg-change reach full charcoal?
+  const fadeOffset = 1000; // px BEFORE #work (adjust to taste)
+
+  window.addEventListener("scroll", () => {
+    const y = window.scrollY;
+    const workTop = work.offsetTop;
+
+    // Fade completion point BEFORE #work starts
+    const fadeEnd = Math.max(0, workTop - fadeOffset);
+
+    // --------------------------------------
+    // 1) .bg-change: transparent → charcoal
+    //    over scroll range: 0 → fadeEnd
+    // --------------------------------------
+    const rawTop = fadeEnd > 0 ? y / fadeEnd : 1;
+    const tTop = Math.min(1, Math.max(0, rawTop));
+    const easedTop = tTop * tTop * (3 - 2 * tTop);
+
+    const alphaTop = easedTop;
+    root.style.setProperty(
+      "--scroll-color",
+      `rgba(${charcoal}, ${charcoal}, ${charcoal}, ${alphaTop})`
+    );
+
+    // --------------------------------------
+    // 2) #work: charcoal → black AFTER
+    //    the user actually REACHES #work
+    // --------------------------------------
+    let val = charcoal; // default: same color as .bg-change
+
+    if (y > workTop) {
+      const extra = y - workTop;
+      const range = window.innerHeight || 1;
+      const tBottom = Math.min(1, Math.max(0, extra / range));
+      const easedBottom = tBottom * tBottom * (3 - 2 * tBottom);
+
+      // charcoal(54) → black(0)
+      val = Math.round(charcoal * (1 - easedBottom));
+    }
+
+    root.style.setProperty(
+      "--scroll-color2",
+      `rgb(${val}, ${val}, ${val})`
+    );
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -16,7 +16,7 @@ Paragraph: "font-family: neuzeit-grotesk, sans-serif" "font-weight: 300/400/700/
 /* Typography & Color */
 
 body {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     font-family: neuzeit-grotesk, sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -158,8 +158,13 @@ img {
     top: 0;
     z-index: 999;
     background: #ffffff;
-    padding: 1.5em 0;
+    padding: 1em 0;
     width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primary-header.header-hidden {
+    transform: translateY(-100%);
 }
 
 #logo img {
@@ -176,16 +181,15 @@ nav > ul > li > a {
     padding: .5em 1em;
     margin: .5em;
     font-family: miller-display, sans-serif;
-    font-style: italic;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus,
 nav > ul > li > a:active {
     font-style: normal;
-    text-decoration: underline;
+    font-style: italic;
     color: rgba(0,0,0,0.5);
 }
 
@@ -228,13 +232,15 @@ nav > ul > li > a:active {
 /*/ Footer Section /*/
 
 footer {
-    background-color: #ffffff;
+    background-color: #000000;
     margin: 0 auto;
     padding: 2em;
 }
 
-#contact h3 {
+#contact h3,
+#contact h3 a {
     font-style: italic;
+    color: #ffffff;
     margin: 0 auto 3em;
     text-decoration: underline;
     text-underline-offset: .25em;
@@ -249,10 +255,15 @@ footer {
 
 .bottom-footer p {
     font-size: 0.875em;
+    color: #ffffff;
 }
 
 .bottom-footer .social {
     display: inline-block;
+}
+
+.bottom-footer .social a {
+    color: #ffffff;
 }
 
 .bottom-footer .social i {
@@ -350,21 +361,11 @@ html {
 
 /*/ Medium to large tablet devices (768px to 1023px) /*/
 @media only screen and (min-width: 768px) {
-    .primary-header {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background: transparent;
-    padding: 1.5em 0;
-    width: 100%;
+     [class*="col-"] {
+    float: left;
+    padding: 0 1em;
+    }
 
-    transition: background-color 500ms;
-}
-
-    .primary-header.sticking {
-    background: #ffffff;
-}
-    
     h1 {
         font-size: 4em;
     }
@@ -389,10 +390,48 @@ html {
     font-size: 1em;
     }
 
-    [class*="col-"] {
-    float: left;
-    padding: 0 1em;
+    .primary-header {
+    background: transparent;
+    padding: 1em 0;
+    width: 100%;
+
+    transition: background-color 500ms;
+}
+
+    .primary-header.sticking {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.18);
+}
+
+    header .container {
+        padding-right: 0;
     }
+
+    nav {
+        width: 50vw;
+        float: right;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav > ul > li > a {
+        color: #ffffff;
+    }
+
+    .primary-header.sticking nav > ul > li > a {
+        color: #000000;
+    }
+
+    .primary-header.sticking nav > ul > li > a:hover,
+    .primary-header.sticking nav > ul > li > a:focus,
+    .primary-header.sticking nav > ul > li > a:active {
+        color: rgba(0,0,0,0.5);
+    }
+
     main {
         .col-md-6 {
             width: 50%;
