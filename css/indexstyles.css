@@ -343,9 +343,9 @@ body.lift-featured #featured * {
 @media (prefers-reduced-motion: reduce) {
   #hero::before,
   .hero-text {
-    transition: none !important;
-    transform: none !important;
-    filter: none !important;
-    opacity: 1 !important;
+    transition: none;
+    transform: none;
+    filter: none;
+    opacity: 1;
   }
 }
