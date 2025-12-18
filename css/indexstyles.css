@@ -211,29 +211,34 @@ body.lift-featured #featured * {
 }
 
 #work .c-work__item-text {
-  max-width: 520px;
+  width: 340px;
   padding: 1.5rem;
   text-align: center;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.35));
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px) saturate(135%);
+  -webkit-backdrop-filter: blur(4px) saturate(135%);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
 }
 
 /* Overlay typography */
+#work .c-work__item-text h3 {
+  line-height: 1.1;
+  margin: 1rem auto;
+}
+
+#work .c-work__item-text h5 {
+  font-family: neuzeit-grotesk, sans-serif;
+  opacity: 0.9;
+}
+
 #work .c-work__item-text h6 {
   font-family: neuzeit-grotesk, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   opacity: 0.9;
   margin-bottom: 0.35rem;
-}
-
-#work .c-work__item-text h3 {
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
-}
-
-#work .c-work__item-text h5 {
-  font-family: neuzeit-grotesk, sans-serif;
-  font-weight: 300;
-  opacity: 0.9;
 }
 
 
@@ -322,7 +327,7 @@ body.lift-featured #featured * {
     width: min(1024px, 100%);
     margin: 0 auto;
 
-    border-radius: 16px;
+    border-radius: 1rem;
   }
 
   /* On desktop, image + overlay fill the card (not the viewport) */
@@ -331,6 +336,10 @@ body.lift-featured #featured * {
   #work .c-work__item-figure img,
   #work .c-work__item-overlay {
     height: 100%;
+  }
+
+  #work .c-work__item-text h5 {
+    font-weight: 300;
   }
 }
 
