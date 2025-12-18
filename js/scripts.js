@@ -1,5 +1,16 @@
 console.log("Thank you for being here.")
 
+/* Always start at the top to keep the hero visible on reload */
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+window.addEventListener("load", () => {
+  if (!window.location.hash) {
+    window.scrollTo(0, 0);
+  }
+});
+
 
 /* Menu Toggle */
 
