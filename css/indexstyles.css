@@ -331,38 +331,6 @@ body.lift-featured #featured * {
   #work .c-work__item-overlay {
     height: 100%;
   }
-
-  #work .c-work__list.grid-view {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 32px;
-    padding-top: 60px;
-    padding-bottom: 120px;
-  }
-
-  #work .c-work__list.grid-view .c-work__item {
-    position: relative;
-    height: clamp(380px, 28vw, 520px);
-    min-height: 0;
-    max-height: none;
-    width: 100%;
-    margin: 0;
-    border-radius: 20px;
-    transform: none !important;
-    opacity: 1 !important;
-  }
-
-  #work .c-work__list.grid-view .c-work__item + .c-work__item {
-    margin-top: 0;
-  }
-
-  #work .c-work__list.grid-view .c-work__item-figure,
-  #work .c-work__list.grid-view .c-work__item-figure picture,
-  #work .c-work__list.grid-view .c-work__item-figure img,
-  #work .c-work__list.grid-view .c-work__item-overlay {
-    inset: 0;
-    height: 100%;
-  }
 }
 
 /* Desktop devices (1440px to 1919px) */

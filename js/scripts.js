@@ -117,7 +117,6 @@ mm.add("(min-width: 1024px)", () => {
   const cards = gsap.utils.toArray("#work .c-work__item");
   const lastCard = cards[cards.length - 1];
   const totalCards = cards.length;
-  const workList = document.querySelector("#work .c-work__list");
 
   cards.forEach((card, index) => {
     const isLast = index === totalCards - 1;
@@ -155,20 +154,10 @@ mm.add("(min-width: 1024px)", () => {
     });
   });
 
-  if (workList && lastCard) {
-    ScrollTrigger.create({
-      trigger: lastCard,
-      start: "bottom bottom",
-      onEnter: () => workList.classList.add("grid-view"),
-      onLeaveBack: () => workList.classList.remove("grid-view"),
-    });
-  }
-
   // cleanup on smaller viewports
   return () => {
     ScrollTrigger.getAll().forEach((t) => t.kill());
     gsap.set(cards, { clearProps: "all" });
-    if (workList) workList.classList.remove("grid-view");
   };
 });
 
@@ -295,6 +284,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   });
 });
+
 
 
 
