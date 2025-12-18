@@ -273,8 +273,8 @@ footer #contact {
 #contact h1 a:hover,
 #contact h1 a:focus {
     text-decoration: underline;
-    text-underline-offset: .25em;
-    text-decoration-thickness: .05em;
+    text-underline-offset: .1em;
+    text-decoration-thickness: .1rem;
 }
 
 .bottom-footer {
