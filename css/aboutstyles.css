@@ -1,51 +1,52 @@
 /* Layout Styling */
 
-#about {
-    padding-top: 10em;
-    padding-bottom: 2em;
-}
-
-#about span {
-    display: block;
-}
-
-#about img {
+#selfpic img {
     width: 22em;
     border-radius: 22em;
     padding-top: .75em;
     margin: 1.5em auto;
 }
 
-#story h2 {
-    font-family: "Playwrite CO", serif;
-    color: #0B5616;
-    font-size: 1.5em;
-    margin: 2em auto;
+#story span {
+    display: block;
+}
+
+#story h4 {
+    margin: 1em auto;
+}
+
+#story h4 span.italic {
+    display: inline-block;
+    font-style: italic;
 }
 
 #resume {
     text-align: center;
-    margin-top: 3em;
+    margin: 3em auto;
 }
 
 #resume a {
-    font-family: "Playwrite CO", serif;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 400;
     text-decoration: underline;
+    text-decoration-thickness: .05rem;
     text-underline-offset: .25em;
 }
 
-#expertise {
-    margin: 4em auto;
+#resume a:active,
+#resume a:hover,
+#resume a:focus {
+    font-style: italic;
 }
 
-#about h4 {
-    margin-top: 0;
+#expertise  .col-md-6 {
+    margin-bottom: 2rem;
 }
 
-.list {
-    font-size: .85em;
+#expertise h5 {
+    padding-bottom: .5rem;
+    font-size: 1.25rem;
+    font-style: italic;
 }
 
 main {
@@ -61,22 +62,16 @@ main {
 
 
 /*Medium devices (640px and larger)*/
-
 @media only screen and (min-width: 640px) {
 
 }
 
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) {
-
-    #about main {
-        padding-top: 11em;
-    }
-
     #selfpic {
         position: sticky;
         float: left;
-        top: 14em;
+        top: 10rem;
         margin-bottom: 5em;
     }
 

@@ -43,6 +43,8 @@ function toggleMenuAndIcon() {
 
 // Get the button:
 let mybutton = document.getElementById("myBtn");
+const footerElement = document.querySelector("footer");
+const baseButtonOffset = 24; // px spacing between button and viewport edge
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
@@ -56,6 +58,7 @@ function scrollFunction() {
   } else {
     mybutton.style.display = "none";
   }
+  adjustButtonOffset();
 }
 
 // When the user clicks on the button, scroll to the top of the document
@@ -63,6 +66,23 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+function adjustButtonOffset() {
+  if (!mybutton || !footerElement) return;
+  const footerRect = footerElement.getBoundingClientRect();
+  const viewportHeight = window.innerHeight;
+
+  if (footerRect.top < viewportHeight) {
+    const overlap = viewportHeight - footerRect.top;
+    mybutton.style.bottom = `${baseButtonOffset + overlap}px`;
+  } else {
+    mybutton.style.bottom = "1.5rem";
+  }
+}
+
+// ensure correct position on load
+adjustButtonOffset();
+window.addEventListener("resize", adjustButtonOffset);
 
 
 /* Parallax Scrolling */

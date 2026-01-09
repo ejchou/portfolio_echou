@@ -78,16 +78,13 @@ body.lift-hero-text .hero-text * {
   margin: 0 auto;
 }
 
-.headline h1 span {
-  font-style: italic;
-}
-
 .headline .hero-name {
   padding-bottom: 24px;
 }
 
 .headline .hero-title {
   padding-top: 24px;
+  font-style: italic;
 }
 
 .tagline p {

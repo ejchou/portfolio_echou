@@ -1,557 +1,865 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4V2E8GNY2J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4V2E8GNY2J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-4V2E8GNY2J');
-</script>
+      gtag("config", "G-4V2E8GNY2J");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Eileen Chou" />
     <meta name="description" content="Project: Marvel Tools" />
     <title>Eileen Chou | Marvel</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/marvelstyles.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/baq0llq.css">
-    <script src="https://kit.fontawesome.com/e0d13a7da0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/baq0llq.css" />
+    <script
+      src="https://kit.fontawesome.com/e0d13a7da0.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-</head>
+  </head>
 
-<body id="marvel">
-    <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-               <picture id="logo">
-					<source srcset="img/home/1x/logo_1x.png" media="(max-width:767px)">
-					<a href="/"><img src="img/home/2x/logo_2x.png" alt="Logo"></a>
-				</picture>
-                <nav>
-                    <ul class="navigation">
-                        <li><a href="#featured" onclick="toggleMenuAndIcon()">Work</a></li>
-						<li><a href="about">About</a></li>
-						<li><a href="#contact" onclick="toggleMenuAndIcon()">Contact</a></li>
-						<li><a href="javascript:void(0);" class="icon" onclick="toggleMenuAndIcon()"><i id="menuIcon" data-feather="align-right"></i></a>
-							<script>feather.replace();</script>
-						</li>
-                    </ul>
-                </nav>
-            </div>
+  <body class="pg-header">
+    <header class="primary-header">
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <picture id="logo">
+            <source
+              srcset="img/home/1x/logo_1x.png"
+              media="(max-width:767px)"
+            />
+            <a href="/"
+              ><img src="img/home/2x/logo_2x.png" alt="Eileen Chou Logo"
+            /></a>
+          </picture>
+
+          <nav>
+            <ul class="navigation">
+              <li>
+                <a href="/#featured" onclick="toggleMenuAndIcon()">Work</a>
+              </li>
+              <li><a href="about">About</a></li>
+              <li>
+                <a href="/#contact" onclick="toggleMenuAndIcon()">Contact</a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="toggleMenuAndIcon()"
+                  ><i id="menuIcon" data-feather="align-right"></i
+                ></a>
+                <script>
+                  feather.replace();
+                </script>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-corner-right-up">
-            <polyline points="10 9 15 4 20 9"></polyline>
-            <path d="M4 20h7a4 4 0 0 0 4-4V4"></path>
-        </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-corner-right-up"
+      >
+        <polyline points="10 9 15 4 20 9"></polyline>
+        <path d="M4 20h7a4 4 0 0 0 4-4V4"></path>
+      </svg>
     </button>
 
-    <main>
-        <div class="container">
-            <div class="title">
-                <div class="col-md-6">
-                    <h1>Marvel Tools</h1>
-                    <h4>A workspace to empower educators.</h4>
+    <main class="cs-page">
+      <div class="container">
+        <div class="title">
+          <div class="col-md-6">
+            <h1>Marvel Tools</h1>
+            <h4>A workspace to empower educators.</h4>
 
-                    <div class="scope">
-                        <div class="scopetitles">
-                            <p>Role</p>
-                            <p>Duration</p>
-                            <p>Tools</p>
-                            <p>Team</p>
-                        </div>
+            <div class="scope">
+              <div class="scopetitles">
+                <p>Role</p>
+                <p>Duration</p>
+                <p>Tools</p>
+              </div>
 
-                        <div class="scopedesc">
-                            <p>Product Designer</p>
-                            <p>Jan '25 - Feb '25</p>
-                            <p>Figma, Slack, Gather</p>
-                            <p>4 x Product Designers, <span>Head of Product, CEO/Founder</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <picture>
-                        <source srcset="img/marvel/1x/marvelmockup_1x.png" media="(max-width:767px)" />
-                        <img src="img/marvel/2x/marvelmockup_2x.png" alt="Marvel Mockup" />
-                    </picture>
-                </div>
+              <div class="scopedesc">
+                <p>Product Designer</p>
+                <p>Jan '25 - Feb '25</p>
+                <p>Figma</p>
+              </div>
             </div>
+          </div>
 
-            <div class="quicklinks">
-                <div class="center">
-                    <h4>Quick Links</h4>
-                    <div class="links">
-                        <a href="marvel.html#solution" class="button secondary">Solution</a>
-                        <a href="https://www.figma.com/proto/Wxok9PJ3TYTeH0qBfdlMbv/Portfolio-Items?page-id=9%3A2&node-id=53-7856&viewport=2614%2C-4250%2C0.18&t=dxRUGvm9upMcT3WC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=53%3A7856&show-proto-sidebar=1"
-                            class="button secondary" target="_blank">Prototype</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="casestudy">
-                <div class="text">
-                    <h3>Overview</h3>
-                    <p>
-                        Marvel Tools is a curated suite of AI-powered tools within the Marvel AI platform, an
-                        open-source digital infrastructure designed to support education worldwide. It provides
-                        practical solutions for the day-to-day needs of educators and academic institutions.
-                    </p>
-                    <p>
-                        Educators often rely on multiple tools to create content. This fragmentation
-                        creates lengthy and inefficient workflows as well as increased errors. Marvel Tools aims to
-                        streamline these processes, saving time and enabling advanced customization
-                        directly within a single workspace. By making the platform intuitive, versatile, and
-                        integration-ready, educators are empowered to achieve more with less effort.
-                    </p>
-                </div>
-
-                <div class="objectives">
-                    <div class="text">
-                        <h3>Objectives</h3>
-                        <div class="list">
-                            <div class="item">
-                                <picture>
-                                    <source srcset="img/marvel/1x/marvelbullet_1x.png" media="(max-width:767px)" />
-                                    <img src="img/marvel/2x/marvelbullet_2x.png" alt="Star Bullet Point" />
-                                </picture>
-
-                                <p><span>Enhance Educational Equity: </span>Ensure educators everywhere have access to
-                                    the
-                                    same high-quality tools and resources, regardless of access to finances.</p>
-                            </div>
-                        </div>
-
-                        <div class="list">
-                            <div class="item">
-                                <picture>
-                                    <source srcset="img/marvel/1x/marvelbullet_1x.png" media="(max-width:767px)" />
-                                    <img src="img/marvel/2x/marvelbullet_2x.png" alt="Star Bullet Point" />
-                                </picture>
-
-                                <p><span> Streamline Educator Workflows: </span>Provide a workspace that feels simple
-                                    yet
-                                    powerful, automating routine and time-consuming tasks.</p>
-                            </div>
-                        </div>
-
-                        <div class="list">
-                            <div class="item">
-                                <picture>
-                                    <source srcset="img/marvel/1x/marvelbullet_1x.png" media="(max-width:767px)" />
-                                    <img src="img/marvel/2x/marvelbullet_2x.png" alt="Star Bullet Point" />
-                                </picture>
-
-                                <p><span>Promote Lifelong Learning: </span>Equip educators with tools that adapt to
-                                    their
-                                    evolving needs and the changing landscape of education through integration of the
-                                    latest
-                                    educational methodologies and technologies.</p>
-                            </div>
-                        </div>
-
-                        <div class="list">
-                            <div class="item">
-                                <picture>
-                                    <source srcset="img/marvel/1x/marvelbullet_1x.png" media="(max-width:767px)" />
-                                    <img src="img/marvel/2x/marvelbullet_2x.png" alt="Star Bullet Point" />
-                                </picture>
-
-                                <p><span>AI-Assisted Refinement: </span>Enable educators to refine content dynamically
-                                    using
-                                    AI solutions that are transparent, unbiased, and respectful of privacy.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="challenge">
-                    <div class="text">
-                        <h3>The Challenge</h3>
-                        <div class="center">
-                            <h4>Limited Accessibility, <span>Low Usability</span></h4>
-                            <div class="underline">
-                                <svg viewBox="0 0 400 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0 9C8.77193 9 16.0088 1.00018 25 1.00018C33.7719 1.00018 41.0088 9 50 9C58.7719 9 66.0088 1 75 1C83.7719 1 91.0088 8.99982 100 8.99982"
-                                        stroke="#834FFF" stroke-width="2" />
-                                    <path
-                                        d="M100 9C108.772 9 116.009 1.00018 125 1.00018C133.772 1.00018 141.009 9 150 9C158.772 9 166.009 1 175 1C183.772 1 191.009 8.99982 200 8.99982"
-                                        stroke="#834FFF" stroke-width="2" />
-                                    <path
-                                        d="M200 9C208.772 9 216.009 1.00018 225 1.00018C233.772 1.00018 241.009 9 250 9C258.772 9 266.009 1 275 1C283.772 1 291.009 8.99982 300 8.99982"
-                                        stroke="#834FFF" stroke-width="2" />
-                                    <path
-                                        d="M300 9C308.772 9 316.009 1.00018 325 1.00018C333.772 1.00018 341.009 9 350 9C358.772 9 366.009 1 375 1C383.772 1 391.009 8.99982 400 8.99982"
-                                        stroke="#834FFF" stroke-width="2" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex">
-                    <div class="col-xlg-6">
-                        <ul>
-                            <li>The previous version only allowed for <span>basic editing and minimal prompt
-                                    refinements.</span></li>
-                            <li>Customization and advanced editing <span>capabilities were severely limited.</span></li>
-                            <li>The studio did not reduce <span>dependency on external platforms</span> and
-                                <span>increased
-                                    manual effort.</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xlg-6">
-                        <picture>
-                            <source srcset="img/marvel/1x/olddesign_1x.png" media="(max-width:767px)" />
-                            <img src="img/marvel/2x/olddesign_2x.png" alt="Version 1.0" />
-                        </picture>
-                    </div>
-                </div>
-
-                <div class="approach">
-                    <div class="text">
-                        <h3>Approach</h3>
-                        <p>
-                            Since my team began work on the project after the first iteration of Marvel Tools, initial
-                            user research had already been conducted. From this research and user interviews, critical
-                            insights were uncovered into how educators organize and manage their work.
-                        </p>
-                        <p>
-                            After reviewing the research material, my team performed competitive analyses of similar AI
-                            education platforms, such as Khanmigo and School AI. We also conducted a thorough audit of
-                            the current design, documenting gaps in user flow and functionality.
-                        </p>
-                    </div>
-
-                    <div class="research">
-                        <div class="example">
-                            <picture>
-                                <source srcset="img/marvel/1x/khanmigo_1x.png" media="(max-width:767px)" />
-                                <img src="img/marvel/2x/khanmigo_2x.png" alt="Khanmigo Screenshots" />
-                            </picture>
-                        </div>
-
-                        <div class="example">
-                            <picture>
-                                <source srcset="img/marvel/1x/notes_1x.png" media="(max-width:767px)" />
-                                <img src="img/marvel/2x/notes_2x.png" alt="Notes" />
-                            </picture>
-                        </div>
-
-                        <div class="example">
-                            <picture>
-                                <source srcset="img/marvel/1x/schoolai_1x.png" media="(max-width:767px)" />
-                                <img src="img/marvel/2x/schoolai_2x.png" alt="School AI Screenshots" />
-                            </picture>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="process">
-                    <div class="text">
-                        <h3>Process</h3>
-                        <p>
-                            In order to produce an interactive and intuitive tool studio, we needed to redesign the
-                            rich-text editor, AI tools and chat capabilities, as well as integrate a version history.
-                            The redesign also brought up questions about how to streamline prompt generation as well as
-                            how to make the interface more efficient.
-                        </p>
-                        <p>
-                            It was also imperative that the redesign not only regarded user goals, but also accounted
-                            for business goals and technical considerations.
-                        </p>
-
-                        <div class="projectgoals">
-                            <picture>
-                                <source srcset="img/marvel/1x/projectgoals_1x.png" media="(max-width:767px)" />
-                                <img src="img/marvel/2x/projectgoals_2x.png" alt="Project Goals" />
-                            </picture>
-                        </div>
-
-                        <p>
-                            To keep our deliverables streamlined and focused, we structured our work using Scrum
-                            methodology with two-week sprints. Since there were first iteration designs and components
-                            already in place, we started our sprints with mid-fidelity wireframes. For newer features,
-                            user flows were mapped out beforehand. With each sprint, one to two features were
-                            prioritized at a time.
-                        </p>
-
-                        <div class="userflows">
-                            <picture>
-                                <source srcset="img/marvel/1x/userflows_1x.png" media="(max-width:767px)" />
-                                <img src="img/marvel/2x/userflows_2x.png" alt="User Flows" />
-                            </picture>
-                        </div>
-                    </div>
-
-                    <div class="mfwireframes">
-                        <div class="example">
-                            <picture>
-                                <source srcset="img/marvel/1x/mfwireframe01_1x.png" media="(max-width:767px)" />
-                                <img src="img/marvel/2x/mfwireframe01_2x.png" alt="Mid-Fidelity Wireframe 1" />
-                            </picture>
-                        </div>
-
-                        <div class="example">
-                            <picture>
-                                <source srcset="img/marvel/1x/mfwireframe02_1x.png" media="(max-width:767px)" />
-                                <img src="img/marvel/2x/mfwireframe02_2x.png" alt="Mid-Fidelity Wireframe 2" />
-                            </picture>
-                        </div>
-
-                        <div class="example">
-                            <picture>
-                                <source srcset="img/marvel/1x/mfwireframe03_1x.png" media="(max-width:767px)" />
-                                <img src="img/marvel/2x/mfwireframe03_2x.png" alt="Mid-Fidelity Wireframe 3" />
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="solution"></div>
-
-                <div class="redesign">
-                    <div class="text">
-                        <h3>The Redesign</h3>
-                        <h4 class="center">Prompt Generator</h4>
-
-                        <div class="underline1">
-                            <svg viewBox="0 0 400 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0 9C8.77193 9 16.0088 1.00018 25 1.00018C33.7719 1.00018 41.0088 9 50 9C58.7719 9 66.0088 1 75 1C83.7719 1 91.0088 8.99982 100 8.99982"
-                                    stroke="#834FFF" stroke-width="2" />
-                                <path
-                                    d="M100 9C108.772 9 116.009 1.00018 125 1.00018C133.772 1.00018 141.009 9 150 9C158.772 9 166.009 1 175 1C183.772 1 191.009 8.99982 200 8.99982"
-                                    stroke="#834FFF" stroke-width="2" />
-                                <path
-                                    d="M200 9C208.772 9 216.009 1.00018 225 1.00018C233.772 1.00018 241.009 9 250 9C258.772 9 266.009 1 275 1C283.772 1 291.009 8.99982 300 8.99982"
-                                    stroke="#834FFF" stroke-width="2" />
-                                <path
-                                    d="M300 9C308.772 9 316.009 1.00018 325 1.00018C333.772 1.00018 341.009 9 350 9C358.772 9 366.009 1 375 1C383.772 1 391.009 8.99982 400 8.99982"
-                                    stroke="#834FFF" stroke-width="2" />
-                            </svg>
-                        </div>
-                    </div>
-
-                    <div class="generator">
-                        <picture>
-                            <source srcset="img/marvel/1x/generator_1x.png" media="(max-width:767px)" />
-                            <img src="img/marvel/2x/generator_2x.png" alt="Generator Design" />
-                        </picture>
-                    </div>
-
-                    <div class="text">
-                        <h4 class="center">Output Editor</h4>
-
-                        <div class="underline2">
-                            <svg viewBox="0 0 400 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0 9C8.77193 9 16.0088 1.00018 25 1.00018C33.7719 1.00018 41.0088 9 50 9C58.7719 9 66.0088 1 75 1C83.7719 1 91.0088 8.99982 100 8.99982"
-                                    stroke="#834FFF" stroke-width="2" />
-                                <path
-                                    d="M100 9C108.772 9 116.009 1.00018 125 1.00018C133.772 1.00018 141.009 9 150 9C158.772 9 166.009 1 175 1C183.772 1 191.009 8.99982 200 8.99982"
-                                    stroke="#834FFF" stroke-width="2" />
-                                <path
-                                    d="M200 9C208.772 9 216.009 1.00018 225 1.00018C233.772 1.00018 241.009 9 250 9C258.772 9 266.009 1 275 1C283.772 1 291.009 8.99982 300 8.99982"
-                                    stroke="#834FFF" stroke-width="2" />
-                                <path
-                                    d="M300 9C308.772 9 316.009 1.00018 325 1.00018C333.772 1.00018 341.009 9 350 9C358.772 9 366.009 1 375 1C383.772 1 391.009 8.99982 400 8.99982"
-                                    stroke="#834FFF" stroke-width="2" />
-                            </svg>
-                        </div>
-                    </div>
-
-                    <div class="editor">
-                        <picture>
-                            <source srcset="img/marvel/1x/editor_1x.png" media="(max-width:767px)" />
-                            <img src="img/marvel/2x/editor_2x.png" alt="Editor Design" />
-                        </picture>
-                    </div>
-
-                    <div class="text">
-                        <h4 class="center">AI Features</h4>
-
-                        <div class="underline3">
-                            <svg viewBox="0 0 400 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0 9C8.77193 9 16.0088 1.00018 25 1.00018C33.7719 1.00018 41.0088 9 50 9C58.7719 9 66.0088 1 75 1C83.7719 1 91.0088 8.99982 100 8.99982"
-                                    stroke="#834FFF" stroke-width="2" />
-                                <path
-                                    d="M100 9C108.772 9 116.009 1.00018 125 1.00018C133.772 1.00018 141.009 9 150 9C158.772 9 166.009 1 175 1C183.772 1 191.009 8.99982 200 8.99982"
-                                    stroke="#834FFF" stroke-width="2" />
-                                <path
-                                    d="M200 9C208.772 9 216.009 1.00018 225 1.00018C233.772 1.00018 241.009 9 250 9C258.772 9 266.009 1 275 1C283.772 1 291.009 8.99982 300 8.99982"
-                                    stroke="#834FFF" stroke-width="2" />
-                                <path
-                                    d="M300 9C308.772 9 316.009 1.00018 325 1.00018C333.772 1.00018 341.009 9 350 9C358.772 9 366.009 1 375 1C383.772 1 391.009 8.99982 400 8.99982"
-                                    stroke="#834FFF" stroke-width="2" />
-                            </svg>
-                        </div>
-                    </div>
-
-                    <div class="features">
-                        <picture>
-                            <source srcset="img/marvel/1x/features_1x.png" media="(max-width:767px)" />
-                            <img src="img/marvel/2x/features_2x.png" alt="AI Features Design" />
-                        </picture>
-                    </div>
-                </div>
-
-                <div class="impact">
-                    <div class="text">
-                        <h3>Future Impact</h3>
-                        <p>
-                            In a rapidly evolving landscape, Marvel Tools brings a powerful contribution to the
-                            education system. It maintains the efficacy of the learning process by fulfilling the
-                            demands of constant innovation and creativity, and it streamlines the effort of performing
-                            tedious administrative tasks. Yet most importantly, the application of this platform
-                            empowers educators to reclaim their ultimate roles as mentors and support systems for their
-                            students.
-                        </p>
-                        <p>
-                            Looking forward, we will conduct extensive usability testing of a private beta of Marvel
-                            Tools to a select group of educators and institutions. Collected feedback will be used to
-                            validate ease of use and accessibility, as well as identify areas of improvement.
-                        </p>
-                        <p>We will also continue to design for more sophisticated features:</p>
-                        <ul>
-                            <li><span>Automated grading with personalized insights:</span> Streamline the grading
-                                process while providing feedback to students.</li>
-                            <li><span>Student performance dashboard:</span> Offer real-time analytics to monitor and
-                                improve student outcomes.</li>
-                            <li><span>Plagiarism detection:</span> Ensure academic integrity through advanced plagiarism
-                                detection.</li>
-                            <li><span>Predictive analytics for student performance:</span> Identify at-risk students and
-                                provide
-                                actionable insights to enhance their learning journey.</li>
-                            <li><span>AI-powered forum:</span> Facilitate collaboration and problem-solving among
-                                students and educators.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="takeaway">
-                    <div class="text">
-                        <h3>Takeaways</h3>
-
-                        <div class="list">
-                            <div class="item">
-                                <picture>
-                                    <source srcset="img/marvel/1x/marvelbullet_1x.png" media="(max-width:767px)" />
-                                    <img src="img/marvel/2x/marvelbullet_2x.png" alt="Star Bullet Point" />
-                                </picture>
-
-                                <p>Gained experience <span>working cross-functionally with developers</span> and
-                                    understanding the criteria for <span>proper design hand-off.</span></p>
-                            </div>
-                        </div>
-
-                        <div class="list">
-                            <div class="item">
-                                <picture>
-                                    <source srcset="img/marvel/1x/marvelbullet_1x.png" media="(max-width:767px)" />
-                                    <img src="img/marvel/2x/marvelbullet_2x.png" alt="Star Bullet Point" />
-                                </picture>
-
-                                <p>Continued to <span>develop my understanding of user-centric design</span> in the
-                                    context of educators.</p>
-                            </div>
-                        </div>
-
-                        <div class="list">
-                            <div class="item">
-                                <picture>
-                                    <source srcset="img/marvel/1x/marvelbullet_1x.png" media="(max-width:767px)" />
-                                    <img src="img/marvel/2x/marvelbullet_2x.png" alt="Star Bullet Point" />
-                                </picture>
-
-                                <p>Learned how to <span>design for automated workflows</span> and <span>accounting for
-                                        AI discrepancies.</span></p>
-                            </div>
-                        </div>
-
-                        <div class="list">
-                            <div class="item">
-                                <picture>
-                                    <source srcset="img/marvel/1x/marvelbullet_1x.png" media="(max-width:767px)" />
-                                    <img src="img/marvel/2x/marvelbullet_2x.png" alt="Star Bullet Point" />
-                                </picture>
-
-                                <p>Maintained goals in <span>designing for accessibility, sustainability, and
-                                        equity.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="prototype">
-                    <div class="center">
-                        <a href="https://www.figma.com/proto/Wxok9PJ3TYTeH0qBfdlMbv/Portfolio-Items?page-id=9%3A2&node-id=53-7856&viewport=2614%2C-4250%2C0.18&t=dxRUGvm9upMcT3WC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=53%3A7856&show-proto-sidebar=1"
-                                class="button secondary" target="_blank">View Prototype</a>
-                    </div>
-                </div>
-
-            </div>
+          <div class="col-md-6">
+            <picture>
+              <source
+                srcset="img/marvel/1x/marvelmockup_1x.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/marvel/2x/marvelmockup_2x.png"
+                alt="Marvel Mockup"
+              />
+            </picture>
+          </div>
         </div>
+
+        <div class="quicklinks">
+          <div class="center">
+            <h4>Quick Links</h4>
+            <div class="links">
+              <a href="marvel.html#solution" class="button secondary"
+                >Solution</a
+              >
+              <a
+                href="https://www.figma.com/proto/Wxok9PJ3TYTeH0qBfdlMbv/Portfolio-Items?page-id=9%3A2&node-id=53-7856&viewport=2614%2C-4250%2C0.18&t=dxRUGvm9upMcT3WC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=53%3A7856&show-proto-sidebar=1"
+                class="button secondary"
+                target="_blank"
+                >Prototype</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="casestudy">
+          <div class="text">
+            <h4>Overview</h4>
+            <p>
+              Marvel Tools is a curated suite of AI-powered tools within the
+              Marvel AI platform, an open-source digital infrastructure designed
+              to support education worldwide. It provides practical solutions
+              for the day-to-day needs of educators and academic institutions.
+            </p>
+            <p>
+              Educators often rely on multiple tools to create content. This
+              fragmentation creates lengthy and inefficient workflows as well as
+              increased errors. Marvel Tools aims to streamline these processes,
+              saving time and enabling advanced customization directly within a
+              single workspace. By making the platform intuitive, versatile, and
+              integration-ready, educators are empowered to achieve more with
+              less effort.
+            </p>
+          </div>
+
+          <div class="objectives">
+            <div class="text">
+              <h5>Objectives</h5>
+              <div class="list">
+                <div class="item">
+                  <picture>
+                    <source
+                      srcset="img/marvel/1x/marvelbullet_1x.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/marvel/2x/marvelbullet_2x.png"
+                      alt="Star Bullet Point"
+                    />
+                  </picture>
+
+                  <p>
+                    <span>Enhance Educational Equity: </span>Ensure educators
+                    everywhere have access to the same high-quality tools and
+                    resources, regardless of access to finances.
+                  </p>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="item">
+                  <picture>
+                    <source
+                      srcset="img/marvel/1x/marvelbullet_1x.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/marvel/2x/marvelbullet_2x.png"
+                      alt="Star Bullet Point"
+                    />
+                  </picture>
+
+                  <p>
+                    <span> Streamline Educator Workflows: </span>Provide a
+                    workspace that feels simple yet powerful, automating routine
+                    and time-consuming tasks.
+                  </p>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="item">
+                  <picture>
+                    <source
+                      srcset="img/marvel/1x/marvelbullet_1x.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/marvel/2x/marvelbullet_2x.png"
+                      alt="Star Bullet Point"
+                    />
+                  </picture>
+
+                  <p>
+                    <span>Promote Lifelong Learning: </span>Equip educators with
+                    tools that adapt to their evolving needs and the changing
+                    landscape of education through integration of the latest
+                    educational methodologies and technologies.
+                  </p>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="item">
+                  <picture>
+                    <source
+                      srcset="img/marvel/1x/marvelbullet_1x.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/marvel/2x/marvelbullet_2x.png"
+                      alt="Star Bullet Point"
+                    />
+                  </picture>
+
+                  <p>
+                    <span>AI-Assisted Refinement: </span>Enable educators to
+                    refine content dynamically using AI solutions that are
+                    transparent, unbiased, and respectful of privacy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="challenge">
+            <div class="text">
+              <h4>The Challenge</h4>
+              <div class="center">
+                <h5>Limited Accessibility, <span>Low Usability</span></h5>
+                <div class="underline">
+                  <svg
+                    viewBox="0 0 400 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 9C8.77193 9 16.0088 1.00018 25 1.00018C33.7719 1.00018 41.0088 9 50 9C58.7719 9 66.0088 1 75 1C83.7719 1 91.0088 8.99982 100 8.99982"
+                      stroke="#834FFF"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M100 9C108.772 9 116.009 1.00018 125 1.00018C133.772 1.00018 141.009 9 150 9C158.772 9 166.009 1 175 1C183.772 1 191.009 8.99982 200 8.99982"
+                      stroke="#834FFF"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M200 9C208.772 9 216.009 1.00018 225 1.00018C233.772 1.00018 241.009 9 250 9C258.772 9 266.009 1 275 1C283.772 1 291.009 8.99982 300 8.99982"
+                      stroke="#834FFF"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M300 9C308.772 9 316.009 1.00018 325 1.00018C333.772 1.00018 341.009 9 350 9C358.772 9 366.009 1 375 1C383.772 1 391.009 8.99982 400 8.99982"
+                      stroke="#834FFF"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="col-xlg-6">
+              <ul>
+                <li>
+                  The previous version only allowed for
+                  <span>basic editing and minimal prompt refinements.</span>
+                </li>
+                <li>
+                  Customization and advanced editing
+                  <span>capabilities were severely limited.</span>
+                </li>
+                <li>
+                  The studio did not reduce
+                  <span>dependency on external platforms</span> and
+                  <span>increased manual effort.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-xlg-6">
+              <picture>
+                <source
+                  srcset="img/marvel/1x/olddesign_1x.png"
+                  media="(max-width:767px)"
+                />
+                <img src="img/marvel/2x/olddesign_2x.png" alt="Version 1.0" />
+              </picture>
+            </div>
+          </div>
+
+          <div class="approach">
+            <div class="text">
+              <h4>Approach</h4>
+              <p>
+                Since my team began work on the project after the first
+                iteration of Marvel Tools, initial user research had already
+                been conducted. From this research and user interviews, critical
+                insights were uncovered into how educators organize and manage
+                their work.
+              </p>
+              <p>
+                After reviewing the research material, my team performed
+                competitive analyses of similar AI education platforms, such as
+                Khanmigo and School AI. We also conducted a thorough audit of
+                the current design, documenting gaps in user flow and
+                functionality.
+              </p>
+            </div>
+
+            <div class="research">
+              <div class="example">
+                <picture>
+                  <source
+                    srcset="img/marvel/1x/khanmigo_1x.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/marvel/2x/khanmigo_2x.png"
+                    alt="Khanmigo Screenshots"
+                  />
+                </picture>
+              </div>
+
+              <div class="example">
+                <picture>
+                  <source
+                    srcset="img/marvel/1x/notes_1x.png"
+                    media="(max-width:767px)"
+                  />
+                  <img src="img/marvel/2x/notes_2x.png" alt="Notes" />
+                </picture>
+              </div>
+
+              <div class="example">
+                <picture>
+                  <source
+                    srcset="img/marvel/1x/schoolai_1x.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/marvel/2x/schoolai_2x.png"
+                    alt="School AI Screenshots"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="process">
+            <div class="text">
+              <h4>Process</h4>
+              <p>
+                In order to produce an interactive and intuitive tool studio, we
+                needed to redesign the rich-text editor, AI tools and chat
+                capabilities, as well as integrate a version history. The
+                redesign also brought up questions about how to streamline
+                prompt generation as well as how to make the interface more
+                efficient.
+              </p>
+              <p>
+                It was also imperative that the redesign not only regarded user
+                goals, but also accounted for business goals and technical
+                considerations.
+              </p>
+
+              <div class="projectgoals">
+                <picture>
+                  <source
+                    srcset="img/marvel/1x/projectgoals_1x.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/marvel/2x/projectgoals_2x.png"
+                    alt="Project Goals"
+                  />
+                </picture>
+              </div>
+
+              <p>
+                To keep our deliverables streamlined and focused, we structured
+                our work using Scrum methodology with two-week sprints. Since
+                there were first iteration designs and components already in
+                place, we started our sprints with mid-fidelity wireframes. For
+                newer features, user flows were mapped out beforehand. With each
+                sprint, one to two features were prioritized at a time.
+              </p>
+
+              <div class="userflows">
+                <picture>
+                  <source
+                    srcset="img/marvel/1x/userflows_1x.png"
+                    media="(max-width:767px)"
+                  />
+                  <img src="img/marvel/2x/userflows_2x.png" alt="User Flows" />
+                </picture>
+              </div>
+            </div>
+
+            <div class="mfwireframes">
+              <div class="example">
+                <picture>
+                  <source
+                    srcset="img/marvel/1x/mfwireframe01_1x.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/marvel/2x/mfwireframe01_2x.png"
+                    alt="Mid-Fidelity Wireframe 1"
+                  />
+                </picture>
+              </div>
+
+              <div class="example">
+                <picture>
+                  <source
+                    srcset="img/marvel/1x/mfwireframe02_1x.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/marvel/2x/mfwireframe02_2x.png"
+                    alt="Mid-Fidelity Wireframe 2"
+                  />
+                </picture>
+              </div>
+
+              <div class="example">
+                <picture>
+                  <source
+                    srcset="img/marvel/1x/mfwireframe03_1x.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/marvel/2x/mfwireframe03_2x.png"
+                    alt="Mid-Fidelity Wireframe 3"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div id="solution"></div>
+
+          <div class="redesign">
+            <div class="text">
+              <h4>The Redesign</h4>
+              <h5 class="center">Prompt Generator</h5>
+
+              <div class="underline1">
+                <svg
+                  viewBox="0 0 400 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 9C8.77193 9 16.0088 1.00018 25 1.00018C33.7719 1.00018 41.0088 9 50 9C58.7719 9 66.0088 1 75 1C83.7719 1 91.0088 8.99982 100 8.99982"
+                    stroke="#834FFF"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M100 9C108.772 9 116.009 1.00018 125 1.00018C133.772 1.00018 141.009 9 150 9C158.772 9 166.009 1 175 1C183.772 1 191.009 8.99982 200 8.99982"
+                    stroke="#834FFF"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M200 9C208.772 9 216.009 1.00018 225 1.00018C233.772 1.00018 241.009 9 250 9C258.772 9 266.009 1 275 1C283.772 1 291.009 8.99982 300 8.99982"
+                    stroke="#834FFF"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M300 9C308.772 9 316.009 1.00018 325 1.00018C333.772 1.00018 341.009 9 350 9C358.772 9 366.009 1 375 1C383.772 1 391.009 8.99982 400 8.99982"
+                    stroke="#834FFF"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="generator">
+              <picture>
+                <source
+                  srcset="img/marvel/1x/generator_1x.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/marvel/2x/generator_2x.png"
+                  alt="Generator Design"
+                />
+              </picture>
+            </div>
+
+            <div class="text">
+              <h5 class="center">Output Editor</h5>
+
+              <div class="underline2">
+                <svg
+                  viewBox="0 0 400 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 9C8.77193 9 16.0088 1.00018 25 1.00018C33.7719 1.00018 41.0088 9 50 9C58.7719 9 66.0088 1 75 1C83.7719 1 91.0088 8.99982 100 8.99982"
+                    stroke="#834FFF"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M100 9C108.772 9 116.009 1.00018 125 1.00018C133.772 1.00018 141.009 9 150 9C158.772 9 166.009 1 175 1C183.772 1 191.009 8.99982 200 8.99982"
+                    stroke="#834FFF"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M200 9C208.772 9 216.009 1.00018 225 1.00018C233.772 1.00018 241.009 9 250 9C258.772 9 266.009 1 275 1C283.772 1 291.009 8.99982 300 8.99982"
+                    stroke="#834FFF"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M300 9C308.772 9 316.009 1.00018 325 1.00018C333.772 1.00018 341.009 9 350 9C358.772 9 366.009 1 375 1C383.772 1 391.009 8.99982 400 8.99982"
+                    stroke="#834FFF"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="editor">
+              <picture>
+                <source
+                  srcset="img/marvel/1x/editor_1x.png"
+                  media="(max-width:767px)"
+                />
+                <img src="img/marvel/2x/editor_2x.png" alt="Editor Design" />
+              </picture>
+            </div>
+
+            <div class="text">
+              <h5 class="center">AI Features</h5>
+
+              <div class="underline3">
+                <svg
+                  viewBox="0 0 400 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 9C8.77193 9 16.0088 1.00018 25 1.00018C33.7719 1.00018 41.0088 9 50 9C58.7719 9 66.0088 1 75 1C83.7719 1 91.0088 8.99982 100 8.99982"
+                    stroke="#834FFF"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M100 9C108.772 9 116.009 1.00018 125 1.00018C133.772 1.00018 141.009 9 150 9C158.772 9 166.009 1 175 1C183.772 1 191.009 8.99982 200 8.99982"
+                    stroke="#834FFF"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M200 9C208.772 9 216.009 1.00018 225 1.00018C233.772 1.00018 241.009 9 250 9C258.772 9 266.009 1 275 1C283.772 1 291.009 8.99982 300 8.99982"
+                    stroke="#834FFF"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M300 9C308.772 9 316.009 1.00018 325 1.00018C333.772 1.00018 341.009 9 350 9C358.772 9 366.009 1 375 1C383.772 1 391.009 8.99982 400 8.99982"
+                    stroke="#834FFF"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="features">
+              <picture>
+                <source
+                  srcset="img/marvel/1x/features_1x.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="img/marvel/2x/features_2x.png"
+                  alt="AI Features Design"
+                />
+              </picture>
+            </div>
+          </div>
+
+          <div class="impact">
+            <div class="text">
+              <h4>Future Impact</h4>
+              <p>
+                In a rapidly evolving landscape, Marvel Tools brings a powerful
+                contribution to the education system. It maintains the efficacy
+                of the learning process by fulfilling the demands of constant
+                innovation and creativity, and it streamlines the effort of
+                performing tedious administrative tasks. Yet most importantly,
+                the application of this platform empowers educators to reclaim
+                their ultimate roles as mentors and support systems for their
+                students.
+              </p>
+              <p>
+                Looking forward, we will conduct extensive usability testing of
+                a private beta of Marvel Tools to a select group of educators
+                and institutions. Collected feedback will be used to validate
+                ease of use and accessibility, as well as identify areas of
+                improvement.
+              </p>
+              <p>
+                We will also continue to design for more sophisticated features:
+              </p>
+              <ul>
+                <li>
+                  <span>Automated grading with personalized insights:</span>
+                  Streamline the grading process while providing feedback to
+                  students.
+                </li>
+                <li>
+                  <span>Student performance dashboard:</span> Offer real-time
+                  analytics to monitor and improve student outcomes.
+                </li>
+                <li>
+                  <span>Plagiarism detection:</span> Ensure academic integrity
+                  through advanced plagiarism detection.
+                </li>
+                <li>
+                  <span>Predictive analytics for student performance:</span>
+                  Identify at-risk students and provide actionable insights to
+                  enhance their learning journey.
+                </li>
+                <li>
+                  <span>AI-powered forum:</span> Facilitate collaboration and
+                  problem-solving among students and educators.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="takeaway">
+            <div class="text">
+              <h4>Takeaways</h4>
+
+              <div class="list">
+                <div class="item">
+                  <picture>
+                    <source
+                      srcset="img/marvel/1x/marvelbullet_1x.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/marvel/2x/marvelbullet_2x.png"
+                      alt="Star Bullet Point"
+                    />
+                  </picture>
+
+                  <p>
+                    Gained experience
+                    <span>working cross-functionally with developers</span> and
+                    understanding the criteria for
+                    <span>proper design hand-off.</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="item">
+                  <picture>
+                    <source
+                      srcset="img/marvel/1x/marvelbullet_1x.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/marvel/2x/marvelbullet_2x.png"
+                      alt="Star Bullet Point"
+                    />
+                  </picture>
+
+                  <p>
+                    Continued to
+                    <span>develop my understanding of user-centric design</span>
+                    in the context of educators.
+                  </p>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="item">
+                  <picture>
+                    <source
+                      srcset="img/marvel/1x/marvelbullet_1x.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/marvel/2x/marvelbullet_2x.png"
+                      alt="Star Bullet Point"
+                    />
+                  </picture>
+
+                  <p>
+                    Learned how to
+                    <span>design for automated workflows</span> and
+                    <span>accounting for AI discrepancies.</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="list">
+                <div class="item">
+                  <picture>
+                    <source
+                      srcset="img/marvel/1x/marvelbullet_1x.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/marvel/2x/marvelbullet_2x.png"
+                      alt="Star Bullet Point"
+                    />
+                  </picture>
+
+                  <p>
+                    Maintained goals in
+                    <span
+                      >designing for accessibility, sustainability, and
+                      equity.</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="prototype">
+            <div class="center">
+              <a
+                href="https://www.figma.com/proto/Wxok9PJ3TYTeH0qBfdlMbv/Portfolio-Items?page-id=9%3A2&node-id=53-7856&viewport=2614%2C-4250%2C0.18&t=dxRUGvm9upMcT3WC-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=53%3A7856&show-proto-sidebar=1"
+                class="button secondary"
+                target="_blank"
+                >View Prototype</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
-        <div class="container">
-            
-            <div id="projects">
-                <div class="previous">
-                    <div>
-                        <a href="stoke.html" class="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> Previous Project: Stoke 
-                        </a>
-                    </div>
-                </div>
-
-                <div class="next">
-                    <div>
-                        <a href="lumina.html" class="button">Next Project: Lumina 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <h6>Created by &copy; Eileen Chou 2024</h6>
-
-            <div class="icons">
-                <a href="mailto:eileen.j.chou@gmail.com">
-                    <i class="fa-regular fa-envelope fa-xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ejchou/" target="_blank">
-                    <i class="fab fa-linkedin-in fa-xl"></i>
-                </a>
-            </div>
+    <footer class="cs-footer container">
+      <div class="projects">
+        <div class="previous">
+          <div>
+            <a href="stoke.html" class="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-left"
+              >
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              Previous Project: Stoke
+            </a>
+          </div>
         </div>
+
+        <div class="next">
+          <div>
+            <a href="lumina.html" class="button"
+              >Next Project: Lumina
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-footer">
+        <p>&copy; 2025 | Crafted with intention by Eileen Chou</p>
+
+        <div class="social">
+          <a href="mailto:eileen.j.chou@gmail.com">
+            <i class="fa-regular fa-envelope fa-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ejchou/" target="_blank">
+            <i class="fab fa-linkedin-in fa-xl"></i>
+          </a>
+        </div>
+      </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>

@@ -61,28 +61,23 @@ h6 {
     font-weight: 400;
 }
 
-p {
-    margin: 0;
-}
-
 /* Links & Buttons */
 
 a {
     color: #000000;
     text-decoration: none;
 }
+
+a:active,
 a:hover,
 a:focus {
     color: rgba(0,0,0,0.5);
     text-decoration: none;
 }
-a:active{
-    text-decoration: none;
-}  
 
 .button {
     display: inline-block;
-    color: #0B5616;
+    color: #000000;
     font-weight: 600;
     padding: .5em 1em;
 }
@@ -102,22 +97,28 @@ a:active{
 }
 
 .button.secondary {
-    font-family: "Poppins", sans-serif;
+    font-family: miller-display, serif;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
     text-align: center;
     padding: .5em 1.5em;
-    background-color: transparent;
-    color: #0B5616;
-    border: 1px solid #0B5616;
-    border-radius: .5em;
-    transition: 0.2s opacity;
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(4px) saturate(135%);
+    -webkit-backdrop-filter: blur(4px) saturate(135%);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
+
+.button.secondary:active,
 .button.secondary:hover,
-.button.secondary:active {
-    opacity: 0.8;
-    background-color: #0B5616;
-    color: #FFFDF7;
+.button.secondary:focus {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    color: rgba(0,0,0,0.85);
 }
 
 
@@ -150,6 +151,13 @@ img {
     text-align: center;
 }
 
+main.cs-page {
+    margin-bottom: 6rem;
+}
+
+.casestudy .text {
+    padding: 1rem 0 1.5rem;
+}
 
 /*/ Header Section /*/
 
@@ -182,7 +190,7 @@ nav > ul > li > a {
     margin: .5em;
     font-family: miller-display, sans-serif;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 nav > ul > li > a:hover,
@@ -190,6 +198,20 @@ nav > ul > li > a:focus,
 nav > ul > li > a:active {
     font-style: normal;
     font-style: italic;
+    color: rgba(0,0,0,0.5);
+}
+
+.pg-header .primary-header {
+    background: #ffffff;
+}
+
+.pg-header .primary-header nav > ul > li > a {
+    color: #000000;
+}
+
+.pg-header .primary-header nav a:hover,
+.pg-header .primary-header nav a:focus,
+.pg-header .primary-header nav a:active {
     color: rgba(0,0,0,0.5);
 }
 
@@ -239,6 +261,11 @@ footer {
     flex-direction: column;
 }
 
+.cs-footer {
+    background: #ffffff;
+    min-height: 0;
+}
+
 footer #contact {
     flex: 1;
     display: flex;
@@ -247,7 +274,6 @@ footer #contact {
     align-items: center;
     text-align: center;
 }
-
 
 #contact .logo-bg {
     background-image: url("/img/home/1x/logo-bg_1x.png");
@@ -302,27 +328,47 @@ footer #contact {
 .bottom-footer .social i {
     margin: .25em;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.125rem;
 }
 
-#projects {
+.cs-footer .bottom-footer {
+    background-color: #ffffff;
+}
+
+.cs-footer .bottom-footer p,
+.cs-footer .bottom-footer .social a {
+    color: #000000;
+}
+
+.projects {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 1.5rem;
 }
 
 .previous .button,
 .next .button {
-    font-size: 1.25em;
-    font-weight: 500;
-    line-height: 36px;
-    margin-bottom: 3em;
+    font-family: miller-display, serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0;
+}
+
+.next .button {
+    text-align: right;
 }
 
 .previous svg,
 .next svg {
     display: inline-flex;
-    vertical-align: top;
+    flex-shrink: 0;
+    vertical-align: middle;
 }
 
 /* Scrolling */
@@ -334,13 +380,12 @@ html {
   #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 1em; /* Place the button at the bottom of the page */
-    right: 1em; /* Place the button 30px from the right */
+    bottom: 1rem; /* Place the button at the bottom of the page */
+    right: 1.5rem; /* Place the button 30px from the right */
     z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #0B5616;
-    color: #FFF6C5;
+    border: 1px solid rgba(0, 0, 0, .5);
+    background-color: #ffffff;
+    color: #000000;
     padding: .45em .6em;
     border-radius: 360px;
     font-size: 1em;
@@ -348,7 +393,8 @@ html {
   }
   
   #myBtn:hover {
-    background-color: #818181;
+    background-color: rgba(0, 0, 0, .25);
+    border: none;
     color: #FFFFFF;
   }
 
@@ -404,37 +450,37 @@ html {
     }
     
     h2 {
-    font-size: 2.75em;
+        font-size: 2.75em;
     }
 
     h3 {
-    font-size: 2.5em;
+        font-size: 2.5em;
     }
 
     h4 {
-    font-size: 2em;
+        font-size: 2em;
     }
 
     h5 {
-    font-size: 1.25em;
+        font-size: 1.25em;
     }
 
     h6 {
-    font-size: 1em;
+        font-size: 1em;
     }
 
     .primary-header {
-    background: transparent;
-    padding: 1em 0;
-    width: 100%;
+        background: transparent;
+        padding: 1em 0;
+        width: 100%;
 
-    transition: background-color 500ms;
-}
+        transition: background-color 500ms;
+    }
 
     .primary-header.sticking {
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.18);
-}
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.18);
+    }
 
     header .container {
         padding-right: 0;
@@ -480,6 +526,11 @@ html {
         }
     }
 
+    .casestudy .text {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
     #contact .logo-bg {
         background-image: url("/img/home/2x/logo-bg_2x.png");
     }
@@ -521,6 +572,11 @@ html {
         padding: 30px 50px;
         margin: 25px 0 10px;
     }
+
+    .casestudy .text {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
 }
 
 /*/ Desktop devices (1440px to 1919px) /*/
@@ -544,6 +600,12 @@ html {
         .col-xlg-6 {
             width: 50%;
         }
+    }
+
+    .casestudy .text {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

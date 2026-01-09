@@ -1,8 +1,53 @@
 /* Layout Styling */
 
-#marvel main {
-    padding-top: 10em;
-    padding-bottom: 4em;
+/*Hero Section*/
+
+.title {
+    margin: 2rem 1rem;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 1rem auto;
+}
+
+.scope {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    padding: 1em 0;
+}
+
+.scopetitles p {
+    font-weight: 600;
+    margin: 0 auto;
+    padding: .25rem 0;
+}
+
+.scopedesc p {
+    margin: 0 auto;
+    padding: .25rem 0;
+}
+
+.title img {
+    margin-top: 2rem;
+}
+
+/* Quick Links */
+
+.quicklinks {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.quicklinks h4 {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.links .button.secondary {
+    margin: 0.5em 1em;
 }
 
 #solution {
@@ -10,68 +55,7 @@
     top: -6.5em;
 }
 
-/*Hero Section*/
-
-.title {
-    margin: 2em 1em;
-}
-
-.title h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: 2.5em;
-    font-weight: 500;
-    margin: 0 auto;
-}
-
-.scope {
-    display: flex;
-    flex-direction: row;
-    gap: 28px;
-}
-
-.scopetitles p {
-    font-weight: 600;
-    margin: 0 auto;
-    padding: .25em 0;
-}
-
-.scopedesc p {
-    margin: 0 auto;
-    padding: .25em 0;
-}
-
-.title img {
-    margin-top: 4em;
-}
-
 /* Main Section */
-
-.quicklinks {
-    margin-top: 4em;
-    margin-bottom: 2em;
-}
-
-.quicklinks h4 {
-    font-weight: 600;
-}
-
-.links .button.secondary {
-    margin: 0.5em 1em;
-}
-
-.text {
-    padding: 1em;
-}
-
-.text h3 {
-    font-size: 1.75em; 
-    font-weight: 500;
-}
-
-.text h4 {
-    font-size: 1.25em;
-    font-weight: 400;
-}
 
 .objectives .list,
 .takeaway .list {
@@ -108,14 +92,18 @@
     letter-spacing: .5px;
 }
 
+.challenge h5,
+.redesign h5 {
+    margin-top: 1.5rem;
+}
 .challenge span {
     display: inline-block;
 }
 
 .challenge .underline {
-    width: 325px;
+    width: 280px;
     overflow: auto;
-    margin: -2em auto 0 auto;
+    margin: 0 auto;
 }
 
 .flex ul li {
@@ -152,21 +140,21 @@
 }
 
 .redesign .underline1 {
-    width: 11.25em;
+    width: 150px;
     overflow: auto;
-    margin: -2.5em auto 0 auto;
+    margin: -0.5rem auto;
 }
 
 .redesign .underline2 {
-    width: 8.125em;
+    width: 125px;
     overflow: auto;
-    margin: -2.5em auto 0 auto;
+    margin: -0.5rem auto;
 }
 
 .redesign .underline3 {
-    width: 6.875em;
+    width: 100px;
     overflow: auto;
-    margin: -2.75em auto 0 auto;
+    margin: -0.5rem auto;
 }
 
 .impact ul {
@@ -182,7 +170,7 @@
 }
 
 #prototype {
-    margin: 2em auto 0;
+    margin: 2rem auto 0;
 }
 
 #prototype .button.secondary {
@@ -201,19 +189,15 @@
 /*Medium devices (768px-1023px)*/
 @media only screen and (min-width: 768px) {
     .title {
-        display: flex;
-        flex-direction: row;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .title img {
         margin-top: 1em;
         padding-left: 2em;
 
-    }
-
-    .casestudy .text {
-        padding-left: 2em;
-        padding-right: 2em;
     }
 
     .objectives .list,
@@ -230,8 +214,7 @@
     }
 
     .challenge .underline {
-        width: 400px;
-        margin: -2.25em auto 0 auto;
+        width: 300px;
     }
 
     .title .col-md-6 {
@@ -252,21 +235,15 @@
     }
 
     .redesign .underline1 {
-        width: 13.5em;;
-        margin-top: -2.75em;
-        margin-bottom: 1em;
+        width: 175px;
     }
     
     .redesign .underline2 {
-        width: 9.75em;
-        margin-top: -2.75em;
-        margin-bottom: 1em;
+        width: 150px;
     }
     
     .redesign .underline3 {
-        width: 8.375em;
-        margin-top: -3em;
-        margin-bottom: 1em;
+        width: 125px;
     }
 
     .redesign img {
@@ -276,7 +253,6 @@
 
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) { 
-    .casestudy .text,
     .casestudy .flex {
         padding-left: 8em;
         padding-right: 8em;

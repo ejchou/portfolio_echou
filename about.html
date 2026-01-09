@@ -31,30 +31,47 @@
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
-<body>
-
-    <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-               <picture id="logo">
-					<source srcset="img/home/1x/logo_1x.png" media="(max-width:767px)">
-					<a href="/"><img src="img/home/2x/logo_2x.png" alt="Logo"></a>
-				</picture>
-                <nav>
-                    <ul class="navigation">
-                        <li><a href="#featured" onclick="toggleMenuAndIcon()">Work</a></li>
-						<li><a href="about">About</a></li>
-						<li><a href="#contact" onclick="toggleMenuAndIcon()">Contact</a></li>
-						<li><a href="javascript:void(0);" class="icon" onclick="toggleMenuAndIcon()"><i id="menuIcon" data-feather="align-right"></i></a>
-							<script>feather.replace();</script>
-						</li>
-                    </ul>
-                </nav>
-            </div>
+<body class="pg-header">
+    <header class="primary-header">
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <picture id="logo">
+            <source
+              srcset="img/home/1x/logo_1x.png"
+              media="(max-width:767px)"
+            />
+            <a href="/"
+              ><img src="img/home/2x/logo_2x.png" alt="Eileen Chou Logo"
+            /></a>
+          </picture>
+          
+          <nav>
+            <ul class="navigation">
+              <li>
+                <a href="#featured" onclick="toggleMenuAndIcon()">Work</a>
+              </li>
+              <li><a href="about">About</a></li>
+              <li>
+                <a href="#contact" onclick="toggleMenuAndIcon()">Contact</a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="toggleMenuAndIcon()"
+                  ><i id="menuIcon" data-feather="align-right"></i
+                ></a>
+                <script>
+                  feather.replace();
+                </script>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
 
-    <main id="about">
+    <main>
         <div class="container">
             <div class="center">
                 <div id="selfpic">
@@ -66,22 +83,22 @@
 
                 <div id="bio">
                     <div id="story">
-                        <h2>Designer.   Explorer.   Systems Thinker.</h2>
-                        <p>Forever curious and fueled by fresh air, I've lived in many cities with a winding path that's taken me through music, finance, food, and now digital design. While my path hasn’t been linear, at the core is a constant: my obsession with understanding how people think, feel, and move through the world.
+                        <h4>Steward.  <span class="italic">  Dreamer.  </span>  Systems Thinker.</h4>
+                        <p>Forever curious and fueled by fresh air, I've lived in many cities with a winding path that's taken me through music, finance, food, and now digital design. While my path hasn’t been linear, one thing has remained constant: my obsession with understanding how people think, feel, and move through the world.
                         </p>
                         <p>I love a good puzzle, especially the kind you solve with others. I’m a big fan of asking “what if?” and “why not?” even if it means playing devil’s advocate. I believe the best experiences are born when we color outside the lines.
                         </p>
-                        <p>I’m inspired by the natural world and fascinated by how things grow, whether it’s ideas, ecosystems, or communities. When I’m not designing, you can find me behind a camera, digging in the dirt, or heading for the mountains to climb, hike, or ski.</p>
+                        <p>I’m inspired by the natural world and fascinated by how things grow and adapt, whether it’s ideas, ecosystems, or communities. When I’m not designing, you can find me behind a camera, traveling to a far-off land, or heading for the mountains to climb, hike, or ski.</p>
                     </div>
 
                     <div id="resume">
-                        <a href="files/echou_resume.pdf" target="_blank">Resume</a>
+                        <h5><a href="files/echou_resume.pdf" target="_blank">Resume</a></h5>
                     </div>
 
                     <div id="expertise">
                         <div class="row">
                             <div class="col-md-6">
-                                <h4>Skillset</h4>
+                                <h5>Skillset</h5>
                                     <p class="list">User Experience Design
                                     <span>Interaction Design</span>
                                     <span>Wireframing</span>
@@ -93,15 +110,16 @@
                                     <span>User Interviews & Surveys</span>
                                     <span>User Personas & Journey Mapping</span>
                                     <span>Usability Testing</span>
-                                    <span> Analytics-Driven Optimization</span>
-                                    <span>HTML, CSS & JavaScript</span>
+                                    <span>Analytics-Driven Optimization</span>
+                                    <span>HTML, CSS, JavaScript</span>
                                     </p>
                             </div>
 
                             <div class="col-md-6">
-                                <h4>Tools</h4>
+                                <h5>Tools</h5>
                                     <p class="list">Figma
                                     <span>Adobe Creative Suite</span>
+                                    <span>AI-Assisted Design</span>
                                     <span>Visual Studio Code</span>
                                     <span>Github</span>
                                     <span>Google Suite</span>
@@ -110,12 +128,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="connect center">
-                        <p>You can reach me at <span>
-                            <a href="mailto:eileen.j.chou@gmail.com" target="_blank">eileen.j.chou@gmail.com</a>.</span>
-                        </p>
-                    </div>
                 </div>
 
             </div>
@@ -123,33 +135,35 @@
 
     </main>
 
-    <footer id="contact">
-        <div class="container">
-            <!-- <h3 class="connect center">
-				<a href="mailto:eileen.j.chou@gmail.com" target="_blank">Let's Connect</a>
-			</h3> -->
-            
-            <!-- <div id="connect">
-                <div class="center">
-                    <a href="mailto:eileen.j.chou@gmail.com"
-                    class="button secondary" target="_blank">Reach Out</a>
-                </div>
-            </div> -->
+    <footer class="container">
+       <div class="center" id="contact">
+        <h1 class="logo-bg">
+          <a href="mailto:eileen.j.chou@gmail.com" target="_blank"
+            >Say <span>hello</span></a
+          >
+        </h1>
+      </div>
+      <div class="bottom-footer">
+        <p>&copy; 2025 | Crafted with intention by Eileen Chou</p>
 
-            <h6>&copy; Eileen Chou 2025</h6>
-
-            <div class="icons">
-                <a href="mailto:eileen.j.chou@gmail.com">
-                    <i class="fa-regular fa-envelope fa-xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ejchou/" target="_blank">
-                    <i class="fab fa-linkedin-in fa-xl"></i>
-                </a>
-            </div>
+        <div class="social">
+          <a href="mailto:eileen.j.chou@gmail.com">
+            <i class="fa-regular fa-envelope fa-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ejchou/" target="_blank">
+            <i class="fab fa-linkedin-in fa-xl"></i>
+          </a>
         </div>
+      </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
 
 </body>

@@ -1,482 +1,686 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
+  <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4V2E8GNY2J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4V2E8GNY2J"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-4V2E8GNY2J');
-</script>
+      gtag("config", "G-4V2E8GNY2J");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Eileen Chou" />
     <meta name="description" content="Project: Lumina Clinic" />
     <title>Eileen Chou | Lumina</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
-
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/luminastyles.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/baq0llq.css">
-    <link rel="stylesheet" href="https://use.typekit.net/vhh1uof.css">
-    <script src="https://kit.fontawesome.com/e0d13a7da0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/baq0llq.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e0d13a7da0.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-</head>
+  </head>
 
-<body id="lumina">
-    <header>
-        <div class="container">
-            <div class="navtoggle" id="myNavtoggle">
-                <picture id="logo">
-					<source srcset="img/home/1x/logo_1x.png" media="(max-width:767px)">
-					<a href="/"><img src="img/home/2x/logo_2x.png" alt="Logo"></a>
-				</picture>
-                <nav>
-                    <ul class="navigation">
-                        <li><a href="#featured" onclick="toggleMenuAndIcon()">Work</a></li>
-						<li><a href="about">About</a></li>
-						<li><a href="#contact" onclick="toggleMenuAndIcon()">Contact</a></li>
-						<li><a href="javascript:void(0);" class="icon" onclick="toggleMenuAndIcon()"><i id="menuIcon" data-feather="align-right"></i></a>
-							<script>feather.replace();</script>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+  <body class="pg-header">
+    <header class="primary-header">
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <picture id="logo">
+            <source
+              srcset="img/home/1x/logo_1x.png"
+              media="(max-width:767px)"
+            />
+            <a href="/"
+              ><img src="img/home/2x/logo_2x.png" alt="Eileen Chou Logo"
+            /></a>
+          </picture>
+
+          <nav>
+            <ul class="navigation">
+              <li>
+                <a href="/#featured" onclick="toggleMenuAndIcon()">Work</a>
+              </li>
+              <li><a href="about">About</a></li>
+              <li>
+                <a href="/#contact" onclick="toggleMenuAndIcon()">Contact</a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="toggleMenuAndIcon()"
+                  ><i id="menuIcon" data-feather="align-right"></i
+                ></a>
+                <script>
+                  feather.replace();
+                </script>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-corner-right-up">
-            <polyline points="10 9 15 4 20 9"></polyline>
-            <path d="M4 20h7a4 4 0 0 0 4-4V4"></path>
-        </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-corner-right-up"
+      >
+        <polyline points="10 9 15 4 20 9"></polyline>
+        <path d="M4 20h7a4 4 0 0 0 4-4V4"></path>
+      </svg>
     </button>
 
-    <main>
-        <div class="container">
-            <div class="title">
-                <div class="title-item">
-                    <h1>Lumina Clinic</h1>
-                    <h4>Redesigning a medical spa's website.</h4>
+    <main class="cs-page">
+      <div class="container">
+        <div class="title">
+          <div class="title-item">
+            <h1>Lumina Clinic</h1>
+            <h5>Redesigning a medical spa's website.</h5>
 
-                    <div class="scope">
-                        <div class="scopetitles">
-                            <p>Role</p>
-                            <p>Duration</p>
-                            <p>Tools</p>
-                        </div>
+            <div class="scope">
+              <div class="scopetitles">
+                <p>Role</p>
+                <p>Duration</p>
+                <p>Tools</p>
+              </div>
 
-                        <div class="scopedesc">
-                            <p>Web/UX/UI Designer</p>
-                            <p>Feb '25 - Mar '25</p>
-                            <p>Figma, Wordpress</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="title-item">
-                    <picture>
-                        <source srcset="img/lumina/1x/luminamockup_1x.png" media="(max-width:767px)" />
-                        <img src="img/lumina/2x/luminamockup_2x.png" alt="Lumina Mockup" />
-                    </picture>
-                </div>
+              <div class="scopedesc">
+                <p>UX & Web Designer</p>
+                <p>Feb '25 - Mar '25</p>
+                <p>Figma, Wordpress</p>
+              </div>
             </div>
+          </div>
 
-            <div class="quicklinks">
-                <div class="center">
-                    <h4>Quick Links</h4>
-                    <div class="links">
-                        <a href="lumina.html#outcome" class="button secondary">Key Outcomes</a>
-                        <a href="http://www.luminaseattle.com" class="button secondary" target="_blank">Lumina's
-                            Website</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="casestudy">
-                <div class="project">
-                    <div class="text">
-                        <h3>The Project</h3>
-                        <div class="col-md-6">
-                            <p>
-                                Lumina is a wellness clinic blending expertise in vascular health with advanced skin and
-                                health treatments. The clinic required a seamless platform for discovering and booking
-                                treatments, and providing comprehensive information about the medical devices it uses.
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="goal">
-                                The primary goal of the project was to create a modern, user-friendly website that
-                                highlights Lumina’s expertise and client-focused approach.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="objectives">
-                    <div class="text">
-                        <h3>Objectives</h3>
-                        <div class="col-md-4">
-                            <h5>01.</h5>
-                            <h4>Improve UX/UI</h4>
-                            <ul>
-                                <li>Enhance customer journey</li>
-                                <li>Create intuitive navigation</li>
-                                <li>Simplify steps to book services</li>
-                                <li>Ensure scalable design for different devices</li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-4">
-                            <h5>02.</h5>
-                            <h4>Align goals &amp; constraints</h4>
-                            <ul>
-                                <li>Increase conversions</li>
-                                <li>Account for various user demographics</li>
-                                <li>Consider technical constraints of a CMS and third-party applications</li>
-                                <li>Stay within accessibility guidelines (WCAG 2.2)</li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-4">
-                            <h5>03.</h5>
-                            <h4>Create engaging design</h4>
-                            <ul>
-                                <li>Utilize a natural color scheme while maintaining a bright visual style</li>
-                                <li>Stay consistent with established branding</li>
-                                <li>Foster approachability and a minimal aesthetic</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="approach">
-                    <div class="text">
-                        <h3>Approach</h3>
-                        <div class="col-md-6">
-                            <p>I identified areas of user friction, inconsistencies, and poor functionality in the
-                                current design.</p>
-                            <ul>
-                                <li>The information architecture was poorly laid out, and the user interface lacked
-                                    balance and visual hierarchy.</li>
-                                <li>The third-party booking platform is visually cluttered and inefficient, thus making
-                                    it important for the website to simplify the booking process as much as possible.
-                                </li>
-                                <li>Each page of the website contained endless content, producing cognitive overload.
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-6">
-                            <p>
-                                Additionally, I needed to address a customer base between the ages of 20 to 65. With
-                                such a wide age range, backgrounds and technical experience would differ significantly.
-                                I created a sitemap that focused on breaking up content and making the website easy to
-                                navigate, no matter the user. From there I produced wireframes that prioritized a
-                                minimal interface, relevant and concise information, and simplified steps to book a
-                                service.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="sitemap">
-                        <h6>Sitemap</h6>
-                        <picture>
-                            <source srcset="img/lumina/1x/sitemap_1x.png" media="(max-width:767px)" />
-                            <img src="img/lumina/2x/sitemap_2x.png" alt="Lumina Sitemap" />
-                        </picture>
-                    </div>
-
-                    <div>
-                        <div class="wf-container">
-                            <h6>Mid-Fidelity Wireframes</h6>
-                            <div class="wireframes">
-                                <div class="wf">
-                                    <picture>
-                                        <source srcset="img/lumina/1x/wf_home_1x.png" media="(max-width:767px)" />
-                                        <img src="img/lumina/2x/wf_home_2x.png" alt="Homepage Wireframe" />
-                                    </picture>
-                                </div>
-
-                                <div class="wf">
-                                    <picture>
-                                        <source srcset="img/lumina/1x/wf_about_1x.png" media="(max-width:767px)" />
-                                        <img src="img/lumina/2x/wf_about_2x.png" alt="About Wireframe" />
-                                    </picture>
-                                </div>
-
-                                <div class="wf">
-                                    <picture>
-                                        <source srcset="img/lumina/1x/wf_services_1x.png" media="(max-width:767px)" />
-                                        <img src="img/lumina/2x/wf_services_2x.png" alt="Service Wireframes" />
-                                    </picture>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="process">
-                    <div class="text">
-                        <h3>Process</h3>
-                        <div class="col-md-6">
-                            <p>
-                                To enhance the user journey, I streamlined the navigation menu by incorporating
-                                dropdowns and sub-pages to organize content and reduce excessive scrolling. I also added
-                                card-based navigation to sub-pages, making it easier for users to locate information.
-                                For services with advanced medical technology, I implemented accordions to address
-                                frequently asked questions, ensuring the page didn’t become overcrowded with text.
-                            </p>
-                        </div>
-
-                        <div class="col-md-6">
-                            <p>
-                                To improve accessibility and engagement, CTAs are strategically placed throughout the
-                                site so customers can easily access the booking platform. For services with multiple
-                                types of treatments, I utilized card-based navigation to directly link users to each
-                                treatment’s specific booking page.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="cta-ex">
-                        <div class="example video">
-                            <img src="img/lumina/cta_video.webp" alt="CTA Walkthrough Video" />
-                        </div>
-
-                        <div class="row-cta">
-                            <div class="center example cta-mobile">
-                                <picture>
-                                    <source srcset="img/lumina/1x/cta_ex2_1x.png" media="(max-width:639px)" />
-                                    <img src="img/lumina/2x/cta_ex2_2x.png" alt="CTA Mobile Example" />
-                                </picture>
-                            </div>
-
-                            <div class="example cta-desktop">
-                                <picture>
-                                    <source srcset="img/lumina/1x/cta_ex1_1x.png" media="(max-width:767px)" />
-                                    <img src="img/lumina/2x/cta_ex1_2x.png" alt="CTA Desktop Example" />
-                                </picture>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="text">
-                        <div class="col-md-6">
-                            <p>
-                                As part of refining both the visual identity and user experience, I selected a color
-                                palette that incorporates neutral tones and earthy browns to reflect natural skin tones
-                                and organic hues. All colors were tested for proper contrast and met accessibility
-                                standards (WCAG 2.2), ensuring an inclusive experience for all users.
-                            </p>
-                        </div>
-
-                        <div class="col-md-6">
-                            <p class="typography">
-                                For the typography, I aimed for an approachable and modern look, with a touch of classic
-                                elegance. <span>Libre Caslon Display</span> brings a timeless feel, while <span>Proxima
-                                    Nova</span> offers versatility and excellent readability.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="visual">
-                        <div class="vis">
-                            <picture>
-                                <source srcset="img/lumina/1x/colorpalette_1x.png" media="(max-width:639px)" />
-                                <img src="img/lumina/2x/colorpalette_2x.png" alt="Color Palette" />
-                            </picture>
-                        </div>
-
-                        <div class="vis">
-                            <div class="lumina-title">
-                                <h6>Header</h6>
-                                <h1>Libre Caslon Display</h1>
-                            </div>
-
-                            <div class="lumina-body">
-                                <h6>Paragraph</h6>
-                                <h3>Proxima Nova</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="brand">
-                        <div class="text">
-                            <div class="col-md-6">
-                                <p>To further strengthen the brand identity, I designed custom icons and buttons that
-                                    seamlessly integrated into the site's minimal design, adding a personalized yet
-                                    subtle touch.
-                                </p>
-                            </div>
-
-                            <div class="col-md-6">
-                                <picture>
-                                    <source srcset="img/lumina/1x/brand_1x.png" media="(max-width:767px)" />
-                                    <img src="img/lumina/2x/brand_2x.png" alt="Custom Branding" />
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="responsive">
-                        <div class="text">
-                            <div class="col-md-6">
-                                <p>To deliver a seamless experience, the site was designed to be fully responsive on any
-                                    device. Starting with a mobile-first mindset, I focused on simplicity, readability,
-                                    and ease of navigation at smaller sizes before scaling up to larger screens.
-                                </p>
-                            </div>
-
-                            <div class="col-md-6">
-                                <p>I designed flexible layouts, scalable typography, and adaptable components, ensuring
-                                    the site remained intuitive, accessible, and visually balanced from mobile to
-                                    desktop. This approach ensured the design adapted effortlessly, supporting a minimal
-                                    and intuitive user journey.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="mockup">
-                            <div class="column-mockup">
-                                <div class="center example mobile">
-                                    <picture>
-                                        <source srcset="img/lumina/1x/mockup_phone_1x.png" media="(max-width:400px)" />
-                                        <img src="img/lumina/2x/mockup_phone_2x.png" alt="Mobile Mockup" />
-                                    </picture>
-                                </div>
-
-                                <div class="example tablet">
-                                    <picture>
-                                        <source srcset="img/lumina/1x/mockup_tablet_1x.png" media="(max-width:767px)" />
-                                        <img src="img/lumina/2x/mockup_tablet_2x.png" alt="Tablet Mockup" />
-                                    </picture>
-                                </div>
-                            </div>
-
-
-                            <div class="example desktop">
-                                <picture>
-                                    <source srcset="img/lumina/1x/mockup_desktop_1x.png" media="(max-width:767px)" />
-                                    <img src="img/lumina/2x/mockup_desktop_2x.png" alt="Desktop Mockup" />
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="outcome"></div>
-
-                <div class="outcomes">
-                    <div class="text">
-                        <h3>Key Outcomes</h3>
-                        <p>
-                            The redesigned Lumina website successfully delivers a streamlined, intuitive user experience
-                            while reflecting Lumina’s core values of natural beauty, simplicity, and well-being.
-                            Navigation is clear and efficient, services are easily accessible through card-based layouts
-                            and CTAs, and responsive design ensures a seamless experience across devices. Custom design
-                            elements, a carefully selected color palette, and accessible typography reinforce a
-                            cohesive, minimal aesthetic consistent with the brand. Overall, the new design strengthens
-                            Lumina’s digital presence, improves user engagement, and provides a foundation for future
-                            growth.
-                        </p>
-
-                        <p>
-                            This project was a reminder that thoughtful design goes beyond aesthetics — it’s about
-                            creating experiences that reflect a brand’s mission, meet users’ needs, and build meaningful
-                            connections.
-                        </p>
-                    </div>
-
-                    <div class="home">
-                        <div class="example">
-                            <picture>
-                                <source srcset="img/lumina/1x/home_desktop_1x.png" media="(max-width:767px)" />
-                                <img src="img/lumina/2x/home_desktop_2x.png" alt="Homepage Example" />
-                            </picture>
-                        </div>
-
-                        <div class="center example home-mobile">
-                            <picture>
-                                <source srcset="img/lumina/1x/home_mobile_1x.png" media="(max-width:767px)" />
-                                <img src="img/lumina/2x/home_mobile_2x.png" alt="Homepage Example" />
-                            </picture>
-                        </div>
-                    </div>
-
-                    <div></div>
-                </div>
-
-                <div id="website">
-                    <div class="center">
-                        <a href="http://www.luminaseattle.com" class="button secondary" target="_blank">View Website</a>
-                    </div>
-                </div>
-
-            </div>
+          <div class="title-item">
+            <picture>
+              <source
+                srcset="img/lumina/1x/luminamockup_1x.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/lumina/2x/luminamockup_2x.png"
+                alt="Lumina Mockup"
+              />
+            </picture>
+          </div>
         </div>
+
+        <div class="quicklinks">
+          <div class="center">
+            <h4>Quick Links</h4>
+            <div class="links">
+              <a href="lumina.html#outcome" class="button secondary"
+                >Key Outcomes</a
+              >
+              <a
+                href="http://www.luminaseattle.com"
+                class="button secondary"
+                target="_blank"
+                >Lumina's Website</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="casestudy">
+          <div class="project">
+            <div class="text">
+              <h4>The Project</h4>
+              <div class="col-md-6">
+                <p>
+                  Lumina is a wellness clinic blending expertise in vascular
+                  health with advanced skin and health treatments. The clinic
+                  required a seamless platform for discovering and booking
+                  treatments, and providing comprehensive information about the
+                  medical devices it uses.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p class="goal">
+                  The primary goal of the project was to create a modern,
+                  user-friendly website that highlights Lumina’s expertise and
+                  client-focused approach.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="objectives">
+            <div class="text">
+              <h4>Objectives</h4>
+              <div class="col-md-4">
+                <h6>01.</h6>
+                <h5>Usability Gains</h5>
+                <ul>
+                  <li>Enhance customer journey</li>
+                  <li>Create intuitive navigation</li>
+                  <li>Simplify steps to book services</li>
+                  <li>Ensure scalable design for different devices</li>
+                </ul>
+              </div>
+
+              <div class="col-md-4">
+                <h6>02.</h6>
+                <h5>Strategic Alignment</h5>
+                <ul>
+                  <li>Increase conversions</li>
+                  <li>Account for various user demographics</li>
+                  <li>
+                    Consider technical constraints of a CMS and third-party
+                    applications
+                  </li>
+                  <li>Stay within accessibility guidelines (WCAG 2.2)</li>
+                </ul>
+              </div>
+
+              <div class="col-md-4">
+                <h6>03.</h6>
+                <h5>Visual Cohesion</h5>
+                <ul>
+                  <li>
+                    Utilize a natural color scheme while maintaining a bright
+                    visual style
+                  </li>
+                  <li>Stay consistent with established branding</li>
+                  <li>Foster approachability and a minimal aesthetic</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="approach">
+            <div class="text">
+              <h4>Approach</h4>
+              <div class="col-md-6">
+                <p>
+                  I identified areas of user friction, inconsistencies, and poor
+                  functionality in the current design.
+                </p>
+                <ul>
+                  <li>
+                    The information architecture was poorly laid out, and the
+                    user interface lacked balance and visual hierarchy.
+                  </li>
+                  <li>
+                    The third-party booking platform is visually cluttered and
+                    inefficient, thus making it important for the website to
+                    simplify the booking process as much as possible.
+                  </li>
+                  <li>
+                    Each page of the website contained endless content,
+                    producing cognitive overload.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-6">
+                <p>
+                  Additionally, I needed to address a customer base between the
+                  ages of 20 to 65. With such a wide age range, backgrounds and
+                  technical experience would differ significantly. I created a
+                  sitemap that focused on breaking up content and making the
+                  website easy to navigate, no matter the user. From there I
+                  produced wireframes that prioritized a minimal interface,
+                  relevant and concise information, and simplified steps to book
+                  a service.
+                </p>
+              </div>
+            </div>
+
+            <div class="center sitemap">
+              <picture>
+                <source
+                  srcset="img/lumina/1x/sitemap_1x.png"
+                  media="(max-width:767px)"
+                />
+                <img src="img/lumina/2x/sitemap_2x.png" alt="Lumina Sitemap" />
+              </picture>
+            </div>
+
+            <div>
+              <div class="wf-container">
+                <div class="wireframes">
+                  <div class="wf">
+                    <picture>
+                      <source
+                        srcset="img/lumina/1x/wf_home_1x.png"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="img/lumina/2x/wf_home_2x.png"
+                        alt="Homepage Wireframe"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="wf">
+                    <picture>
+                      <source
+                        srcset="img/lumina/1x/wf_about_1x.png"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="img/lumina/2x/wf_about_2x.png"
+                        alt="About Wireframe"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="wf">
+                    <picture>
+                      <source
+                        srcset="img/lumina/1x/wf_services_1x.png"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="img/lumina/2x/wf_services_2x.png"
+                        alt="Service Wireframes"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="process">
+            <div class="text">
+              <h4>Process</h4>
+              <div class="col-md-6">
+                <p>
+                  To enhance the user journey, I streamlined the navigation menu
+                  by incorporating dropdowns and sub-pages to organize content
+                  and reduce excessive scrolling. I also added card-based
+                  navigation to sub-pages, making it easier for users to locate
+                  information. For services with advanced medical technology, I
+                  implemented accordions to address frequently asked questions,
+                  ensuring the page didn’t become overcrowded with text.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <p>
+                  To improve accessibility and engagement, CTAs are
+                  strategically placed throughout the site so customers can
+                  easily access the booking platform. For services with multiple
+                  types of treatments, I utilized card-based navigation to
+                  directly link users to each treatment’s specific booking page.
+                </p>
+              </div>
+            </div>
+
+            <div class="cta-ex">
+              <div class="example video">
+                <img
+                  src="img/lumina/cta_video.webp"
+                  alt="CTA Walkthrough Video"
+                />
+              </div>
+
+              <div class="row-cta">
+                <div class="center example cta-mobile">
+                  <picture>
+                    <source
+                      srcset="img/lumina/1x/cta_ex2_1x.png"
+                      media="(max-width:639px)"
+                    />
+                    <img
+                      src="img/lumina/2x/cta_ex2_2x.png"
+                      alt="CTA Mobile Example"
+                    />
+                  </picture>
+                </div>
+
+                <div class="example cta-desktop">
+                  <picture>
+                    <source
+                      srcset="img/lumina/1x/cta_ex1_1x.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/lumina/2x/cta_ex1_2x.png"
+                      alt="CTA Desktop Example"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+
+            <div class="text">
+              <div class="col-md-6">
+                <p>
+                  As part of refining both the visual identity and user
+                  experience, I selected a color palette that incorporates
+                  neutral tones and earthy browns to reflect natural skin tones
+                  and organic hues. All colors were tested for proper contrast
+                  and met accessibility standards (WCAG 2.2), ensuring an
+                  inclusive experience for all users.
+                </p>
+              </div>
+
+              <div class="col-md-6">
+                <p class="typography">
+                  For the typography, I aimed for an approachable and modern
+                  look, with a touch of classic elegance.
+                  <span>Libre Caslon Display</span> brings a timeless feel,
+                  while <span>Proxima Nova</span> offers versatility and
+                  excellent readability.
+                </p>
+              </div>
+            </div>
+
+            <div class="visual">
+              <div class="vis palette center">
+                <picture>
+                  <source
+                    srcset="img/lumina/1x/colorpalette_1x.png"
+                    media="(max-width:639px)"
+                  />
+                  <img
+                    src="img/lumina/2x/colorpalette_2x.png"
+                    alt="Color Palette"
+                  />
+                </picture>
+              </div>
+
+              <div class="vis">
+                <div class="lumina-title">
+                  <h6>Header</h6>
+                  <h1>Libre Caslon Display</h1>
+                </div>
+
+                <div class="lumina-body">
+                  <h6>Paragraph</h6>
+                  <h3>Proxima Nova</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="brand">
+              <div class="text">
+                <div class="col-md-6">
+                  <p>
+                    To further strengthen the brand identity, I designed custom
+                    icons and buttons that seamlessly integrated into the site's
+                    minimal design, adding a personalized yet subtle touch.
+                  </p>
+                </div>
+
+                <div class="col-md-6">
+                  <picture>
+                    <source
+                      srcset="img/lumina/1x/brand_1x.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/lumina/2x/brand_2x.png"
+                      alt="Custom Branding"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+
+            <div class="responsive">
+              <div class="text">
+                <div class="col-md-6">
+                  <p>
+                    To deliver a seamless experience, the site was designed to
+                    be fully responsive on any device. Starting with a
+                    mobile-first mindset, I focused on simplicity, readability,
+                    and ease of navigation at smaller sizes before scaling up to
+                    larger screens.
+                  </p>
+                </div>
+
+                <div class="col-md-6">
+                  <p>
+                    I designed flexible layouts, scalable typography, and
+                    adaptable components, ensuring the site remained intuitive,
+                    accessible, and visually balanced from mobile to desktop.
+                    This approach ensured the design adapted effortlessly,
+                    supporting a minimal and intuitive user journey.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mockup">
+                <div class="column-mockup">
+                  <div class="center example mobile">
+                    <picture>
+                      <source
+                        srcset="img/lumina/1x/mockup_phone_1x.png"
+                        media="(max-width:400px)"
+                      />
+                      <img
+                        src="img/lumina/2x/mockup_phone_2x.png"
+                        alt="Mobile Mockup"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="example tablet">
+                    <picture>
+                      <source
+                        srcset="img/lumina/1x/mockup_tablet_1x.png"
+                        media="(max-width:767px)"
+                      />
+                      <img
+                        src="img/lumina/2x/mockup_tablet_2x.png"
+                        alt="Tablet Mockup"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="example desktop">
+                  <picture>
+                    <source
+                      srcset="img/lumina/1x/mockup_desktop_1x.png"
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="img/lumina/2x/mockup_desktop_2x.png"
+                      alt="Desktop Mockup"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="outcome"></div>
+
+          <div class="outcomes">
+            <div class="text">
+              <h4>Key Outcomes</h4>
+              <p>
+                The redesigned Lumina website successfully delivers a
+                streamlined, intuitive user experience while reflecting Lumina’s
+                core values of natural beauty, simplicity, and well-being.
+                Navigation is clear and efficient, services are easily
+                accessible through card-based layouts and CTAs, and responsive
+                design ensures a seamless experience across devices. Custom
+                design elements, a carefully selected color palette, and
+                accessible typography reinforce a cohesive, minimal aesthetic
+                consistent with the brand. Overall, the new design strengthens
+                Lumina’s digital presence, improves user engagement, and
+                provides a foundation for future growth.
+              </p>
+
+              <p>
+                This project was a reminder that thoughtful design goes beyond
+                aesthetics — it’s about creating experiences that reflect a
+                brand’s mission, meet users’ needs, and build meaningful
+                connections.
+              </p>
+            </div>
+
+            <div class="home">
+              <div class="example">
+                <picture>
+                  <source
+                    srcset="img/lumina/1x/home_desktop_1x.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/lumina/2x/home_desktop_2x.png"
+                    alt="Homepage Example"
+                  />
+                </picture>
+              </div>
+
+              <div class="center example home-mobile">
+                <picture>
+                  <source
+                    srcset="img/lumina/1x/home_mobile_1x.png"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/lumina/2x/home_mobile_2x.png"
+                    alt="Homepage Example"
+                  />
+                </picture>
+              </div>
+            </div>
+
+            <div></div>
+          </div>
+
+          <div id="website">
+            <div class="center">
+              <a
+                href="http://www.luminaseattle.com"
+                class="button secondary"
+                target="_blank"
+                >View Website</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
-        <div class="container">
-
-            <div id="projects">
-                <div class="previous">
-                    <div>
-                        <a href="marvel.html" class="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-arrow-left">
-                                <line x1="19" y1="12" x2="5" y2="12"></line>
-                                <polyline points="12 19 5 12 12 5"></polyline>
-                            </svg> Previous Project: Marvel
-                        </a>
-                    </div>
-                </div>
-
-                <div class="next">
-                    <div>
-                        <a href="stoke.html" class="button">Next Project: Stoke
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-arrow-right">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <h6>Created by &copy; Eileen Chou 2024</h6>
-
-            <div class="icons">
-                <a href="mailto:eileen.j.chou@gmail.com">
-                    <i class="fa-regular fa-envelope fa-xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ejchou/" target="_blank">
-                    <i class="fab fa-linkedin-in fa-xl"></i>
-                </a>
-            </div>
+    <footer class="cs-footer container">
+      <div class="projects">
+        <div class="previous">
+          <div>
+            <a href="marvel.html" class="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-left"
+              >
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              Previous Project: Marvel
+            </a>
+          </div>
         </div>
+
+        <div class="next">
+          <div>
+            <a href="stoke.html" class="button"
+              >Next Project: Stoke
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-arrow-right"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-footer">
+        <p>&copy; 2025 | Crafted with intention by Eileen Chou</p>
+
+        <div class="social">
+          <a href="mailto:eileen.j.chou@gmail.com">
+            <i class="fa-regular fa-envelope fa-xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ejchou/" target="_blank">
+            <i class="fab fa-linkedin-in fa-xl"></i>
+          </a>
+        </div>
+      </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>
