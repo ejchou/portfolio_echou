@@ -1,26 +1,15 @@
 /* Layout Styling */
 
-#lumina main {
-    padding-top: 10em;
-    padding-bottom: 4em;
-}
-
-#outcome {
-    position: relative;
-    top: -6.5em;
-}
-
-/*Hero Section*/
+/* Hero Section */
 
 .title {
     margin: 2em 1em;
 }
 
 .title h1 {
-    font-family: "Poppins", sans-serif;
     font-size: 2.5em;
-    font-weight: 500;
-    margin: 1em auto;
+    font-weight: 600;
+    margin: 1rem auto;
 }
 
 .scope {
@@ -42,10 +31,10 @@
 }
 
 .title img {
-    margin-top: 2em;
+    margin-top: 2rem;
 }
 
-/*Main Section*/
+/*Quick Links*/
 
 .quicklinks {
     margin-top: 4em;
@@ -53,7 +42,7 @@
 }
 
 .quicklinks h4 {
-    font-weight: 600;
+    font-size: 1.5rem;
     line-height: 2;
 }
 
@@ -61,17 +50,15 @@
     margin: 0.5em 1em;
 }
 
-.text {
-    padding: 1em 0;
+#outcome {
+    position: relative;
+    top: -6.5em;
 }
 
-.text h3 {
-    font-size: 1.75em; 
-    font-weight: 500;
-}
+/* Main Section */
 
 .goal {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.15em;
 }
 
@@ -86,58 +73,72 @@
     clear: both;
 }
 
-.objectives h5 {
-    font-family: "Libre Caslon Display", serif;
-    font-size: 1.75em;
-    padding-right: .5em;
+.objectives .col-md-4 {
+    margin: 1rem auto;
 }
 
-.objectives h4 {
-    font-size: 1.25em;
-    font-weight: 400;
+.objectives h6 {
+    font-size: 1.25rem;
+}
+
+.objectives h5 {
+    font-size: 1.25rem;
     line-height: 1;
 }
 
-.objectives h5,h4 {
+.objectives h6,h5 {
     display: inline;
+    margin-top: 1rem;
 }
 
 .objectives ul {
-    margin: 2em auto;
+    margin-top: 1rem;
 }
 
-.approach h6,
-.visual h6 {
-    color: #818181;
+.sitemap,
+.wireframes {
+    padding-bottom: 3rem;
 }
 
-.wf-container {
-    padding-bottom: 2em;
+.approach h6 {
+    color: rgba(0,0,0,0.5);
+    padding-bottom: 1rem;
 }
 
 .wireframes {
     display: inline-flex;
     justify-content: center;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .wf {
     flex-basis: calc(100%/3);
 }
 
-.cta-ex,
 .mockup,
 .home {
-    margin: 2em auto;
+    margin: 2rem auto;
+}
+
+.cta-mobile img {
+    max-width: 50%;
 }
 
 .visual {
-    padding-top: 4em;
-    padding-bottom: 3em;
+    margin-bottom: 1.5rem;
+}
+
+.visual .palette {
+    padding-bottom: 1.5rem;
+}
+
+.visual h6 {
+    color: rgba(0,0,0,0.5);
+    margin-bottom: 1.25rem;
 }
 
 .example {
-    padding: 1em 0;
+    padding: 1rem 0;
 }
 
 .typography span {
@@ -146,16 +147,15 @@
 
 .lumina-title h1 {
     font-family: "Libre Caslon Display", serif;
-    font-size: 2.5em;
+    font-size: 2rem;
     line-height: 0;
     padding-bottom: 1em;
-    color: #000000;
 }
 
 .lumina-body h3 {
     font-family: proxima-nova, sans-serif;
     font-weight: 300;
-    font-size: 1.75em;
+    font-size: 1.5em;
     line-height: 0;
 }
 
@@ -168,24 +168,21 @@
 }
 
 #website .button.secondary {
+    color: #9A6C56;
+    border: 1px solid #9A6C56;
+}
+
+#website .button.secondary:hover,
+#website .button.secondary:active,
+#website .button.secondary:focus {
     background-color: #9A6C56;
-    border-style: double;
-    border-color: #ffffff;
-    border-width: .5em;
-    color: #FFFFFF;
-    font-family: proxima-nova, sans-serif;
-    font-size: 1.15em;
-    font-weight: 500;
+    color: #ffffff;
 }
 
 /* Media Queries */
 
 /*Small devices (640px to 767px)*/
 @media only screen and (min-width: 640px) {
-    .sitemap {
-        padding-bottom: 2em;
-    }
-
     .cta-mobile img,
     .mobile img,
     .home-mobile img {
@@ -196,6 +193,10 @@
 
 /*Medium devices (768px to 1023px)*/
 @media only screen and (min-width: 768px) {
+    /* #lumina [class*="col-"] {
+    float: left;
+    padding: 0 1rem;
+} */
     .title {
         display: inline-flex;
         justify-content: center;
@@ -206,8 +207,8 @@
         flex-basis: calc(100%/2);
     }
 
-    .title h1 {
-        margin: 0 auto;
+    .text {
+        padding: 2rem 1rem;
     }
 
     .scope {
@@ -219,25 +220,37 @@
         clear: both;
     }
 
-    .objectives h5,h4 {
-        display: block;
+    .objectives .col-md-4 {
+        padding-right: 0.25rem;
+    }
+
+    .objectives h6 {
+        font-size: 1.35rem;
+        line-height: 0;
     }
 
     .objectives h5 {
-        line-height: 0;
+        font-size: 1.5rem;
+    }
+
+    .objectives h6,h5 {
+        display: block;
+        margin: 1rem auto;
     }
 
     .objectives ul {
         margin: 0 auto;
-    }
-
-    .sitemap {
-        padding: 2em 0;
+        padding-left: 1rem;
     }
 
     .sitemap,
     .wf-container {
         margin: 0 .5em;
+    }
+
+    .sitemap img {
+        max-width: 75%;
+        margin-top: 2rem;
     }
 
     .mockup {
@@ -253,8 +266,8 @@
     }
     
     .cta-ex {
-        margin: 3em 0.5em;
-        gap: 1em;
+        margin: 1.5rem 0.5rem;
+        gap: 1rem;
     }
     
     .cta-ex,
@@ -269,7 +282,7 @@
         flex-direction: row;
         justify-content: center;
         display: inline-flex;
-        gap: 2.5em;
+        gap: 2.5rem;
         margin: 0 auto;
     }
 
@@ -286,12 +299,21 @@
     .visual {
         display: grid;
         grid-template-columns: 50% 50%;
-        gap: 2em;
-        margin: 0 0.5em;
+        gap: 2rem;
+        padding: 2rem 0.5rem;
+        margin: 0 auto;
     }
 
     .vis {
         flex-basis: calc(100%/2);
+    }
+
+    .visual .palette {
+        padding-bottom: 0;
+    }
+
+    .visual .palette img {
+        max-width: 500px;
     }
 
     .brand .text {
@@ -320,11 +342,6 @@
         overflow: hidden;
     }
 
-    .outcomes .text p {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-
     .home {
         display: inline-flex;
         justify-content: center;
@@ -340,27 +357,21 @@
 
 /*Large devices (1024px to 1439px)*/
 @media only screen and (min-width: 1024px) {
-    .text {
-        padding: 1em;
-    }
-
-    .sitemap,
-    .wf-container {
-        padding: 3em;
-    }
-
     .wireframes,
     .cta-ex,
     .visual,
     .mockup {
-        gap: 5em;
+        gap: 5rem;
     }
 
     .cta-ex,
-    .visual,
     .mockup,
     .home {
-        margin: 3em 2em;
+        margin: 3rem 2rem;
+    }
+
+    .visual {
+        margin-bottom: 0;
     }
 
     .home {
@@ -375,11 +386,16 @@
 /*X-large devices (1440px and larger)*/
 @media only screen and (min-width: 1440px) {
     .sitemap {
-        padding: 1em 10em 3em;
+        padding: 3rem 10rem;
+    }
+
+    .wf-container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin: 0 1.5rem;
     }
 
     .visual {
-        padding: 4em 6em;
         gap: 5em;
     }
 

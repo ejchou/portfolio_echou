@@ -1,59 +1,47 @@
-/* Layout Styling */
-
-#stoke main {
-    padding-top: 10em;
-    padding-bottom: 4em;
-}
-
-#solution {
-    position: relative;
-    top: -6.5em;
-}
-
-/*Case Study Hero Section*/
+/* Hero Section */
 
 .title {
-    margin: 2em 1em;
+    margin: 2rem 1rem;
 }
 
 .title h1 {
-    font-family: "Poppins", sans-serif;
-    font-size: 2.5em;
-    font-weight: 500;
-    margin: 1em auto;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 1rem auto;
 }
 
 .scope {
     display: flex;
     flex-direction: row;
     gap: 28px;
-    padding: 1em 0;
+    padding: 1rem 0;
 }
 
 .scopetitles p {
     font-weight: 600;
     margin: 0 auto;
-    padding: .25em 0;
+    padding: .25rem 0;
 }
 
 .scopedesc p {
     margin: 0 auto;
-    padding: .25em 0;
+    padding: .25rem 0;
 }
 
 .title img {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-/* Main Section */
+/* Quick Links */
+
 .quicklinks {
-    margin-top: 4em;
-    margin-bottom: 2em;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 .quicklinks h4 {
-    font-weight: 600;
+    font-size: 1.5rem;
     line-height: 2;
 }
 
@@ -61,34 +49,32 @@
     margin: 0.5em 1em;
 }
 
-.text {
-    padding: 1em;
+#solution {
+    position: relative;
+    top: -6.5em;
 }
 
-.text h3{
-    font-size: 1.75em;
-    font-weight: 500;
-}
-
-.text h4 {
-    font-size: 1.25em; 
-}
+/* Main Section */
 
 .problem {
     background-color: #315A4E;
     color: #FFFFFF;
-    border-radius: 1em;
-    padding: 1em;
-    margin: 1em 2em;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem 2rem;
 }
 
 .problem ol li {
-    padding-right: .75em;
+    padding-right: .75rem;
 }
 
-.userprobs,
-.example {
-    margin: 3em auto;
+.solution h5 {
+    margin-top: 1.5rem;
+    font-family: neuzeit-grotesk, sans-serif;
+}
+
+.userprobs {
+    margin: 1.5rem auto;
 }
 
 .userprobs p {
@@ -100,7 +86,7 @@
 .personacards {
     display: flex;
     flex-direction: row;
-    margin: 3em auto;
+    margin: 1.5rem auto;
 }
 .persona1 {
     position: relative;
@@ -110,21 +96,40 @@
     position: relative;
     right: 50px;
     top: 30px;
+    padding-bottom: 1.5rem;
 }
 
-.userflow img {
-    padding: 1em;
+.example {
+    margin: 1.5rem auto;
+}
+
+.userflow,
+.cardsort,
+.sitemap,
+.sketch {
+    padding-bottom: 1rem;
 }
 
 .sketch,
 .lfwireframe {
     display: flex;
     flex-flow: row; 
-    gap: 1em;
+    gap: 1rem;
 }
 
 #prototype {
-    margin: 4em auto 0;
+    margin: 2rem auto 0;
+}
+
+#prototype .button.secondary {
+    color: #315A4E;
+    border: 1px solid #315A4E;
+}
+
+#prototype .button.secondary:hover,
+#prototype .button.secondary:active {
+    background-color: #315A4E;
+    color: #ffffff;
 }
 
 /* Media Queries */
@@ -132,7 +137,7 @@
 /*Small devices (640px to 767px)*/
 @media only screen and (min-width: 640px) {
     .example {
-        margin: 3em 2em;
+        margin: 2rem;
     }
 }
 
@@ -158,11 +163,12 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: stretch;
+        
     }
 
     .problem {
         flex: 1;
-        margin: 1em 1em;
+        margin: 1.5rem;
     }
 
     .persona1 {
@@ -189,27 +195,27 @@
     .ideationimg2 {
         display: inline-flex;
         flex-direction: row;
-        gap: 2em;
+        gap: 2rem;
     }    
 }
 
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) { 
-    .casestudy {
-        padding-left: 8em;
-        padding-right: 8em;
+    .userprobs {
+        padding-left: 8rem;
+        padding-right: 8rem;
     }
-    
+
     .sketch img {
-        width: 200px;
+        width: 250px;
     }
 
     .ideationimg2 {
-        gap: 3em;
+        gap: 3rem;
     }
 }
 
 /*X-large devices (1440px and larger)*/
 @media only screen and (min-width: 1440px) {
- 
+
 }
