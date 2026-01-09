@@ -7,10 +7,6 @@
     margin: 1.5em auto;
 }
 
-#story span {
-    display: block;
-}
-
 #story h4 {
     margin: 1em auto;
 }
@@ -49,15 +45,12 @@
     font-style: italic;
 }
 
-main {
-    margin-bottom: 4em;
+#expertise p span {
+    display: block;
 }
 
-#bio .connect a {
-    font-family: "Playwrite CO", serif;
-    font-weight: 400;
-    text-decoration: underline;
-    text-underline-offset: .25em;
+main {
+    margin-bottom: 4em;
 }
 
 
