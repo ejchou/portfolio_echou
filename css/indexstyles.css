@@ -14,7 +14,7 @@
   inset: 0;
   z-index: -1;
 
-  background-image: url("/img/home/1x/white-sands_1x.jpg");
+  background-image: url("../img/home/1x/white-sands_1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0%;
@@ -252,7 +252,7 @@ body.lift-featured #featured * {
     right: 0;   /* anchor to the right */
     left: auto; /* release from left alignment */
 
-    background-image: url("/img/home/2x/white-sands_2x.jpg");
+    background-image: url("../img/home/2x/white-sands_2x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; /* image aligns to the right */

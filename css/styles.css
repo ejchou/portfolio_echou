@@ -276,7 +276,7 @@ footer #contact {
 }
 
 #contact .logo-bg {
-    background-image: url("/img/home/1x/logo-bg_1x.png");
+    background-image: url("../img/home/1x/logo-bg_1x.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -532,7 +532,7 @@ html {
     }
 
     #contact .logo-bg {
-        background-image: url("/img/home/2x/logo-bg_2x.png");
+        background-image: url("../img/home/2x/logo-bg_2x.png");
     }
 
     .bottom-footer {
